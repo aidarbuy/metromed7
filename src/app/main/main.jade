@@ -1,0 +1,74 @@
+div(layout="vertical" layout-fill)
+	md-content
+		//- Header
+		//- header
+			acme-navbar(creationDate="main.creationDate")
+
+		//- SLIDER
+		layer-slider
+
+		//- TOP-SIDEBARS
+		div(layout="row" layout-sm="column")
+			md-card(flex ng-repeat="item in main.topSidebars")
+				md-card-content
+					h2.md-display-1 {{ item.header }}
+					p.md-headline(ng-repeat="p in item.text") {{ p }}
+
+		//- QUOTE
+		//- md-toolbar(class="md-accent" style="text-align:center")
+			div(flex layout="column" layout-align="center")
+				h2(flex).md-display-2 {{ main.quote.title }}
+				h4(flex).md-headline {{ main.quote.text }}
+
+
+		//- CUSTOM SERVICES
+		//- div(layout="row" layout-sm="column")
+			md-card(flex ng-repeat="item in main.customServices")
+				md-card-content(style="text-align:center")
+					ng-md-icon(icon="{{ item.icon }}" style="fill:#2cbfd9;top:6px;" ng-attr-style="fill:#2cbfd9" size="64")
+					h2.md-display-2 {{ item.title }}
+					p.md-headline(ng-repeat="p in item.text") {{ p }}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+				//- BUTTONS
+				//- md-card
+					md-card-content
+						div(layout="row" layout-align="center start")
+							div(layout="column")
+								md-button.md-raised.md-primary Primary
+								md-button.md-raised.md-primary.md-hue-1 Primary Hue 1
+								md-button.md-raised.md-primary.md-hue-2 Primary Hue 2
+								md-button.md-raised.md-primary.md-hue-3 Primary Hue 3
+							div(layout="column" layout-align="space-around")
+								md-button.md-raised.md-accent Accent
+								md-button.md-raised.md-accent.md-hue-1 Accent Hue 1
+								md-button.md-raised.md-accent.md-hue-2 Accent Hue 2
+								md-button.md-raised.md-accent.md-hue-3 Accent Hue 3
+							div(layout="column" layout-align="space-around")
+								md-button.md-raised.md-warn Warn
+								md-button.md-raised.md-warn.md-hue-1 Warn Hue 1
+								md-button.md-raised.md-warn.md-hue-2 Warn Hue 2
+								md-button.md-raised.md-warn.md-hue-3 Warn Hue 3
+
+			//- Footer
+			footer
+				acme-footer
