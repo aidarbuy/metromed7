@@ -1,5 +1,4 @@
-//- Mobile
-div(layout="column" layout-align="space-around" hide-gt-md)
+div(layout="row" layout-sm="column" layout-align="space-around")
 	div(flex ng-repeat="p in srv.prices")
 		md-card.price-card-outer
 			.price-card-inner
@@ -8,18 +7,6 @@ div(layout="column" layout-align="space-around" hide-gt-md)
 					.md-display-4 ${{ p.price }}
 					.md-headline ONE TIME FEE
 				ul.md-headline
-					li(ng-repeat="li in p.list") {{ li }}
-
-//- Desktop
-div(layout="row" layout-align="space-around" hide-sm hide-md)
-	div(flex ng-repeat="p in srv.prices")
-		md-card.price-card-outer
-			.price-card-inner
-				h2.md-headline {{ p.title }}
-				.price
-					.md-display-4 ${{ p.price }}
-					.md-headline ONE TIME FEE
-				ul.md-title
 					li(ng-repeat="li in p.list") {{ li }}
 
 

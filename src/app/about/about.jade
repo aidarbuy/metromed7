@@ -3,27 +3,7 @@
 	acme-navbar
 
 
-div(layout="row" flex layout-align="space-around" hide-sm)
-	md-card(flex)
-		md-card-content
-			h1.md-display-2 {{ about.welcome.title }}
-
-			h2.md-display-1 {{ about.welcome.conditions.header }}
-
-			ul.md-title
-				li(ng-repeat="item in about.welcome.conditions.list") {{ item }}
-
-			h2.md-subhead {{ about.welcome.asterix}}
-
-	md-card(flex)
-		md-card-content 
-			h2.md-display-2 {{ about.whyMetroMed.title }}
-
-			ul.md-title
-				li(ng-repeat="item in about.whyMetroMed.items ") {{ item }}
-
-
-div(layout="column" flex layout-align="space-around" hide-gt-sm)
+div(layout="row" layout-sm="column" flex layout-align="space-around")
 	md-card(flex)
 		md-card-content
 			h1.md-display-2 {{ about.welcome.title }}

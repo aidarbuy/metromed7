@@ -18,7 +18,7 @@ md-list .md-button {
 	// background-color: #2cbfd9;
 }
 
-$gray: #ddd;
+$gray: #ccc;
 md-content.md-default-theme {
 	background-color: $gray;
 }
@@ -38,11 +38,6 @@ h2 {
 	& :last-child {
 		opacity: 0.8;
 	}
-}
-
-md-toolbar:not(.md-hue-1),
-.md-fab {
-	fill: #fff; // FAB icon color
 }
 
 md-sidenav {

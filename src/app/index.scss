@@ -77,6 +77,11 @@ md-toolbar {
 	position: absolute;
 }
 
+md-toolbar:not(.md-hue-1),
+.md-fab {
+	fill: #fff; // FAB icon color
+}
+
 /**
  *  Do not remove this comments bellow. It's the markers used by gulp-inject to inject
  *  all your sass files automatically

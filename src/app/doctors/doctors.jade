@@ -3,25 +3,12 @@
 	acme-navbar
 
 md-card
-	div(layout="column" layout-align="space-around" hide-gt-sm)
+	div(layout="row" layout-sm="column" layout-align="space-around")
 		div(flex ng-repeat="doctor in doctors.doctors")
 			md-card
 				img(ng-src="assets/{{ doctor.img.href.src }}" class="md-card-image" alt="photo of doctor {{ doctor.firstname + ' ' + doctor.lastname }}")
 				md-card-content
 					h2.md-display-1 {{ doctor.firstname + " " + doctor.lastname }}
-					p.md-subhead(ng-repeat="desc in doctor.description") {{ desc }}
-
-					div.md-actions(layout="row" layout-align="end center")
-						md-button(class="md-raised md-accent") Read more
-
-
-	//- Desktop
-	div(layout="row" layout-align="space-around" hide-sm)
-		div(flex ng-repeat="doctor in doctors.doctors")
-			md-card
-				img(ng-src="assets/{{ doctor.img.href.src }}" class="md-card-image" alt="photo of doctor {{ doctor.firstname + ' ' + doctor.lastname }}")
-				md-card-content
-					h2.md-headline {{ doctor.firstname + " " + doctor.lastname }}
 					p.md-subhead(ng-repeat="desc in doctor.description") {{ desc }}
 
 					div.md-actions(layout="row" layout-align="end center")
