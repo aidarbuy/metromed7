@@ -4,7 +4,7 @@ class LayerSliderDirective {
 
     let directive = {
       restrict: 'E',
-      templateUrl: 'app/components/layerslider/slider.html',
+      templateUrl: 'app/components/layerslider/previous-version-2d-demo-slider.html',
       controller: LayerSliderController,
       controllerAs: 'ls',
       bindToController: true,
@@ -12,6 +12,10 @@ class LayerSliderDirective {
         // Initializing the slider
         angular.element("#layerslider").layerSlider({
           pauseOnHover: false,
+          autoPlayVideos: false,
+          // skin: 'borderlessdark3d',
+          skin: 'fullwidth',
+          hoverBottomNav: true,
           skinsPath: 'layerslider/skins/'
         });
       }
