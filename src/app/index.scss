@@ -5,60 +5,76 @@
 // bower:scss
 // endbower
 
-@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Roboto:400,700,700italic,400italic);
-
 html {
-  font-family: 'Roboto Slab', serif;
-}
-
-[layout=row] {
-  // flex-direction: row;
+  // font-family: 'Roboto Slab', serif; 
 }
 
 .browsehappy {
-  margin: 0.2em 0;
-  background: #ccc;
-  color: #000;
-  padding: 0.2em 0;
+	margin: 0.2em 0;
+	background: #ccc;
+	color: #000;
+	padding: 0.2em 0;
 }
 
-.thumbnail {
-  height: 200px;
-
-  img.pull-right {
-    width: 50px;
-  }
+.md-toolbar-tools h1 {
+	font-size: inherit;
+	font-weight: inherit;
+	margin: inherit;
 }
 
-md-toolbar.md-default-theme {
-  background-color: black;
+md-toolbar {
+	background: #2cbfd9;
+
+	.md-button {
+		// background-color: red;
+		box-sizing: border-box;
+		color: currentColor;
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+		position: relative;
+		outline: none;
+		border: 0;
+		display: inline-block;
+		padding: 0px;
+		padding-top: 3px;
+		margin: 0 6px;
+		line-height: 100%;
+		min-height: 36px;
+		// background: transparent;
+		white-space: nowrap;
+		min-width: 36px;
+		text-align: center;
+		text-transform: uppercase;
+		font-weight: 500;
+		font-size: 14px;
+		font-style: inherit;
+		font-variant: inherit;
+		font-family: inherit;
+		text-decoration: none;
+		cursor: pointer;
+		overflow: hidden;
+		transition: box-shadow 0.4s cubic-bezier(0.25, 0.8, 0.25, 1), background-color 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+		border-radius: 50%;
+	}
+
+	ng-md-icon {
+		// background: green;
+		// height: 10px;
+		// margin-top: 10px;
+		// padding-top: 10px;
+		// top: 10px;
+	}
 }
 
-section.jumbotron {
-  margin-bottom: 30px;
-  padding: 1px 30px;
-  background-color: #5aadbb;
-  text-align: center;
-
-  color: white;
-
-  h1 {
-    font-size: 3em;
-  }
-}
-
-.techs {
-  display: flex;
-  flex-flow: row wrap;
-
-  md-card {
-    width: 30%;
-
-    img.pull-right {
-      float: right;
-      width: 50px;
-    }
-  }
+.md-button.md-fab.md-fab-bottom-right {
+	top: auto;
+	right: 20px;
+	bottom: 6px;
+	padding-top: 7px;
+	left: auto;
+	position: absolute;
 }
 
 /**

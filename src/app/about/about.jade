@@ -1,0 +1,55 @@
+//- Header
+//- header
+	acme-navbar
+
+
+div(layout="row" flex layout-align="space-around" hide-sm)
+	md-card(flex)
+		md-card-content
+			h1.md-display-2 {{ about.welcome.title }}
+
+			h2.md-display-1 {{ about.welcome.conditions.header }}
+
+			ul.md-title
+				li(ng-repeat="item in about.welcome.conditions.list") {{ item }}
+
+			h2.md-subhead {{ about.welcome.asterix}}
+
+	md-card(flex)
+		md-card-content 
+			h2.md-display-2 {{ about.whyMetroMed.title }}
+
+			ul.md-title
+				li(ng-repeat="item in about.whyMetroMed.items ") {{ item }}
+
+
+div(layout="column" flex layout-align="space-around" hide-gt-sm)
+	md-card(flex)
+		md-card-content
+			h1.md-display-2 {{ about.welcome.title }}
+
+			h2.md-display-1 {{ about.welcome.conditions.header }}
+
+			ul.md-title
+				li(ng-repeat="item in about.welcome.conditions.list") {{ item }}
+
+			h2.md-subhead {{ about.welcome.asterix}}
+
+	md-card(flex)
+		md-card-content 
+			h2.md-display-2 {{ about.whyMetroMed.title }}
+
+			ul.md-title
+				li(ng-repeat="item in about.whyMetroMed.items ") {{ item }}
+
+
+//- p.md-body-2 Body copy with medium weight.
+//- md-button Button
+//- p.md-body-1 Regular body copy
+//- small.md-caption with small text
+//- span.md-caption Caption
+
+
+//- Footer
+footer
+	acme-footer

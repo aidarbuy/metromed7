@@ -1,3 +1,58 @@
-.acme-navbar-text{
-  color: white;
+/* Sidenav area */
+md-list .md-button {
+  // color: inherit;
+  // font-weight: 500;
+  text-align: left;
+  width: 100%;
+}
+  md-list .md-button.selected {
+    color: #03a9f4;
+  }
+
+  md-sidenav  md-list {
+    // padding: 0px 0px 8px 0px;
+  }
+
+
+#menu md-list-item:hover {
+	// background-color: #2cbfd9;
+}
+
+$gray: #ddd;
+md-content.md-default-theme {
+	background-color: $gray;
+}
+md-card {
+	// background-color: #fff;
+	h2:first-of-type {
+		// margin-top: 0;
+	}
+}
+
+h2 {
+	// font-weight: 400;
+}
+
+.md-toolbar-tools-bottom {
+	font-size: small; // SideNav header
+	& :last-child {
+		opacity: 0.8;
+	}
+}
+
+md-toolbar:not(.md-hue-1),
+.md-fab {
+	fill: #fff; // FAB icon color
+}
+
+md-sidenav {
+  // fill: #737373;
+  ng-md-icon {
+    // background-color: red;
+		position: relative;
+		// top: 5px; // adjust for svg viewbox
+	}
+}
+.user-avatar {
+	border-radius: 99%;
 }

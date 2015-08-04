@@ -1,0 +1,15 @@
+//- Header
+//- header
+	acme-navbar
+
+main
+	md-card
+		md-card-content
+			//- h1 Our location
+			//- h1 {{ gmap.testMsg }}
+			ui-gmap-google-map(center='gmap.map.center' zoom='gmap.map.zoom')
+				ui-gmap-marker(idKey='gmap.marker.id' coords='gmap.marker.coords')
+
+//- Footer
+footer
+	acme-footer
