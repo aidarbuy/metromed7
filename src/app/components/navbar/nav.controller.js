@@ -4,31 +4,31 @@ class NavController {
 
 		// this.selectedIndex = 0;
 
-		// $scope.$watch('this.selectedIndex', function(current) {
-		// 	switch (current) {
-		// 		case 0:
-		// 			$location.url("/");
-		// 			break;
-		// 		case 1:
-		// 			$location.url("/about");
-		// 			break;
-		// 		case 2:
-		// 			$location.url("/services");
-		// 			break;
-		// 		case 3:
-		// 			$location.url("/doctors");
-		// 			break;
-		// 		case 4:
-		// 			$location.url("/primary");
-		// 			break;
-		// 		case 5:
-		// 			$location.url("/map");
-		// 			break;
-		// 		case 6:
-		// 			$location.url("/virtual");
-		// 			break;
-		// 	}
-		// });
+		$scope.$watch('this.selectedIndex', function(current) {
+			switch (current) {
+				case 0:
+					$location.url("/");
+					break;
+				case 1:
+					$location.url("/about");
+					break;
+				case 2:
+					$location.url("/services");
+					break;
+				case 3:
+					$location.url("/doctors");
+					break;
+				case 4:
+					$location.url("/primary");
+					break;
+				case 5:
+					$location.url("/map");
+					break;
+				case 6:
+					$location.url("/virtual");
+					break;
+			}
+		});
 
 
 		this.menu = [

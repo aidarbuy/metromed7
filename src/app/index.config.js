@@ -5,7 +5,7 @@ function config ($logProvider, $mdThemingProvider) {
   $logProvider.debugEnabled(true);
 
   $mdThemingProvider.theme('default')
-  	.primaryPalette('cyan')
+  	.primaryPalette('cyan');
   	// .accentPalette('orange')
   	// .dark()
 }

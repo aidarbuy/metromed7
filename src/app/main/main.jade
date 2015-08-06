@@ -1,74 +1,61 @@
-div(layout="vertical" layout-fill)
-	md-content
-		//- Header
-		//- header
-			acme-navbar(creationDate="main.creationDate")
+layer-slider
 
-		//- SLIDER
-		layer-slider
+//- TOP-SIDEBARS
+div(layout="row" layout-sm="column" layout-wrap)
+	div(ng-repeat="item in main.topSidebars" flex="25" flex-md="50" flex-sm="100")
+		md-card(style="background: #2cbfd9; color: white; height: 300px")
+			md-card-content
+				h2.md-headline {{ item.header }}
+				p(ng-repeat="p in item.text") {{ p }}
 
-		//- TOP-SIDEBARS
-		div(layout="row" layout-sm="column")
-			md-card(flex ng-repeat="item in main.topSidebars")
-				md-card-content
-					h2.md-display-1 {{ item.header }}
-					p.md-headline(ng-repeat="p in item.text") {{ p }}
+//- QUOTE
+div(layout="column" layout-align="center center" layout-fill layout-margin)
+	h2(flex) {{ main.quote.title }}
+	p(flex style="text-align:center") {{ main.quote.text }}
 
-		//- QUOTE
-		//- md-toolbar(class="md-accent" style="text-align:center")
-			div(flex layout="column" layout-align="center")
-				h2(flex).md-display-2 {{ main.quote.title }}
-				h4(flex).md-headline {{ main.quote.text }}
+//- CUSTOM SERVICES
+div(layout="row" layout-sm="column" layout-wrap)
+	div(ng-repeat="item in main.customServices" flex="25" flex-md="50" flex-sm="100")
+		md-card(style="height: 300px")
+			md-card-content(layout="column" layout-align="start center" layout-margin style="text-align: center")
+				ng-md-icon(icon="{{ item.icon }}" style="fill:#2cbfd9;top:6px;" ng-attr-style="fill:#2cbfd9" size="64")
+				h2.md-headline(flex) {{ item.title }}
+				p(ng-repeat="t in item.text" flex) {{ t }}
 
+div(layout-sm="column" layout-md="column" layout-gt-md="row")
+	//- MEDICAL SCHOOL
+	md-card(flex)
+		md-toolbar.md-primary.md-hue-2
+			.md-toolbar-tools
+				span(flex)
+				h2.md-flex Nano Medical School for Patients
+				span(flex)
+		md-card-content
+			md-list-item.md-3-line(ng-repeat="article in main.articles")
+				md-content(layout-padding style="height: 300px; margin: 24px 0;")
+					div(layout="row" layout-align="end end")
+						img(flex="25" ng-src="assets/{{ article.img.src }}" alt="{{ article.img.alt }}" style="width:100px;height:100px")
+						span(flex="5")
+						h2(flex) {{ article.header }}
+					.md-list-item-text
+						p(ng-repeat="t in article.text") {{ t }}
+				md-divider(style="padding:0px" ng-if="!$last")
 
-		//- CUSTOM SERVICES
-		//- div(layout="row" layout-sm="column")
-			md-card(flex ng-repeat="item in main.customServices")
-				md-card-content(style="text-align:center")
-					ng-md-icon(icon="{{ item.icon }}" style="fill:#2cbfd9;top:6px;" ng-attr-style="fill:#2cbfd9" size="64")
-					h2.md-display-2 {{ item.title }}
-					p.md-headline(ng-repeat="p in item.text") {{ p }}
+	//- TESTIMONIALS
+	md-card(flex)
+		md-toolbar.md-primary.md-hue-2
+			.md-toolbar-tools
+				span(flex)
+				h2.md-flex Testimonials
+				span(flex)
+		md-card-content
+			md-list
+				md-list-item.md-3-line(ng-repeat="item in main.testimonials")
+					img.face(ng-src="assets/images/testimonials/{{ item.img }}" alt="{{ item.name }}")
+					.md-list-item-text
+						h3 {{ item.name }}
+						h4 {{ item.city }}
+						p {{ item.text }}
+					md-divider(md-inset ng-if="!$last")
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-				//- BUTTONS
-				//- md-card
-					md-card-content
-						div(layout="row" layout-align="center start")
-							div(layout="column")
-								md-button.md-raised.md-primary Primary
-								md-button.md-raised.md-primary.md-hue-1 Primary Hue 1
-								md-button.md-raised.md-primary.md-hue-2 Primary Hue 2
-								md-button.md-raised.md-primary.md-hue-3 Primary Hue 3
-							div(layout="column" layout-align="space-around")
-								md-button.md-raised.md-accent Accent
-								md-button.md-raised.md-accent.md-hue-1 Accent Hue 1
-								md-button.md-raised.md-accent.md-hue-2 Accent Hue 2
-								md-button.md-raised.md-accent.md-hue-3 Accent Hue 3
-							div(layout="column" layout-align="space-around")
-								md-button.md-raised.md-warn Warn
-								md-button.md-raised.md-warn.md-hue-1 Warn Hue 1
-								md-button.md-raised.md-warn.md-hue-2 Warn Hue 2
-								md-button.md-raised.md-warn.md-hue-3 Warn Hue 3
-
-//- Footer
-footer
-	acme-footer
+acme-footer

@@ -1,20 +1,12 @@
-//- Header
-//- header
-	acme-navbar
+div(layout="row" layout-sm="column" layout-align="space-around")
+	div(flex-sm="100" flex-md="50" flex-gt-md="25" layout-wrap ng-repeat="doctor in doctors.doctors")
+		md-card
+			img.md-card-image(ng-src="assets/{{ doctor.img.href.src }}" alt="photo of doctor {{ doctor.firstname + ' ' + doctor.lastname }}")
+			md-card-content
+				h2.md-title {{ doctor.firstname + " " + doctor.lastname }}
+				p(ng-repeat="desc in doctor.description") {{ desc | limitTo: 80 }}
 
-md-card
-	div(layout="row" layout-sm="column" layout-align="space-around")
-		div(flex ng-repeat="doctor in doctors.doctors")
-			md-card
-				img(ng-src="assets/{{ doctor.img.href.src }}" class="md-card-image" alt="photo of doctor {{ doctor.firstname + ' ' + doctor.lastname }}")
-				md-card-content
-					h2.md-display-1 {{ doctor.firstname + " " + doctor.lastname }}
-					p.md-subhead(ng-repeat="desc in doctor.description") {{ desc }}
+				.md-actions(layout="row" layout-align="end center")
+					md-button.md-raised.md-accent Read more
 
-					div.md-actions(layout="row" layout-align="end center")
-						md-button(class="md-raised md-accent") Read more
-
-
-//- Footer
-footer
-	acme-footer
+acme-footer
