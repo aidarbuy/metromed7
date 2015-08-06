@@ -74,21 +74,19 @@ class NavController {
 
 		this.admin = [
 			{
-				link : '',
-				title: '952 Edwards Ferry Road NE Leesburg VA 20176',
-				icon: 'room'
-			},
-			{
-				// link : 'showListBottomSheet($event)',
-				link : 'tel:(703) 687-4158',
+				link : 'tel:1-703-687-4158',
 				title: '(703) 687-4158',
 				icon: 'call'
 			},
 			{
-				// link : 'showListBottomSheet($event)',
 				link : 'mailto:info@metromeduc.com',
 				title: 'info@metromeduc.com',
 				icon: 'email'
+			},
+			{
+				link : '#/map',
+				title: '952 Edwards Ferry Road NE Leesburg VA 20176',
+				icon: 'room'
 			}
 		];
 
