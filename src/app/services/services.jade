@@ -1,12 +1,12 @@
-div(layout="row" layout-sm="column" layout-align="space-around")
-	div(flex ng-repeat="p in srv.prices")
+div(layout="row" layout-wrap layout-align="space-around")
+	div(ng-repeat="p in srv.prices" flex="25" flex-md="50" flex-sm="100")
 		md-card.price-card-outer
 			.price-card-inner
-				h2.md-display-1 {{ p.title }}
+				h2.md-headline {{ p.title }}
 				.price
 					.md-display-4 ${{ p.price }}
 					.md-headline ONE TIME FEE
-				ul.md-headline
+				ul.md-title
 					li(ng-repeat="li in p.list") {{ li }}
 
 

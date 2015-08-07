@@ -1,4 +1,4 @@
-div(layout="row" layout-sm="column" layout-align="space-around")
+div(layout="row" layout-wrap layout-align="space-around")
 	div(flex-sm="100" flex-md="50" flex-gt-md="25" layout-wrap ng-repeat="doctor in doctors.doctors")
 		md-card
 			img.md-card-image(ng-src="assets/{{ doctor.img.href.src }}" alt="photo of doctor {{ doctor.firstname + ' ' + doctor.lastname }}")
