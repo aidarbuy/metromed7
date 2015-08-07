@@ -1,24 +1,24 @@
-layer-slider
+//- layer-slider
 
 //- TOP-SIDEBARS
-div(layout="row" layout-sm="column" layout-wrap)
+div(layout="row" layout-wrap)
 	div(ng-repeat="item in main.topSidebars" flex="25" flex-md="50" flex-sm="100")
-		md-card(style="background: #2cbfd9; color: white; height: 300px")
+		md-card(flex style="background: #2cbfd9; color: white; height: 300px")
 			md-card-content
 				h2.md-headline {{ item.header }}
 				p(ng-repeat="p in item.text") {{ p }}
 
 //- QUOTE
-div(layout="column" layout-align="center center" layout-fill layout-margin)
-	h2(flex) {{ main.quote.title }}
+div(layout="column" layout-align="center center" layout-margin)
+	h2(flex style="text-align:center") {{ main.quote.title }}
 	p(flex style="text-align:center") {{ main.quote.text }}
 
 //- CUSTOM SERVICES
-div(layout="row" layout-sm="column" layout-wrap)
+div(layout="row" layout-wrap)
 	div(ng-repeat="item in main.customServices" flex="25" flex-md="50" flex-sm="100")
-		md-card(style="height: 300px")
-			md-card-content(layout="column" layout-align="start center" layout-margin style="text-align: center")
-				ng-md-icon(icon="{{ item.icon }}" style="fill:#2cbfd9;top:6px;" ng-attr-style="fill:#2cbfd9" size="64")
+		md-card(flex style="height: 300px")
+			md-card-content(layout="column" layout-align="center center" layout-margin style="text-align: center")
+				ng-md-icon(flex icon="{{ item.icon }}" style="fill:#2cbfd9;top:6px;" ng-attr-style="fill:#2cbfd9" size="64")
 				h2.md-headline(flex) {{ item.title }}
 				p(ng-repeat="t in item.text" flex) {{ t }}
 
