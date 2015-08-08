@@ -4,7 +4,7 @@ class LayerSliderDirective {
 
     let directive = {
       restrict: 'E',
-      templateUrl: 'app/components/layerslider/previous-version-2d-demo-slider.html',
+      templateUrl: 'app/components/layerslider/responsive.html',
       controller: LayerSliderController,
       controllerAs: 'ls',
       bindToController: true,

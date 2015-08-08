@@ -4,6 +4,7 @@ import routerConfig from './index.route';
 
 import runBlock from './index.run';
 import LayerSliderDirective from '../app/components/layerslider/slider.directive';
+import RevolutionSliderDirective from '../app/components/revolution/revolution.directive';
 import NavController from '../app/components/navbar/nav.controller';
 import MainController from './main/main.controller';
 import AboutUsController from './about/about.controller';
@@ -25,6 +26,7 @@ angular.module('metromed7', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 
   .service('githubContributor', GithubContributorService)
   .controller('NavController', NavController)
   .directive('layerSlider', () => new LayerSliderDirective())
+  .directive('revolutionSlider', () => new RevolutionSliderDirective())
   .controller('MainController', MainController)
   .controller('AboutUsController', AboutUsController)
   .controller('ServicesController', ServicesController)
