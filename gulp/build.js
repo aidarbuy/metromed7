@@ -94,9 +94,17 @@ gulp.task('layerslider', function () {
 		.pipe(gulp.dest(path.join(conf.paths.dist, '/layerslider')));
 });
 
+// Copy Revolution slider to dist
+gulp.task('revolution', function () {
+	$.del(path.join(conf.paths.dist, '/revolution'));
+
+	return gulp.src(path.join(conf.paths.src, 'revolution/**/*'))
+		.pipe(gulp.dest(path.join(conf.paths.dist, '/revolution')));
+});
+
 // Clean dist folder
 gulp.task('clean', function (done) {
 	$.del([path.join(conf.paths.dist, '/'), path.join(conf.paths.tmp, '/')], done);
 });
 
-gulp.task('build', ['html', 'fonts', 'other', 'layerslider']);
+gulp.task('build', ['html', 'fonts', 'other', 'layerslider', 'revolution']);

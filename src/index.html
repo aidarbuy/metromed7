@@ -32,44 +32,49 @@
 	</head>
 
 	<body layout="column" ng-controller="NavController as nav">
+		<!-- Toolbar -->
 		<md-toolbar>
 			<div class="md-toolbar-tools" layout="row" layout-align="center center">
 				<md-button ng-click="nav.toggleSidenav('left')" hide-gt-sm class="md-icon-button" style="padding:0">
 					<md-icon aria-label="Menu" md-svg-icon="https://s3-us-west-2.amazonaws.com/s.cdpn.io/68133/menu.svg"></md-icon>
 				</md-button>
+				<!-- Brand -->
 				<a ui-sref="home" layout="row" layout-align="start center">
 					<i class="material-icons" style="margin-right:5px">local_hospital</i>
 					<h2>MetroMed Urgent Care</h2>
 				</a>
 				<span flex></span>
 				<!-- Address -->
-				<a ui-sref="map" layout="row" layout-align="start center" style="background:re">
-					<i hide-md class="material-icons" style="margin-right:7px">room</i>
-					<p hide-md hide-sm>952 Edwards Ferry Road NE Leesburg VA 20176</p>
+				<a ui-sref="map" layout="row" layout-align="start center" hide-md hide-sm>
+					<i class="material-icons" style="margin-right:7px">room</i>
+					<p>952 Edwards Ferry Road NE Leesburg VA 20176</p>
 				</a>
 				<!-- Phone -->
-				<span style="margin-left:20px" hide-sm></span>
-				<a href="tel:(703) 687-4158" layout="row" layout-align="start center" style="background:gree">
+				<a href="tel:(703) 687-4158" layout="row" layout-align="start center" style="margin-left:20px" hide-sm>
 					<i class="material-icons" style="margin-right:7px">call</i>
-					<p hide-sm>(703) 687-4158</p>
+					<p>(703) 687-4158</p>
 				</a>
+				<md-button href="tel:(703) 687-4158" aria-label="call MetroMed Urgent Care" class="md-fab md-accent" style="line-height:65px" hide-gt-sm>
+					<i class="material-icons">call</i>
+				</md-button>
 				<!-- Email -->
-				<span hide-sm hide-md hide-lg style="margin-left:20px;"></span>
-				<a href="mailto:info@metromeduc.com" layout="row" layout-align="start center" style="background:blu">
-					<i hide-md hide-lg class="material-icons" style="margin-right:7px">email</i>
-					<p hide-sm hide-md hide-lg>info@metromeduc.com</p>
+				<a href="mailto:info@metromeduc.com" layout="row" layout-align="start center" style="margin-left:20px" hide-sm hide-md hide-lg>
+					<i class="material-icons" style="margin-right:7px">email</i>
+					<p>info@metromeduc.com</p>
 				</a>
 			</div>
 		</md-toolbar>
+
+		<!-- Wrapper -->
 		<div layout="row" flex>
+			<!-- Side Navigation -->
 			<md-sidenav layout="column" class="md-sidenav-left md-whiteframe-z2" md-component-id="left" md-is-locked-open="$mdMedia('gt-lg')">
 				<!-- Logo -->
 				<md-toolbar class="md-tall md-hue-2">
 					<span flex></span>
 					<div layout="column" class="md-toolbar-tools-bottom inset">
 						<user-avatar>
-							<!-- <md-content><img src="assets/images/logo/logo-cross-ecg-urgentcare.png"></md-content> -->
-							<h2>MetroMed UC</h2>
+							<h2 style="text-transform:uppercase">MetroMed UC</h2>
 						</user-avatar>
 						<span></span>
 						<div>MetroMed Urgent Care</div>
@@ -89,18 +94,13 @@
 						</md-menu-item>
 						<md-divider></md-divider>
 					</md-menu-content>
-					<md-menu-content>
-						<md-divider></md-divider>
-					</md-menu-content>
+					<md-menu-content></md-menu-content>
 				</md-menu>
 
 				<!-- Credentials -->
-				<!-- <md-toolbar class="md-hue-2" style="min-height:32px;height:32px;"> -->
-				<md-toolbar class="md-hue-2">
-					<div class="md-toolbar-tools"><span flex></span><h6 flex>Contact Info</h6><span flex></span></div>
-				</md-toolbar>
 				<md-menu>
 					<md-menu-content>
+					<md-subheader>Contact Info</md-subheader>
 						<md-menu-item ng-repeat="item in nav.admin">
 							<md-button class="md-primary md-hue-2" aria-label="Home" style="border-top: 1px solid #eee" href="{{ item.link }}">
 								<div layout="row" layout-align="center center">
@@ -110,9 +110,7 @@
 						</md-menu-item>
 						<md-divider></md-divider>
 					</md-menu-content>
-					<md-menu-content>
-						<md-divider></md-divider>
-					</md-menu-content>
+					<md-menu-content></md-menu-content>
 				</md-menu>
 			</md-sidenav>
 
@@ -127,6 +125,7 @@
 		<!-- External libraries: jQuery & GreenSock -->
 		<script src="layerslider/js/jquery.js" type="text/javascript"></script>
 		<script src="layerslider/js/greensock.js" type="text/javascript"></script>
+
 		<!-- LayerSlider script files -->
 		<script src="layerslider/js/layerslider.transitions.js" type="text/javascript"></script>
 		<script src="layerslider/js/layerslider.kreaturamedia.jquery.js" type="text/javascript"></script>
