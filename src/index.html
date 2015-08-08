@@ -66,52 +66,45 @@
 		</md-toolbar>
 
 		<!-- Wrapper -->
-		<div layout="row" flex>
+		<section layout="row" flex>
 			<!-- Side Navigation -->
 			<md-sidenav layout="column" class="md-sidenav-left md-whiteframe-z2" md-component-id="left" md-is-locked-open="$mdMedia('gt-lg')">
 				<!-- Logo -->
-				<md-toolbar class="md-tall md-hue-2">
+				<md-toolbar class="md-hue-2">
 					<span flex></span>
 					<div layout="column" class="md-toolbar-tools-bottom inset">
 						<user-avatar>
-							<h2 style="text-transform:uppercase">MetroMed UC</h2>
+							<h2 class="md-headline">MetroMed Urgent Care</h2>
 						</user-avatar>
 						<span></span>
-						<div>MetroMed Urgent Care</div>
-						<div>info@metromeduc.com</div>
+						<div class="md-body-2">952 Edwards Ferry Road NE</div>
+						<div class="md-body-1">Leesburg VA 20176</div>
 					</div>
 				</md-toolbar>
 
 				<!-- Menu -->
-				<md-menu>
-					<md-menu-content>
-						<md-menu-item ng-repeat="item in nav.menu">
-							<md-button class="md-primary" aria-label="Home" style="border-top: 1px solid #eee" ui-sref="{{ item.state }}" ng-click="nav.toggleSidenav('left')">
-								<div layout="row" layout-align="center center">
+				<md-list>
+					<md-list-content>
+						<md-list-item ng-repeat="item in nav.menu">
+							<md-button class="md-primary" aria-label="{{ item.title }}" style="border-top: 1px solid #eee; margin:0px; height:48px" ui-sref="{{ item.state }}" ng-click="nav.toggleSidenav('left')">
+								<div layout="row" layout-align="start center" style="margin:6px 0 0 9px">
 									<i class="material-icons" style="margin-right:5px">{{ item.icon }}</i>{{ item.title }}
 								</div>
 							</md-button>
-						</md-menu-item>
+						</md-list-item>
 						<md-divider></md-divider>
-					</md-menu-content>
-					<md-menu-content></md-menu-content>
-				</md-menu>
-
-				<!-- Credentials -->
-				<md-menu>
-					<md-menu-content>
-					<md-subheader>Contact Info</md-subheader>
-						<md-menu-item ng-repeat="item in nav.admin">
-							<md-button class="md-primary md-hue-2" aria-label="Home" style="border-top: 1px solid #eee" href="{{ item.link }}">
-								<div layout="row" layout-align="center center">
+						<!-- Contact Info -->
+						<md-subheader>Contact Info:</md-subheader>
+						<md-list-item ng-repeat="item in nav.admin | limitTo:2">
+							<md-button class="md-primary md-hue-2" aria-label="Home" style="border-top: 1px solid #eee; margin:0px; height:48px" href="{{ item.link }}">
+								<div layout="row" layout-align="start center" style="margin:6px 0 0 9px">
 									<i class="material-icons" style="margin-right:5px">{{ item.icon }}</i>{{ item.title | limitTo: 25 }}
 								</div>
 							</md-button>
-						</md-menu-item>
+						</md-list-item>
 						<md-divider></md-divider>
-					</md-menu-content>
-					<md-menu-content></md-menu-content>
-				</md-menu>
+					</md-list-content>
+				</md-list>
 			</md-sidenav>
 
 			<!-- Content -->
@@ -120,7 +113,7 @@
 						<div ui-view></div>
 					</md-content>
 			</div>
-		</div>
+		</section>
 
 		<!-- External libraries: jQuery & GreenSock -->
 		<script src="layerslider/js/jquery.js" type="text/javascript"></script>
