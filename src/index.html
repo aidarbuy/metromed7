@@ -35,7 +35,7 @@
 		<!-- Toolbar -->
 		<md-toolbar>
 			<div class="md-toolbar-tools" layout="row" layout-align="center center">
-				<md-button ng-click="nav.toggleSidenav('left')" hide-gt-sm class="md-icon-button" style="padding:0">
+				<md-button ng-click="nav.toggleSidenav('left')" hide-gt-md class="md-icon-button" style="padding:0">
 					<md-icon aria-label="Menu" md-svg-icon="https://s3-us-west-2.amazonaws.com/s.cdpn.io/68133/menu.svg"></md-icon>
 				</md-button>
 				<!-- Brand -->
@@ -86,9 +86,9 @@
 				<md-list>
 					<md-list-content>
 						<md-list-item ng-repeat="item in nav.menu">
-							<md-button class="md-primary" aria-label="{{ item.title }}" style="border-top: 1px solid #eee; margin:0px; height:48px" ui-sref="{{ item.state }}" ng-click="nav.toggleSidenav('left')">
+							<md-button class="md-primary" aria-label="{{item.title}}" style="border-top: 1px solid #eee; margin:0px; height:48px" ui-sref="{{ item.state }}" ng-click="nav.toggleSidenav('left')">
 								<div layout="row" layout-align="start center" style="margin:6px 0 0 9px">
-									<i class="material-icons" style="margin-right:5px">{{ item.icon }}</i>{{ item.title }}
+									<i class="material-icons" style="margin-right:5px">{{item.icon}}</i>{{item.title}}
 								</div>
 							</md-button>
 						</md-list-item>
@@ -96,9 +96,9 @@
 						<!-- Contact Info -->
 						<md-subheader>Contact Info:</md-subheader>
 						<md-list-item ng-repeat="item in nav.admin | limitTo:2">
-							<md-button class="md-primary md-hue-2" aria-label="Home" style="border-top: 1px solid #eee; margin:0px; height:48px" href="{{ item.link }}">
+							<md-button class="md-primary md-hue-2" aria-label="Home" style="border-top: 1px solid #eee; margin:0px; height:48px; text-transform:lowercase" href="{{item.link}}">
 								<div layout="row" layout-align="start center" style="margin:6px 0 0 9px">
-									<i class="material-icons" style="margin-right:5px">{{ item.icon }}</i>{{ item.title | limitTo: 25 }}
+									<i class="material-icons" style="margin-right:5px">{{item.icon}}</i>{{item.title}}
 								</div>
 							</md-button>
 						</md-list-item>

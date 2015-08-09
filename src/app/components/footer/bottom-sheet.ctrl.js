@@ -28,7 +28,7 @@ class GridBottomSheetCtrl {
 				href: 'https://twitter.com/metromeduc'
 		}];
 
-		this.listItemClick = function($index) {
+		this.listItemClick = function() {
 			// var clickedItem = this.items[$index];
 			// $mdBottomSheet.hide(clickedItem);
 		};

@@ -1,3 +1,26 @@
-.angular-google-map-container { 
-	height: 400px;
+md-list.map-credentials {
+	// background: gray;
+	.md-primary {
+		// background: red;
+		text-transform: lowercase;
+		margin-left: 0px;
+		padding-left: 0px;
+		padding-right: 0px; 
+	}
+
+	md-list-item {
+		// background: green;
+		padding-top: 5px; 
+	}
+
+	md-icon {
+		// background: blue;
+		width: 32px;
+		height: 32px;
+		margin-left: 10px;
+		margin-right: 20px; 
+	}
 }
+
+.angular-google-map-container { 
+	height: 400px; }

@@ -1,4 +1,4 @@
-function config ($logProvider, $mdThemingProvider, $mdIconProvider) {
+function config ($logProvider, $mdThemingProvider) {
   'ngInject';
 
   // Enable log

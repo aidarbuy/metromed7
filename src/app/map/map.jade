@@ -1,15 +1,34 @@
-//- Header
-//- header
-	acme-navbar
+md-card
+	md-card-content
+		md-list.map-credentials
+			md-button.md-primary.md-hue-2(href="#/map" style="text-transform:capitalize")
+				md-divider
+				md-list-item.md-3-line
+					md-icon(md-svg-src="assets/icons/location.svg")
+					.md-list-item-text
+						h3 952 Edwards Ferry Road NE
+						p.md-display-1 Leesburg VA 20176
+				md-divider
 
-main
-	md-card
-		md-card-content
-			//- h1 Our location
-			//- h1 {{ gmap.testMsg }}
-			ui-gmap-google-map(center='gmap.map.center' zoom='gmap.map.zoom')
-				ui-gmap-marker(idKey='gmap.marker.id' coords='gmap.marker.coords')
+		ui-gmap-google-map(center='gmap.map.center' zoom='gmap.map.zoom')
+			ui-gmap-marker(idKey='gmap.marker.id' coords='gmap.marker.coords')
 
-//- Footer
-footer
-	acme-footer
+		md-list.map-credentials
+			md-button.md-primary.md-hue-2(href="tel:(703) 687-4158" style="margin-bottom:0")
+				md-divider
+				md-list-item.md-3-line
+					md-icon(md-svg-src="assets/icons/phone.svg")
+					.md-list-item-text
+						h3 (703) 687-4158
+						p.md-display-1 7 days a week from 10am to 8pm
+
+			md-button.md-primary.md-hue-2(href="tel:(703) 687-4158" style="margin-top:0")
+				md-divider
+				md-list-item.md-3-line
+					md-icon(md-svg-src="assets/icons/email.svg")
+					.md-list-item-text
+						h3 info@metromeduc.com
+						p.md-display-1 24 hours a day 7 days a week
+				md-divider
+
+acme-footer
