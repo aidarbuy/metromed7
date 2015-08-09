@@ -1,5 +1,5 @@
 //- div(layout="column")
-revolution-slider(flex)
+//- revolution-slider(flex)
 
 //- TOP-SIDEBARS
 div(layout="row" layout-wrap)
@@ -10,17 +10,19 @@ div(layout="row" layout-wrap)
 				p(style="font-size:large" ng-repeat="p in item.text") {{ p }}
 
 //- QUOTE
-div(layout="column" layout-align="center center" layout-margin)
-	h2(flex style="text-align:center") {{ main.quote.title }}
-	p(flex style="text-align:center") {{ main.quote.text }}
+md-card
+	md-toolbar.md-accent
+		//- div(layout="column" layout-align="center center")
+		h2.md-display-1(style="margin-bottom:10px; text-align:center") {{ main.quote.title }}
+		h3.md-title(style="margin-top:10px; text-align:center") {{ main.quote.text }}
 
 //- CUSTOM SERVICES
 div(layout="row" layout-wrap)
 	div(ng-repeat="item in main.customServices" flex="25" flex-md="50" flex-sm="100")
 		md-card(flex style="height: 300px")
 			md-card-content(layout="column" layout-align="center center" layout-margin style="text-align: center")
-				ng-md-icon(flex icon="{{ item.icon }}" style="fill:#2cbfd9;top:6px;" ng-attr-style="fill:#2cbfd9" size="64")
-				h2.md-headline(flex) {{ item.title }}
+				ng-md-icon(icon="{{ item.icon }}" style="fill:#2cbfd9;top:6px;" ng-attr-style="fill:#2cbfd9" size="64")
+				h2.md-title {{ item.title }}
 				p(ng-repeat="t in item.text" flex) {{ t }}
 
 div(layout-sm="column" layout-md="column" layout-gt-md="row")
@@ -29,17 +31,18 @@ div(layout-sm="column" layout-md="column" layout-gt-md="row")
 		md-toolbar.md-primary.md-hue-2
 			.md-toolbar-tools
 				span(flex)
+				md-icon(md-svg-src="assets/icons/school.svg" style="width:48px; height:48px; margin-right:10px")
 				h2.md-flex Nano Medical School for Patients
 				span(flex)
 		md-card-content
-			md-list-item.md-3-line(ng-repeat="article in main.articles | limitTo: 3")
+			md-list-item.md-3-line(ng-repeat="article in main.articles | limitTo: 4")
 				md-content(layout-padding style="height: 300px; margin: 24px 0;")
 					div(layout="row" layout-align="end end")
 						img(flex="25" ng-src="assets/{{ article.img.src }}" alt="{{ article.img.alt }}" style="width:100px;height:100px")
 						span(flex="5")
 						h2(flex) {{ article.header }}
 					.md-list-item-text
-						p(ng-repeat="t in article.text") {{ t }}
+						p(style="font-size:large" ng-repeat="t in article.text") {{ t }}
 				md-divider(style="padding:0px" ng-if="!$last")
 
 	//- TESTIMONIALS
@@ -47,6 +50,7 @@ div(layout-sm="column" layout-md="column" layout-gt-md="row")
 		md-toolbar.md-primary.md-hue-2
 			.md-toolbar-tools
 				span(flex)
+				md-icon(md-svg-src="assets/icons/feedback.svg" style="width:48px; height:48px; margin-right:10px")
 				h2.md-flex Testimonials
 				span(flex)
 		md-card-content
@@ -56,7 +60,7 @@ div(layout-sm="column" layout-md="column" layout-gt-md="row")
 					.md-list-item-text
 						h3 {{ item.name }}
 						h4 {{ item.city }}
-						p {{ item.text }}
+						p(style="font-size:large") {{ item.text }}
 					md-divider(md-inset ng-if="!$last")
 
 acme-footer

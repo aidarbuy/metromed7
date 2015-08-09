@@ -16,6 +16,23 @@ html {
 	padding: 0.2em 0;
 }
 
+$tabs-menu-border-color: #eee;
+$tabs-menu-border-width: 1px;
+md-toolbar#tabs-menu {
+	// background: red;
+	// border-top: 1px solid $tabs-menu-border;
+	.tabs-menu-btn {
+		// background: red;
+		border-top: $tabs-menu-border-width solid $tabs-menu-border-color;
+		border-left: $tabs-menu-border-width solid $tabs-menu-border-color;
+		border-bottom: $tabs-menu-border-width solid $tabs-menu-border-color;
+		border-right: $tabs-menu-border-width solid $tabs-menu-border-color;
+		border-radius: 0;
+		padding: 10px 30px;
+		margin: 0;
+	}
+}
+
 .material-icons {
   font-family: 'Material Icons';
   font-weight: normal;

@@ -65,6 +65,18 @@
 			</div>
 		</md-toolbar>
 
+		<!-- Tabs -->
+		<md-toolbar id="tabs-menu" hide-sm hide-md hide-gt-lg>
+			<div class="md-toolbar-tools" layout="column" layout-align="center">
+				<md-button class="tabs-menu-btn" ng-repeat="item in nav.menu" ui-sref="{{item.state}}">{{item.title}}</md-button>
+			</div>
+			<!--
+			<md-tabs>
+				<md-tab ng-repeat="item in nav.menu" label="{{item.title}}"></md-tab>
+			</md-tabs>
+			-->
+		</md-toolbar>
+
 		<!-- Wrapper -->
 		<section layout="row" flex>
 			<!-- Side Navigation -->
