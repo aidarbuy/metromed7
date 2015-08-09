@@ -33,6 +33,25 @@ md-toolbar#tabs-menu {
 	}
 }
 
+/* The starting CSS styles for the enter animation */
+.fade.ng-enter {
+  transition:.5s linear all;
+  opacity:0;
+}
+/* The finishing CSS styles for the enter animation */
+.fade.ng-enter.ng-enter-active {
+  opacity:1;
+}
+/* The starting CSS styles for the leave animation */
+.fade.ng-leave {
+  // transition:.5s linear all;
+  // opacity:1;
+}
+/* The finishing CSS styles for the leave animation */
+.fade.ng-leave.ng-leave-active {
+  // opacity:0;
+}
+
 .material-icons {
   font-family: 'Material Icons';
   font-weight: normal;

@@ -75,20 +75,20 @@ class MainController {
 		// NANO MEDICAL SCHOOL
 		this.articles = [
 			{
-				header: "Upper Respiratory Infection:  An Often Misused Term"
-				,date: "August 09, 2015"
-				,text: [
+				header: "Upper Respiratory Infection:  An Often Misused Term",
+				date: "August 09, 2015",
+				text: [
 					"Patients will often be given a diagnosis of Upper Respiratory Infection, also known as a URI, when in fact what they have is a Lower Respiratory Infection.",
 					"The respiratory tract consists of the lungs, the pharynx (throat), the nasal passages, the sinuses, and the middle ears.  They are all connected.",
 					"The dividing line between the upper and lower respiratory tracts is the vocal cords.  An infection which is primarily above the vocal cords is an upper respiratory infection.  An infection which is below the vocal cords is a lower respiratory infection.",
 					"Upper Respiratory Infections include:  pharyngitis (sore throat), sinusitis (infection of the sinuses), nasopharyngitis (infection of the nasal passages),  otitis media (middle ear infection).",
 					"Lower Respiratory Infections include:  bronchitis (an infection of the airways in the lungs), pneumonia (an infection of the lungs themselves).",
 					"So, if you have a cough, and the doctor diagnoses you with an upper respiratory infection, you can show the doctor how smart you are by saying, “Don’t you really mean a lower respiratory infection?”  But wait until after you’ve gotten the prescription before doing that, because he might not take it very well."
-				]
-				,img: {
-					title: "Upper respiratory infection image"
-					,src: 'images/articles/respiratory.jpg'
-					,alt: "upper respiratory infection"
+				],
+				img: {
+					title: "Upper respiratory infection image",
+					src: 'images/articles/respiratory.jpg',
+					alt: "upper respiratory infection"
 				}
 			},
 			{

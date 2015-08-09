@@ -17,3 +17,7 @@ echo $STRING
 echo "Opening firebase:"
 firebase open
 echo $STRING
+
+echo "Starting localhost"
+gulp serve
+echo $STRING
