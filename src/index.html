@@ -68,7 +68,7 @@
 		<!-- Wrapper -->
 		<section layout="row" flex>
 			<!-- Side Navigation -->
-			<md-sidenav layout="column" class="md-sidenav-left md-whiteframe-z2" md-component-id="left" md-is-locked-open="$mdMedia('gt-lg')">
+			<md-sidenav ng-cloak layout="column" class="md-sidenav-left md-whiteframe-z2" md-component-id="left" md-is-locked-open="$mdMedia('gt-lg')">
 				<!-- Logo -->
 				<md-toolbar class="md-hue-2">
 					<span flex></span>
@@ -86,9 +86,10 @@
 				<md-list>
 					<md-list-content>
 						<md-list-item ng-repeat="item in nav.menu">
-							<md-button class="md-primary" aria-label="{{item.title}}" style="border-top: 1px solid #eee; margin:0px; height:48px" ui-sref="{{ item.state }}" ng-click="nav.toggleSidenav('left')">
+							<md-button ng-cloak class="md-primary" aria-label="{{item.title}}" style="border-top: 1px solid #eee; margin:0px; height:48px" ui-sref="{{ item.state }}" ng-click="nav.toggleSidenav('left')">
 								<div layout="row" layout-align="start center" style="margin:6px 0 0 9px">
-									<i class="material-icons" style="margin-right:5px">{{item.icon}}</i>{{item.title}}
+									<i class="material-icons" style="margin-right:5px">{{item.icon}}</i>
+									<div ng-cloak>{{item.title}}</div>
 								</div>
 							</md-button>
 						</md-list-item>
@@ -96,9 +97,10 @@
 						<!-- Contact Info -->
 						<md-subheader>Contact Info:</md-subheader>
 						<md-list-item ng-repeat="item in nav.admin | limitTo:2">
-							<md-button class="md-primary md-hue-2" aria-label="Home" style="border-top: 1px solid #eee; margin:0px; height:48px; text-transform:lowercase" href="{{item.link}}">
+							<md-button ng-cloak class="md-primary md-hue-2" aria-label="Home" style="border-top: 1px solid #eee; margin:0px; height:48px; text-transform:lowercase" href="{{item.link}}">
 								<div layout="row" layout-align="start center" style="margin:6px 0 0 9px">
-									<i class="material-icons" style="margin-right:5px">{{item.icon}}</i>{{item.title}}
+									<i class="material-icons" style="margin-right:5px">{{item.icon}}</i>
+									<div ng-cloak>{{item.title}}</div>
 								</div>
 							</md-button>
 						</md-list-item>
