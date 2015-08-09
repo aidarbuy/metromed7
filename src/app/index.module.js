@@ -16,6 +16,7 @@ import VirtualTourController from './virtual/tour.controller';
 import GithubContributorService from '../app/components/githubContributor/githubContributor.service';
 import NavbarDirective from '../app/components/navbar/navbar.directive';
 import FooterDirective from '../app/components/footer/footer.directive';
+import GridBottomSheetCtrl from '../app/components/footer/bottom-sheet.ctrl';
 
 angular.module('metromed7', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 'ngResource', 'ui.router', 'ngMaterial', 'ngMdIcons', 'uiGmapgoogle-maps'])
   .config(config)
@@ -34,5 +35,6 @@ angular.module('metromed7', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 
   .controller('PrimaryCareController', PrimaryCareController)
   .controller('MapController', MapController)
   .controller('VirtualTourController', VirtualTourController)
+  .controller('GridBottomSheetCtrl', GridBottomSheetCtrl)
   .directive('acmeNavbar', () => new NavbarDirective())
   .directive('acmeFooter', () => new FooterDirective());

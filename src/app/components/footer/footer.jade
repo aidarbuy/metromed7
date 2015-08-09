@@ -1,3 +1,6 @@
-md-toolbar.md-hue-2(style="margin-top:20px")
-	.md-toolbar-tools
+md-toolbar.md-hue-2
+	.md-toolbar-tools(layout="row")
 		p(style="color: #eee; font-size: small; text-shadow: 1px 1px #333") Amygdala LLC © 2015 | All Rights Reserved
+		span(flex)
+		md-button(ng-click="ft.openBottomSheet($event)")
+			i.material-icons more_vert

@@ -4,7 +4,7 @@ class RevolutionSliderDirective {
 
 		let directive = {
 			restrict: 'E',
-			templateUrl: 'app/components/revolution/rev2.html',
+			templateUrl: 'app/components/revolution/revolution.html',
 			controller: RevolutionSliderController,
 			controllerAs: 'ls',
 			bindToController: true,

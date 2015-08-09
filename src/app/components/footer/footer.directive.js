@@ -1,27 +1,34 @@
 class FooterDirective {
-  constructor () {
-    'ngInject';
+	constructor () {
+		'ngInject';
 
-    let directive = {
-      restrict: 'E',
-      templateUrl: 'app/components/footer/footer.html',
-      scope: {
-          creationDate: '='
-      },
-      controller: FooterController,
-      controllerAs: 'ft',
-      bindToController: true
-    };
+		let directive = {
+			restrict: 'EA',
+			templateUrl: 'app/components/footer/footer.html',
+			controller: FooterController,
+			controllerAs: 'ft',
+			bindToController: true
+		};
 
-    return directive;
-  }
+		return directive;
+	}
 }
 
 class FooterController {
-  constructor () {
-    'ngInject';
+	constructor ($mdBottomSheet) {
+		'ngInject';
 
-  }
+		this.openBottomSheet = function ($event) {
+			$mdBottomSheet.show({
+				templateUrl: 'app/components/footer/bottom-sheet.html',
+				controller: 'GridBottomSheetCtrl',
+				controllerAs: 'bs',
+				targetEvent: $event
+			}).then(function (clickedItem) {
+				this.alert = clickedItem.name + ' clicked!';
+			});
+		};
+	}
 }
 
 export default FooterDirective;
