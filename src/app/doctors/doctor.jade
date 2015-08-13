@@ -1,0 +1,31 @@
+md-content(layout="row" layout-align="center" layout-padding)
+
+	.card
+		.image
+			img(ng-src="{{doc.img}}" alt="{{doc.alt}}")
+			span.title {{doc.header}}
+
+		.content
+			p(ng-repeat="desc in doc.doctor.description") {{desc}}
+
+		.action
+			.md-actions(layout="row" layout-align="end center")
+				a(href="#/doctors") All doctors
+			//- md-button.md-raised.md-accent(href="#/doctors") All doctors
+
+
+	//- md-card.card
+		.image
+			img(ng-src="{{doc.img}}" alt="{{doc.alt}}")
+			span.title {{doc.header}}
+
+		//- md-card-content.content(flex)
+		.content
+			p(ng-repeat="desc in doc.doctor.description") {{desc}}
+
+			md-card-footer
+				.md-actions(layout="row" layout-align="end center")
+					md-button.md-raised.md-accent(href="#/doctors") All doctors
+
+
+acme-footer

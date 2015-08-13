@@ -10,6 +10,10 @@ import MainController from './main/main.controller';
 import AboutUsController from './about/about.controller';
 import ServicesController from './services/services.controller';
 import DoctorsController from './doctors/doctors.controller';
+import DoctorController from './doctors/doctor.controller';
+import DoctorsFactory from './doctors/doctors.factory';
+// import KodaController from './doctors/koda.controller';
+// import TileDataModel from './doctors/koda.factory';
 import PrimaryCareController from './primary/care.controller';
 import MapController from './map/map.controller';
 import VirtualTourController from './virtual/tour.controller';
@@ -32,9 +36,13 @@ angular.module('metromed7', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 
   .controller('AboutUsController', AboutUsController)
   .controller('ServicesController', ServicesController)
   .controller('DoctorsController', DoctorsController)
+  .controller('DoctorController', DoctorController)
+  // .controller('KodaController', KodaController)
   .controller('PrimaryCareController', PrimaryCareController)
   .controller('MapController', MapController)
   .controller('VirtualTourController', VirtualTourController)
   .controller('GridBottomSheetCtrl', GridBottomSheetCtrl)
   .directive('acmeNavbar', () => new NavbarDirective())
-  .directive('acmeFooter', () => new FooterDirective());
+  .directive('acmeFooter', () => new FooterDirective())
+  // .factory('tilesModel', () => new TileDataModel());
+  .factory('Doctor', () => new DoctorsFactory());

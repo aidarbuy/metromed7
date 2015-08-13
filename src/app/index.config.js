@@ -20,6 +20,7 @@ function config ($logProvider, $mdThemingProvider) {
 	// 	.icon('copy2', 'img/icons/copy2.svg', 24)
 	// 	.icon('facebook', 'img/icons/facebook.svg', 24)
 	// 	.icon('twitter', 'img/icons/twitter.svg', 24);
+
 }
 
 export default config;

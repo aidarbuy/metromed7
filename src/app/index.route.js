@@ -26,6 +26,12 @@ function routerConfig ($stateProvider, $urlRouterProvider) {
       controller: 'DoctorsController',
       controllerAs: 'doctors'
     })
+    .state('doctor/:id', {
+      url: '/doctor/:id',
+      templateUrl: 'app/doctors/doctor.html',
+      controller: 'DoctorController',
+      controllerAs: 'doc'
+    })
     .state('primary', {
       url: '/primary',
       templateUrl: 'app/primary/care.html',
