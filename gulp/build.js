@@ -19,7 +19,7 @@ gulp.task('partials', ['markups'], function () {
 			quotes: true
 		}))
 		.pipe($.angularTemplatecache('templateCacheHtml.js', {
-			module: 'metromed7',
+			module: 'metromed',
 			root: 'app'
 		}))
 		.pipe(gulp.dest(conf.paths.tmp + '/partials/'));
@@ -53,12 +53,12 @@ gulp.task('html', ['inject', 'partials'], function () {
 		.pipe($.useref())
 		.pipe($.revReplace())
 		.pipe(htmlFilter)
-		.pipe($.minifyHtml({
-			empty: true,
-			spare: true,
-			quotes: true,
-			conditionals: true
-		}))
+		// .pipe($.minifyHtml({
+		// 	empty: true,
+		// 	spare: true,
+		// 	quotes: true,
+		// 	conditionals: true
+		// }))
 		.pipe(htmlFilter.restore())
 		.pipe(gulp.dest(path.join(conf.paths.dist, '/')))
 		.pipe($.size({ title: path.join(conf.paths.dist, '/'), showFiles: true }));
