@@ -155,6 +155,29 @@ md-toolbar:not(.md-hue-1), .md-fab {
 	fill: #fff;
 }
 
+.toolbar-link {
+	// background: red;
+	margin-left: 20px;
+	font-size: large;
+	.toolbar-icon {
+		vertical-align: middle;
+		margin-right: 2px;
+	}
+	.toolbar-icon-login {
+		// background: red;
+		// margin-top: 1px;
+		padding-top: 2px;
+		// width: 100px;
+	}
+	.toolbar-label {
+		vertical-align: middle;
+	}
+}
+.toolbar-icon-login-sm {
+	margin-top: 5px;
+	// vertical-align: baseline|length|sub|super|top|text-top|middle|bottom|text-bottom|initial|inherit;
+}
+
 /**
  *  Do not remove this comments bellow. It's the markers used by gulp-inject to inject
  *  all your sass files automatically
