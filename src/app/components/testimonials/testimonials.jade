@@ -1,0 +1,16 @@
+md-card(flex)
+	md-toolbar.md-primary.md-hue-2
+		.md-toolbar-tools
+			span(flex)
+			md-icon(md-svg-src="assets/icons/feedback.svg" style="width:48px; height:48px; margin-right:10px")
+			h2.md-flex Testimonials
+			span(flex)
+	md-card-content
+		md-list
+			md-list-item.md-3-line(ng-repeat="t in t.testimonials")
+				img.face(ng-src="assets/images/testimonials/{{ t.img }}" alt="{{ t.name }}")
+				.md-list-item-text
+					h3 {{ t.name }}
+					h4 {{ t.city }}
+					p(style="font-size:large") {{ t.text }}
+				md-divider(md-inset ng-if="!$last")

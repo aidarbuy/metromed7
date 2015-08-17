@@ -12,7 +12,7 @@ var articles = [
 		],
 		img: {
 			title: "Upper respiratory infection image",
-			src: 'images/articles/respiratory.jpg',
+			src: 'assets/images/articles/respiratory-200x200.jpg',
 			alt: "upper respiratory infection"
 		}
 	},
@@ -31,8 +31,8 @@ var articles = [
 		],
 		img: {
 			title: "blueberries and blackberries",
-			src: 'images/articles/cough.jpg',
-			alt: "a handful of blueberries and blackberries"
+			src: 'assets/images/articles/cough-200x200.jpg',
+			alt: "a woman coughs"
 		}
 	},
 	{
@@ -43,7 +43,7 @@ var articles = [
 		],
 		img: {
 			title: "blueberries and blackberries",
-			src: 'images/articles/berries-150x150.jpg',
+			src: 'assets/images/articles/berries-200x200.jpg',
 			alt: "a handful of blueberries and blackberries"
 		}
 	},
@@ -61,7 +61,7 @@ var articles = [
 		],
 		img: {
 			title: "Dr. Roshelle Beckwith",
-			src: 'images/articles/badge-roshelle.jpg',
+			src: 'assets/images/articles/badge-roshelle-200x200.jpg',
 			alt: "A badge of dr. Roshelle Beckwith"
 		}
 	},

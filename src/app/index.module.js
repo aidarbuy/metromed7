@@ -6,10 +6,16 @@ import MainController from './main/main.controller';
 import NavController from '../app/components/navbar/nav.controller';
 // import LayerSliderDirective from '../app/components/layerslider/slider.directive';
 import RevolutionSliderDirective from '../app/components/revolution/revolution.directive';
-import TopSidebars from '../app/main/data.top-sidebar';
-import CustomServices from '../app/main/data.custom-services';
-import NanoMedical from '../app/main/data.nano-medical';
-import Testimonials from '../app/main/data.testimonials';
+import TopSidebar from '../app/components/top-sidebar/top-sidebar';
+import TopSidebarDirective from '../app/components/top-sidebar/top-sidebar.drct';
+import Quote from '../app/components/quote/quote';
+import QuoteDirective from '../app/components/quote/quote.drct';
+import CustomServices from '../app/components/custom-services/custom-services';
+import CustomServicesDirective from '../app/components/custom-services/custom-services.drct';
+import MedicalSchoolDirective from '../app/components/medical-school/medical-school.directive';
+import MedicalSchool from '../app/components/medical-school/medical-school';
+import TestimonialsDirective from '../app/components/testimonials/testimonials.directive';
+import Testimonials from '../app/components/testimonials/testimonials';
 
 import AboutUsController from './about/about.controller';
 import ServicesController from './services/services.controller';
@@ -36,9 +42,15 @@ angular.module('metromed', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', '
 	.controller('NavController', NavController)
 	//.directive('layerSlider', () => new LayerSliderDirective())
 	.directive('revolutionSlider', () => new RevolutionSliderDirective())
-	.value('TopSidebars', TopSidebars)
+	.directive('topSidebar', () => new TopSidebarDirective())
+	.value('TopSidebar', TopSidebar)
+	.directive('quote', () => new QuoteDirective())
+	.value('Quote', Quote)
 	.value('CustomServices', CustomServices)
-	.value('NanoMedical', NanoMedical)
+	.directive('customServices', () => new CustomServicesDirective())
+	.directive('medicalSchool', () => new MedicalSchoolDirective())
+	.value('MedicalSchool', MedicalSchool)
+	.directive('testimonials', () => new TestimonialsDirective())
 	.value('Testimonials', Testimonials)
 
 	.controller('AboutUsController', AboutUsController)

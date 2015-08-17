@@ -1,0 +1,20 @@
+md-card.medical-school
+	md-toolbar.md-primary.md-hue-2
+		.md-toolbar-tools
+			span(flex)
+			md-icon(md-svg-src="assets/icons/school.svg")
+			h2.md-flex Nano Medical School for Patients
+			span(flex)
+	md-card-content
+		md-list-item(ng-repeat="a in ms.articles | limitTo: 4")
+			md-content.article
+				div(layout="row" layout-align="end center")
+					img.big(ng-src="{{ a.img.src }}" alt="{{ a.img.alt }}" hide-sm)
+					img.sml(ng-src="{{ a.img.src }}" alt="{{ a.img.alt }}" hide-gt-sm)
+					span(flex="5")
+					h2(flex) {{ a.header }}
+
+				.md-list-item-text
+					p(ng-repeat="t in a.text") {{ t }}
+
+			md-divider(ng-if="!$last")
