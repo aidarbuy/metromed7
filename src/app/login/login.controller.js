@@ -29,9 +29,10 @@ class LoginController {
 		});
 
 		// Login
-		this.login = function () {
-			authObject.$authWithOAuthPopup('email')
+		this.login = function (method) {
+			authObject.$authWithOAuthPopup(method)
 			.catch(function (error) {
+				$scope.error = error;
 				$log.error(error);
 			});
 		};

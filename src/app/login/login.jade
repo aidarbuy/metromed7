@@ -1,29 +1,63 @@
-style.
-	.inputdemoIcons .inputIconDemo {
-		min-height: 48px; }
-	.inputdemoIcons md-input-container:not(.md-input-invalid) > md-icon.email {
-		color: green; }
-	.inputdemoIcons md-input-container:not(.md-input-invalid) > md-icon.name {
-		color: dodgerblue; }
-	.inputdemoIcons md-input-container.md-input-invalid > md-icon.email, .inputdemoIcons md-input-container.md-input-invalid > md-icon.name {
-		color: red; }
-
 md-card
-	div(layout="column")
-		br
-		md-content(layout-padding class="autoScroll")
-			md-input-container.md-icon-float
-				//- Use floating label instead of placeholder
-				label Name
-				md-icon.name(md-svg-src="img/icons/ic_person_24px.svg")
-				input(ng-model="user.name" type="text")
-			md-input-container(md-no-float)
-				md-icon(md-svg-src="img/icons/ic_phone_24px.svg")
-				input(ng-model="user.phone" type="text" placeholder="Phone Number")
-			md-input-container
-				//- Use floating placeholder instead of label
-				md-icon.email(md-svg-src="img/icons/ic_email_24px.svg")
-				input(ng-model="user.email" type="email" placeholder="Email (required)" ng-required="true")
-			md-input-container(md-no-float)
-				md-icon(md-svg-src="img/icons/ic_place_24px.svg" style="display:inline-block;")
-				input(ng-model="user.address" type="text" placeholder="Address")
+	//- md-content.md-padding
+		//- div.fb-like(data-share="true" data-width="450" data-show-faces="true")
+	md-toolbar.md-warn(ng-show="error")
+		.md-toolbar-tools(layout="column")
+			h1(flex) {{error.code}}
+			h2(flex) {{error.details}}
+	md-tabs(md-dynamic-height md-border-bottom)
+		md-tab
+			md-tab-label
+				//- md-icon.email(md-svg-src="assets/icons/ic_email_24px.svg")
+				md-icon.email(md-svg-src="assets/icons/email.svg")
+				span.login-label Email and Password
+			md-tab-body
+				md-content.md-padding
+					div(layout="column")
+						br
+						md-content(layout-padding class="autoScroll")
+
+							md-input-container.md-icon-float
+								md-icon.name(md-svg-src="assets/icons/ic_person_24px.svg")
+								input(ng-model="user.name" type="text" placeholder="Name")
+
+							md-input-container
+								md-icon(md-svg-src="assets/icons/ic_phone_24px.svg")
+								input(ng-model="user.phone" type="text" placeholder="Phone Number")
+
+							md-input-container
+								md-icon.email(md-svg-src="assets/icons/ic_email_24px.svg")
+								input(ng-model="user.email" type="email" placeholder="Email (required)" ng-required="true")
+
+							md-input-container
+								md-icon(md-svg-src="assets/icons/ic_place_24px.svg" style="display:inline-block;")
+								input(ng-model="user.address" type="text" placeholder="Address")
+		md-tab
+			md-tab-label
+				md-icon(md-svg-src="assets/icons/facebook3.svg")
+				span.login-label Facebook
+			md-tab-body
+				md-content.md-padding
+					h1 Facebook
+					md-button.md-raised(ng-click="login.login('facebook')") Facebook login
+		md-tab(label="Twitter")
+			md-tab-label
+				md-icon(md-svg-src="assets/icons/twitter.svg")
+				span.login-label Twitter
+			md-tab-body
+				md-content.md-padding
+					h1 Twitter
+		md-tab(label="Google")
+			md-tab-label
+				md-icon(md-svg-src="assets/icons/google-plus.svg")
+				span.login-label Google
+			md-tab-body
+				md-content.md-padding
+					h1 Google
+		md-tab(label="GitHub")
+			md-tab-label
+				md-icon(md-svg-src="assets/icons/github-icon.svg")
+				span.login-label GitHub
+			md-tab-body
+				md-content.md-padding
+					h1 GitHub	}

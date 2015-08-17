@@ -1,16 +1,16 @@
 //- div(layout="column")
-revolution-slider(flex)
+//- revolution-slider(flex)
 
 //- TOP-SIDEBARS
 div(layout="row" layout-wrap)
 	div(ng-repeat="item in main.topSidebars" flex="25" flex-md="50" flex-sm="100")
-		md-card(flex style="background: #2cbfd9; color: white; height: 300px")
+		md-card.top-sidebar(flex style="background-color:{{item.bgColor}};margin-right:{{item.marginRight}}; margin-left:{{item.marginLeft}}")
 			md-card-content
 				h2.md-headline {{ item.header }}
-				p(style="font-size:large" ng-repeat="p in item.text") {{ p }}
+				p.top-sidebar-text(ng-repeat="p in item.text") {{ p }}
 
 //- QUOTE
-md-card
+//- md-card
 	md-toolbar.md-accent
 		//- div(layout="column" layout-align="center center")
 		h2.md-display-1(style="margin-bottom:10px; text-align:center") {{ main.quote.title }}
@@ -19,7 +19,7 @@ md-card
 //- CUSTOM SERVICES
 div(layout="row" layout-wrap)
 	div(ng-repeat="item in main.customServices" flex="25" flex-md="50" flex-sm="100")
-		md-card(flex style="height: 300px")
+		md-card.md-whiteframe-z2(flex style="height:300px")
 			md-card-content(layout="column" layout-align="center center" layout-margin style="text-align: center")
 				ng-md-icon(icon="{{ item.icon }}" style="fill:#2cbfd9;top:6px;" ng-attr-style="fill:#2cbfd9" size="64")
 				h2.md-title {{ item.title }}

@@ -50,6 +50,12 @@ function routerConfig ($stateProvider, $urlRouterProvider) {
       controller: 'VirtualTourController',
       controllerAs: 'vtour'
     })
+    .state('telemedicine', {
+      url: '/telemedicine',
+      templateUrl: 'app/telemedicine/telemedicine.html',
+      controller: 'TelemedicineController',
+      controllerAs: 'tm'
+    })
     .state('login', {
       url: '/login',
       templateUrl: 'app/login/login.html',

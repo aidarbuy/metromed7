@@ -69,6 +69,11 @@ class NavController {
 				state : 'virtual',
 				title: 'Virtual Tour',
 				icon: 'visibility'
+			},
+			{
+				state : 'telemedicine',
+				title: 'Telemedicine',
+				icon: 'switch_video'
 			}
 		];
 

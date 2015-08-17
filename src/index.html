@@ -33,8 +33,22 @@
 	</head>
 
 	<body layout="column" ng-controller="NavController as nav">
+		<script>
+			/*
+			window.fbAsyncInit = function() {
+				FB.init({appId:'737151669740618', xfbml:true, version:'v2.4'});
+			};
+			(function(d, s, id){
+				var js, fjs = d.getElementsByTagName(s)[0];
+				if (d.getElementById(id)) {return;}
+				js = d.createElement(s); js.id = id;
+				js.src = "//connect.facebook.net/en_US/sdk.js";
+				fjs.parentNode.insertBefore(js, fjs);
+			}(document, 'script', 'facebook-jssdk'));
+			*/
+		</script>
 		<!-- Toolbar -->
-		<md-toolbar>
+		<md-toolbar class="md-whiteframe-z2">
 			<div class="md-toolbar-tools" layout="row" layout-align="center center">
 				<!-- Open Menu -->
 				<md-button class="md-icon-button" style="padding:0" ng-click="nav.toggleSidenav('left')" hide-gt-md>
@@ -108,7 +122,7 @@
 				<md-list>
 					<md-list-content>
 						<md-list-item ng-repeat="item in nav.menu">
-							<md-button ng-cloak class="md-primary" aria-label="{{item.title}}" style="border-top: 1px solid #eee; margin:0px; height:48px" ui-sref="{{ item.state }}" ng-click="nav.toggleSidenav('left')">
+							<md-button ng-cloak class="md-primary md-hue-2" aria-label="{{item.title}}" style="border-top: 1px solid #eee; margin:0px; height:48px" ui-sref="{{ item.state }}" ng-click="nav.toggleSidenav('left')">
 								<div layout="row" layout-align="start center" style="margin:6px 0 0 9px">
 									<i class="material-icons" style="margin-right:5px">{{item.icon}}</i>
 									<div ng-cloak>{{item.title}}</div>
@@ -141,6 +155,7 @@
 
 		<!-- External libraries: jQuery & GreenSock -->
 		<script src="revolution/js/jquery.min.js" type="text/javascript"></script>
+		<script src="bower_components/webrtc-adapter/adapter.js"></script>
 		<!-- // <script src="layerslider/js/jquery.js" type="text/javascript"></script> -->
 		<!-- // <script src="layerslider/js/greensock.js" type="text/javascript"></script> -->
 		<!-- // <script src="greensock-js/src/minified/TweenMax.min.js" type="text/javascript"></script> -->

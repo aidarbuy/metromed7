@@ -21,7 +21,7 @@ class RevolutionSliderDirective {
 						dottedOverlay:"none",
 						delay:9000,
 						startwidth:1160,
-						startheight:600,
+						startheight:700,
 						hideThumbs:200,
 
 						thumbWidth:100,

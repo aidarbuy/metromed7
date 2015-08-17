@@ -1,0 +1,26 @@
+md-card
+	md-card-content
+
+			//- h1.md-headline
+				a(href="//webrtc.github.io/samples/" title="WebRTC samples homepage") WebRTC samples
+				span  getUserMedia
+
+			video#gum-local(autoplay)
+
+			p.md-title Display the video stream from 
+				code getUserMedia()
+				| in a video element.
+
+			p.md-title The 
+				code MediaStream
+				|  object 
+				code stream
+				|  passed to the 
+				code getUserMedia()
+				|  callback is in global scope, 
+				| so you can inspect it from the console.
+
+			a#viewSource(href="https://github.com/webrtc/samples/tree/master/src/content/getusermedia/gum" title="View source for this page on GitHub") View source on GitHub
+
+
+acme-footer
