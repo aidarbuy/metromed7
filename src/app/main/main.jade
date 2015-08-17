@@ -1,13 +1,24 @@
-//- revolution-slider(flex)
+toolbar
+tabbar
 
-top-sidebar
+section(layout="row" flex)
 
-quote
+	sidenav
 
-custom-services
+	div#content(layout="column" flex)
+		md-content.md-padding(layout="column" flex)
+			.fade(ui-view)
 
-div(layout-sm="column" layout-md="column" layout-gt-md="row")
-	medical-school(flex)
-	testimonials(flex)
+				revolution-slider(flex)
+
+				top-sidebar
+
+				quote
+
+				custom-services
+
+				div(layout-sm="column" layout-md="column" layout-gt-md="row")
+					medical-school(flex)
+					testimonials(flex)
 
 acme-footer

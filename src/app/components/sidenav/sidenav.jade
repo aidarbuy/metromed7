@@ -1,0 +1,29 @@
+md-sidenav.md-sidenav-left.md-whiteframe-z2(layout="column" md-component-id="left" md-is-locked-open="$mdMedia('gt-lg')")
+	//- Logo
+	md-toolbar.md-hue-2
+		span(flex)
+		.md-toolbar-tools-bottom.inset(layout="column")
+			user-avatar
+				h2.md-headline MetroMed Urgent Care
+			span
+			.md-body-2 952 Edwards Ferry Road NE
+			.md-body-1 Leesburg VA 20176
+
+	//- Menu
+	md-list
+		md-list-content
+			md-list-item(ng-repeat="i in sn.menu")
+				md-button.md-primary.md-hue-2(aria-label="{{i.title}}" ui-sref="{{ i.state }}" ng-click="sn.toggleSidenav('left')")
+					.menu-item(layout="row" layout-align="start center")
+						i.material-icons {{i.icon}}
+						div(ng-cloak) {{i.title}}
+			md-divider
+
+			//- Contact Info
+			md-subheader Contact Info:
+			md-list-item(ng-repeat="i in sn.contact | limitTo:2")
+				md-button.md-primary.md-hue-2(ng-cloak aria-label="Home" href="{{i.link}}")
+					.contact-info-title(layout="row" layout-align="start center")
+						i.material-icons {{i.icon}}
+						div(ng-cloak) {{i.title}}
+			md-divider
