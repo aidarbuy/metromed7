@@ -11,7 +11,6 @@ import SidenavDirective from '../app/components/sidenav/sidenav.drct';
 import TabbarDirective from '../app/components/tabbar/tabbar.drct';
 
 import MainController from './main/main.controller';
-import NavController from '../app/components/navbar/nav.controller';
 import RevolutionSliderDirective from '../app/components/revolution/revolution.directive';
 import TopSidebar from '../app/components/top-sidebar/top-sidebar';
 import TopSidebarDirective from '../app/components/top-sidebar/top-sidebar.drct';
@@ -33,10 +32,8 @@ import PrimaryCareController from './primary/care.controller';
 import MapController from './map/map.controller';
 import VirtualTourController from './virtual/tour.controller';
 import LoginController from './login/login.controller';
-import NavbarDirective from '../app/components/navbar/navbar.directive';
 import FooterDirective from '../app/components/footer/footer.directive';
 import GridBottomSheetCtrl from '../app/components/footer/bottom-sheet.ctrl';
-import GithubContributorService from '../app/components/githubContributor/githubContributor.service';
 
 angular.module('metromed', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 'ngResource', 
 														'ngMaterial', 'ui.router', 'ngMdIcons', 'uiGmapgoogle-maps', 'firebase'])
@@ -53,7 +50,6 @@ angular.module('metromed', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', '
 	.directive('tabbar', () => new TabbarDirective())
 
 	.controller('MainController', MainController)
-	.controller('NavController', NavController)
 	.directive('revolutionSlider', () => new RevolutionSliderDirective())
 	.directive('topSidebar', () => new TopSidebarDirective())
 	.value('TopSidebar', TopSidebar)
@@ -76,6 +72,4 @@ angular.module('metromed', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', '
 	.controller('VirtualTourController', VirtualTourController)
 	.controller('LoginController', LoginController)
 	.controller('GridBottomSheetCtrl', GridBottomSheetCtrl)
-	.directive('acmeNavbar', () => new NavbarDirective())
-	.directive('acmeFooter', () => new FooterDirective())
-	.service('githubContributor', GithubContributorService);
+	.directive('acmeFooter', () => new FooterDirective());

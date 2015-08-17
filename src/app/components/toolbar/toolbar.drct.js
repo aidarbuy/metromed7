@@ -13,7 +13,7 @@ class ToolbarDirective {
 }
 
 class ToolbarController {
-	constructor ($mdSidenav, $log) {
+	constructor ($mdSidenav) {
 		'ngInject';
 
 		this.toggleSidenav = function (navID) {
