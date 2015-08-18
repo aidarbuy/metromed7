@@ -3,7 +3,7 @@ class CustomServicesDirective {
 		'ngInject';
 
 		let directive = {
-			templateUrl: '../app/components/custom-services/custom-services.html',
+			templateUrl: 'app/components/custom-services/custom-services.html',
 			controller: CustomServicesController,
 			controllerAs: 'cs'
 		};

@@ -3,7 +3,7 @@ class QuoteDirective {
 		'ngInject';
 
 		let directive = {
-			templateUrl: '../app/components/quote/quote.html',
+			templateUrl: 'app/components/quote/quote.html',
 			controller: QuoteController,
 			controllerAs: 'qt'
 		};

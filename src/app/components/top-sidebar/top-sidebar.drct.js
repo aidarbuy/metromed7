@@ -3,7 +3,7 @@ class TopSidebarDirective {
 		'ngInject';
 
 		let directive = {
-			templateUrl: '../app/components/top-sidebar/top-sidebar.html',
+			templateUrl: 'app/components/top-sidebar/top-sidebar.html',
 			controller: TopSidebarController,
 			controllerAs: 'ts'
 		};

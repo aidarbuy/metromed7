@@ -36,12 +36,12 @@ var menu = [
 		state : 'virtual',
 		title: 'Virtual Tour',
 		icon: 'visibility'
-	},
-	{
-		state : 'telemedicine',
-		title: 'Telemedicine',
-		icon: 'switch_video'
 	}
+	// {
+	// 	state : 'telemedicine',
+	// 	title: 'Telemedicine',
+	// 	icon: 'switch_video'
+	// }
 ];
 
 export default menu;

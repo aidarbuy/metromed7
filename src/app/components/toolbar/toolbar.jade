@@ -1,35 +1,37 @@
-md-toolbar.md-whiteframe-z2
+md-toolbar#toolbar.md-whiteframe-z2
 	.md-toolbar-tools(layout="row" layout-align="center center")
+
 		//- Menu button
 		md-button.md-icon-button(ng-click="tb.toggleSidenav('left')" hide-gt-md)
 			md-icon(md-svg-src="assets/icons/menu.svg" aria-label="Menu")
 
 		//- Brand
-		a.toolbar-link(ui-sref="home")
-			i.material-icons.toolbar-icon local_hospital
-			span.toolbar-label MetroMed Urgent Care
+		a(ui-sref="home" layout="row" layout-align="start center")
+			md-icon(md-svg-src="assets/icons/logo.svg")
+			span MetroMed Urgent Care
+
 		span(flex)
 
 		//- Address
-		a.toolbar-link(ui-sref="map" hide-md hide-sm)
-			i.material-icons.toolbar-icon room
-			span.toolbar-label 952 Edwards Ferry Road NE Leesburg VA 20176
+		a(ui-sref="map" hide-md hide-sm layout="row")
+			md-icon(md-svg-src="assets/icons/ic_place_24px.svg")
+			span 952 Edwards Ferry Road NE Leesburg VA 20176
 
 		//- Phone
-		a.toolbar-link(href="tel:(703) 687-4158" hide-sm)
-			i.material-icons.toolbar-icon call
-			span.toolbar-label (703) 687-4158
+		a(href="tel:(703) 687-4158" hide-sm layout="row")
+			md-icon(md-svg-src="assets/icons/ic_phone_24px.svg")
+			span (703) 687-4158
 		md-button.md-fab.md-accent(href="tel:(703) 687-4158" aria-label="Call MetroMed Urgent Care" hide-gt-sm)
-			i.material-icons call
+			md-icon(md-svg-src="assets/icons/ic_phone_24px.svg")
 
 		//- Email
-		a.toolbar-link(href="mailto:info@metromeduc.com" hide-sm hide-md hide-lg)
-			i.material-icons.toolbar-icon email
-			span.toolbar-label info@metromeduc.com
+		a(href="mailto:info@metromeduc.com" hide-sm hide-md hide-lg layout="row")
+			md-icon(md-svg-src="assets/icons/ic_email_24px.svg")
+			span info@metromeduc.com
 
 		//- Login
-		a.toolbar-link(href="#/login" hide-sm)
-			md-icon.toolbar-icon.toolbar-icon-login(md-svg-src="assets/icons/enter.svg" aria-label="Login")
+		//- a(href="#/login" hide-sm layout="row")
+			md-icon(md-svg-src="assets/icons/enter.svg" aria-label="Login")
 			span.toolbar-label Login
-		md-button(ui-sref="login" aria-label="Login MetroMed Urgent Care" hide-gt-sm)
+		//- md-button(ui-sref="login" aria-label="Login MetroMed Urgent Care" hide-gt-sm)
 			md-icon.toolbar-icon-login-sm(md-svg-src="assets/icons/enter.svg" aria-label="Login")

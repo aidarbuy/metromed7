@@ -3,7 +3,7 @@ class TestimonialsDirective {
 		'ngInject';
 
 		let directive = {
-			templateUrl: '../app/components/testimonials/testimonials.html',
+			templateUrl: 'app/components/testimonials/testimonials.html',
 			controller: TestimonialsController,
 			controllerAs: 't'
 		};

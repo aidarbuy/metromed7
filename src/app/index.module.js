@@ -18,7 +18,7 @@ import Quote from '../app/components/quote/quote';
 import QuoteDirective from '../app/components/quote/quote.drct';
 import CustomServices from '../app/components/custom-services/custom-services';
 import CustomServicesDirective from '../app/components/custom-services/custom-services.drct';
-import MedicalSchoolDirective from '../app/components/medical-school/medical-school.directive';
+import MedicalSchoolDirective from '../app/components/medical-school/medical-school.drct';
 import MedicalSchool from '../app/components/medical-school/medical-school';
 import TestimonialsDirective from '../app/components/testimonials/testimonials.directive';
 import Testimonials from '../app/components/testimonials/testimonials';
@@ -55,8 +55,8 @@ angular.module('metromed', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', '
 	.value('TopSidebar', TopSidebar)
 	.directive('quote', () => new QuoteDirective())
 	.value('Quote', Quote)
-	.value('CustomServices', CustomServices)
 	.directive('customServices', () => new CustomServicesDirective())
+	.value('CustomServices', CustomServices)
 	.directive('medicalSchool', () => new MedicalSchoolDirective())
 	.value('MedicalSchool', MedicalSchool)
 	.directive('testimonials', () => new TestimonialsDirective())
@@ -72,4 +72,4 @@ angular.module('metromed', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', '
 	.controller('VirtualTourController', VirtualTourController)
 	.controller('LoginController', LoginController)
 	.controller('GridBottomSheetCtrl', GridBottomSheetCtrl)
-	.directive('acmeFooter', () => new FooterDirective());
+	.directive('metromedFooter', () => new FooterDirective());

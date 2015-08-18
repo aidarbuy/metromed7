@@ -53,12 +53,12 @@ gulp.task('html', ['inject', 'partials'], function () {
 		.pipe($.useref())
 		.pipe($.revReplace())
 		.pipe(htmlFilter)
-		// .pipe($.minifyHtml({
-		// 	empty: true,
-		// 	spare: true,
-		// 	quotes: true,
-		// 	conditionals: true
-		// }))
+		.pipe($.minifyHtml({
+			empty: true,
+			spare: true,
+			quotes: true,
+			conditionals: true
+		}))
 		.pipe(htmlFilter.restore())
 		.pipe(gulp.dest(path.join(conf.paths.dist, '/')))
 		.pipe($.size({ title: path.join(conf.paths.dist, '/'), showFiles: true }));
@@ -107,4 +107,4 @@ gulp.task('clean', function (done) {
 	$.del([path.join(conf.paths.dist, '/'), path.join(conf.paths.tmp, '/')], done);
 });
 
-gulp.task('build', ['html', 'fonts', 'other', 'layerslider', 'revolution']);
+gulp.task('build', ['html', 'fonts', 'other', 'revolution']);

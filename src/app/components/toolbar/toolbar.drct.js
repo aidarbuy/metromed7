@@ -3,9 +3,11 @@ class ToolbarDirective {
 		'ngInject';
 
 		let directive = {
-			templateUrl: '../app/components/toolbar/toolbar.html',
+			templateUrl: 'app/components/toolbar/toolbar.html',
+			replace: true,
 			controller: ToolbarController,
-			controllerAs: 'tb'
+			controllerAs: 'tb',
+			bindToController: true
 		};
 
 		return directive;

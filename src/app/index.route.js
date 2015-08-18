@@ -1,4 +1,4 @@
-function routerConfig ($stateProvider, $urlRouterProvider) {
+function routerConfig ($stateProvider, $urlRouterProvider, $locationProvider) {
   'ngInject';
 
   $stateProvider
@@ -65,10 +65,10 @@ function routerConfig ($stateProvider, $urlRouterProvider) {
 
   $urlRouterProvider.otherwise('/');
 
- //  $locationProvider.html5Mode({
-	// 	enabled: true,
-	// 	requireBase: false
-	// });
+  $locationProvider.html5Mode({
+		enabled: true,
+		requireBase: false
+	});
 }
 
 export default routerConfig;

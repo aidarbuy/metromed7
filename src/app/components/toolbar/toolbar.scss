@@ -1,11 +1,19 @@
-md-button {
-	padding: 0;
-}
+#toolbar {
+	.md-toolbar-tools {
 
-a {
-	margin-left: 0;
-}
+		a:nth-child(2) {
+			md-icon {
+				width: 40px;
+				height: 40px;
+			}
+		}
 
-md-button.phone {
-	line-height: 65px;
+		a { md-icon { margin-right: 5px; } }
+
+		a:nth-child(5) { md-icon { margin-left: 15px; } }
+
+		a:nth-child(7) { md-icon { margin-left: 15px; } }
+
+		.md-fab.md-accent { md-icon { margin-left: 5px; } }
+	}
 }
