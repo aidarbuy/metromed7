@@ -6,6 +6,12 @@
 			height: 300px;
 			margin: 0;
 			color: #fefefe;
+			opacity: 0.9;
+			-webkit-transition: opacity 0.3s ease-out 0s;
+			-moz-transition: opacity 0.3s ease-out 0s;
+			-o-transition: opacity 0.3s ease-out 0s;
+			-ms-transition: opacity 0.3s ease-out 0s;
+			transition: opacity 0.3s ease-out 0s;
 			md-card-content {
 				h2 {
 
@@ -14,6 +20,9 @@
 
 				}
 			}
+		}
+		md-card:hover {
+			opacity: 1;
 		}
 	}
 }

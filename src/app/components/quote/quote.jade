@@ -1,6 +1,8 @@
-//- quote
-md-card
-	md-toolbar.md-accent
-		div(layout="column" layout-align="start center")
-			h2.md-display-1 {{ qt.quote.title }}
-			h3.md-title {{ qt.quote.text }}
+md-card#quote
+	md-toolbar.md-accent.md-hue-3
+		md-card-content
+			md-divider
+			div(layout="column" layout-align="center center")
+				h2.md-display-1 {{ qt.quote.title }}
+				h3.md-title {{ qt.quote.text }}
+			md-divider

@@ -1,12 +1,12 @@
-md-toolbar.md-hue-2
+md-toolbar#footer.md-hue-2
 	.md-toolbar-tools(layout="row")
-		p(style="color: #eee; font-size: small; text-shadow: 1px 1px #333") Amygdala LLC © 2015 | All Rights Reserved
+		p Amygdala LLC © 2015 | All Rights Reserved
 		span(flex)
 
 		md-button(ng-click="ft.openBottomSheet($event)" hide-gt-md)
 			i.material-icons more_vert
 
 		//- Social buttons
-		span(ng-controller="GridBottomSheetCtrl as bs" style="padding-top:10px" hide-sm hide-md)
+		span(ng-controller="GridBottomSheetCtrl as bs" hide-sm hide-md)
 			md-button(ng-repeat="item in bs.items" ng-href="{{item.href}}" aria-label="{{item.name}}")
-				md-icon.footer-icon(md-svg-src="assets/icons/{{item.icon}}.svg")
+				md-icon(md-svg-src="assets/icons/{{item.icon}}.svg")

@@ -3,12 +3,11 @@ md-card#medical-school
 		.md-toolbar-tools(layout="row")
 			span(flex)
 			md-icon(md-svg-src="assets/icons/school.svg")
-			span(flex)
 			h2 Nano Medical School for Patients
 			span(flex)
 
 	br
-	div(ng-repeat="a in ms.articles | limitTo: 3")
+	div(ng-repeat="a in ms.articles | limitTo: 2")
 		md-card
 			img.md-card-image(ng-src="{{a.img.src}}" alt="{{a.img.alt}}")
 			md-card-content
