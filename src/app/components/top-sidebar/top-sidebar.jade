@@ -1,8 +1,6 @@
-//- TOP-SIDEBAR
-div(layout="row" layout-wrap)
+div#top-sidebar(layout="row" layout-wrap)
 	div(ng-repeat="i in ts.data" flex="25" flex-md="50" flex-sm="100")
-		//- md-card.top-sidebar(flex style="background-color:{{i.bgColor}}; margin-right:{{i.marginRight}}; margin-left:{{i.marginLeft}}")
-		md-card.top-sidebar(flex style="background-color:{{i.bgColor}};")
+		md-card(flex style="background-color:{{i.bgColor}};")
 			md-card-content
 				h2.md-headline {{ i.header }}
-				p.top-sidebar-text(ng-repeat="p in i.text") {{ p }}
+				p(ng-repeat="p in i.text") {{ p }}

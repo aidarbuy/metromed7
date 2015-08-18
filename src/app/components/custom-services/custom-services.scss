@@ -1,0 +1,14 @@
+#custom-services {
+	div {
+		md-card {
+			height: 320px;
+			md-card-content {
+				// margin: auto;
+				padding-top: 10%;
+				ng-md-icon {}
+				h2 {}
+				p { text-align: center }
+			}
+		}
+	}
+}

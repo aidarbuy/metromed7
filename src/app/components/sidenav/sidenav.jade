@@ -1,4 +1,4 @@
-//- md-is-locked-open="$mdMedia('gt-lg')")
+//- md-sidenav.md-sidenav-left.md-whiteframe-z2(layout="column" md-component-id="left" md-is-locked-open="$mdMedia('sm')")
 md-sidenav.md-sidenav-left.md-whiteframe-z2(layout="column" md-component-id="left" md-is-locked-open="$mdMedia('gt-lg')")
 	//- Logo
 	md-toolbar.md-hue-2(ng-click="tb.toggleSidenav('left')")
@@ -18,7 +18,7 @@ md-sidenav.md-sidenav-left.md-whiteframe-z2(layout="column" md-component-id="lef
 			md-button.md-primary.md-hue-2(aria-label="{{i.title}}" ui-sref="{{ i.state }}" ng-click="sn.toggleSidenav('left')")
 				.menu-item(layout="row" layout-align="start center")
 					i.material-icons {{i.icon}}
-					div(ng-cloak) {{i.title}}
+					div {{i.title}}
 				md-divider
 
 		//- Contact Info
