@@ -2,6 +2,8 @@ class AboutUsController {
 	constructor () {
 		'ngInject';
 
+		this.imagePath = 'assets/images/team/three-medics.jpg';
+
 		this.welcome = {
 			title: "Welcome to MetroMed!",
 			conditions: {
@@ -30,19 +32,19 @@ class AboutUsController {
 		this.whyMetroMed = {
 			title: "Why MetroMed Urgent Care:",
 			items: [
-				"Experienced emergency room docs and personnel",
-				"Bed-side Ultrasound Screening",
-				"X-Ray",
-				"Skillfully done procedures, such as:",
-				"Joint aspiration",
-				"Ingrown toenail removal",
-				"Foreign body removal from the eye",
-				"Reduction of fractures and dislocations",
-				"Prices guaranteed to be the lowest in the area",
-				"Laboratory and Pharmacy",
-				"IV treatment and EKG",
-				"Location. Yes, we are right next to Wal-Mart",
-				"Clean, Quick and Pleasant"
+				["Experienced emergency room docs and personnel"],
+				["Bed-side Ultrasound Screening"],
+				["X-Ray"],
+				["Skillfully done procedures, such as:",
+					"Joint aspiration",
+					"Ingrown toenail removal",
+					"Foreign body removal from the eye",
+					"Reduction of fractures and dislocations"],
+				["Prices guaranteed to be the lowest in the area"],
+				["Laboratory and Pharmacy"],
+				["IV treatment and EKG"],
+				["Location. Yes, we are right next to Wal-Mart"],
+				["Clean, Quick and Pleasant"]
 			]
 		};
 

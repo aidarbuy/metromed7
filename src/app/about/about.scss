@@ -1,0 +1,32 @@
+#about {	
+	md-card {
+		md-card-content {
+
+			h1 {}
+
+			h2 {}
+
+			md-list {
+				md-list-item {
+					md-icon {
+						width: 20px;
+					}
+					p {font-size: large}
+					md-divider {}
+				}
+			}
+
+			h2 {}
+		}
+	}
+
+	md-card {
+		img {}
+		md-card-content {
+			h2 {}
+			ul {
+				li {}
+			}
+		}
+	}
+}
