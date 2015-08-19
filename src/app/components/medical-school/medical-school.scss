@@ -1,8 +1,6 @@
 md-card#medical-school {
 	md-toolbar.md-hue-2 {	
 		.md-toolbar-tools {
-			// background: red;
-			// padding: 0;
 			span {}
 			md-icon {
 				width: 50px;
@@ -21,7 +19,11 @@ md-card#medical-school {
 			img.md-card-image {}
 			md-card-content {	
 				h2 {}
-				p {font-size: large}
+				md-content {
+					height: 400px;
+					margin-bottom: 20px;
+					p {font-size: large}
+				}
 			}
 			.md-actions {
 				md-button {}

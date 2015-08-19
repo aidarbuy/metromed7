@@ -12,7 +12,7 @@ var articles = [
 		],
 		img: {
 			title: "Upper respiratory infection image",
-			src: 'assets/images/articles/respiratory-600x300.jpg',
+			src: 'assets/images/articles/respiratory2-600x300.jpg',
 			alt: "upper respiratory infection"
 		}
 	},
@@ -31,7 +31,7 @@ var articles = [
 		],
 		img: {
 			title: "blueberries and blackberries",
-			src: 'assets/images/articles/cough-600x300.jpg',
+			src: 'assets/images/articles/cough2-600x300.jpg',
 			alt: "a woman coughs"
 		}
 	},

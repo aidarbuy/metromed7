@@ -5,16 +5,19 @@ md-card#medical-school
 			md-icon(md-svg-src="assets/icons/school.svg")
 			h2 Nano Medical School for Patients
 			span(flex)
-
 	br
+
 	div(ng-repeat="a in ms.articles | limitTo: 2")
 		md-card
 			img.md-card-image(ng-src="{{a.img.src}}" alt="{{a.img.alt}}")
 			md-card-content
-				//- h2.md-headline {{a.header}}
-				p(ng-repeat="t in a.text | limitTo:3") {{t}}
-			.md-actions(layout="row" layout-align="end center")
-				md-button Learn more
+				h2.md-headline {{a.header}}
+				md-content(layout-padding)
+					p(ng-repeat="t in a.text") {{t}}
+				div(layout="row" layout-align="end end")
+					p {{ a.date }}
+			//- .md-actions(layout="row" layout-align="end start")
+				//- md-button Learn more
 		br
-		md-divider(ng-if="!$last")
-		br(ng-if="!$last")
+		//- md-divider(ng-if="!$last")
+		//- br(ng-if="!$last")
