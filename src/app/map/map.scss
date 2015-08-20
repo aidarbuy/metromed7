@@ -1,0 +1,42 @@
+.map-credentials {
+	.md-button {
+		// background: red;
+		md-list-item {
+			// background: blue;
+			padding-left: 2%;
+			md-icon {
+				// background: yellow;
+				margin-top: auto;
+				margin-bottom: auto;
+				margin-right: 10px;
+				// margin-left: 0px; 
+				// width: 30px;
+				// height: 30px;
+			}
+			.md-list-item-text {
+				// background: red;
+				text-transform: lowercase;
+				margin-top: auto;
+				margin-bottom: auto;
+				h3 {
+					// font-size: 130%;
+				}
+				h3.cap {
+					// font-size: 130%;
+					text-transform: capitalize;
+				}
+				p {
+					font-size: 110%;
+				}
+				p.cap {
+					text-transform: capitalize;
+				}
+			}
+		}
+	}
+}
+
+
+.angular-google-map-container { 
+	height: 400px;
+}

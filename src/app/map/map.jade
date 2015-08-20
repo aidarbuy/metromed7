@@ -1,34 +1,59 @@
+md-card.map-credentials
+	//- (layout="row" layout-align="space-around center")
+	md-card-content(layout="row" layout-padding)
+
+		//- Address
+		md-button.md-primary.md-hue-2.md-raised(flex href="#/map")
+			md-list-item.md-2-line
+				md-icon(md-svg-src="assets/icons/location.svg")
+				.md-list-item-text(layout="column" layout-align="center start")
+					h3.cap 952 Edwards Ferry Road NE
+					p.cap Leesburg VA 20176
+
+		//- Phone
+		md-button.md-primary.md-hue-2.md-raised(flex href="tel:(703) 687-4158" hide show-gt-sm)
+			md-list-item.md-2-line
+				md-icon(md-svg-src="assets/icons/ic_phone_24px.svg")
+				.md-list-item-text(layout="column" layout-align="center start")
+					h3 (703) 687-4158
+					p Every day from 10am to 8pm
+
+		//- Email
+		md-button.md-primary.md-hue-2.md-raised(flex href="mailto:info@metromeduc.com" hide show-gt-md)
+			md-list-item.md-2-line
+				md-icon(md-svg-src="assets/icons/ic_email_24px.svg")
+				.md-list-item-text(layout="column" layout-align="center start")
+					h3 info@metromeduc.com
+					p 24 hours a day 7 days a week
+
+
+//- Map
 md-card
 	md-card-content
-		md-list.map-credentials
-			md-button.md-primary.md-hue-2(href="#/map" style="text-transform:capitalize")
-				md-divider
-				md-list-item.md-3-line
-					md-icon(md-svg-src="assets/icons/location.svg")
-					.md-list-item-text
-						h3 952 Edwards Ferry Road NE
-						p.md-display-1 Leesburg VA 20176
-				md-divider
-
 		ui-gmap-google-map(center='gmap.map.center' zoom='gmap.map.zoom')
 			ui-gmap-marker(idKey='gmap.marker.id' coords='gmap.marker.coords')
 
-		md-list.map-credentials
-			md-button.md-primary.md-hue-2(href="tel:(703) 687-4158" style="margin-bottom:0")
-				md-divider
-				md-list-item.md-3-line
-					md-icon(md-svg-src="assets/icons/phone.svg")
-					.md-list-item-text
-						h3 (703) 687-4158
-						p.md-display-1 7 days a week from 10am to 8pm
 
-			md-button.md-primary.md-hue-2(href="mailto:info@metromeduc.com" style="margin-top:0")
-				md-divider
-				md-list-item.md-3-line
-					md-icon(md-svg-src="assets/icons/email.svg")
-					.md-list-item-text
-						h3 info@metromeduc.com
-						p.md-display-1 24 hours a day 7 days a week
-				md-divider
+//- Bottom map credentials
+md-card.map-credentials(hide-gt-md)
+	//- (layout="row" layout-align="space-around center")
+	md-card-content(layout="column" layout-padding)
+
+		//- Phone
+		md-button.md-primary.md-hue-2.md-raised(flex href="tel:(703) 687-4158" hide-gt-sm)
+			md-list-item.md-2-line
+				md-icon(md-svg-src="assets/icons/ic_phone_24px.svg")
+				.md-list-item-text(layout="column" layout-align="center start")
+					h3 (703) 687-4158
+					p Every day from 10am to 8pm
+
+		//- Email
+		md-button.md-primary.md-hue-2.md-raised(flex href="mailto:info@metromeduc.com")
+			md-list-item.md-2-line
+				md-icon(md-svg-src="assets/icons/ic_email_24px.svg")
+				.md-list-item-text(layout="column" layout-align="center start")
+					h3 info@metromeduc.com
+					p 24 hours a day 7 days a week
+
 
 acme-footer
