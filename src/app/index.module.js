@@ -10,6 +10,7 @@ import Toolbar from '../app/components/toolbar/toolbar';
 import SidenavDirective from '../app/components/sidenav/sidenav.drct';
 import TabbarDirective from '../app/components/tabbar/tabbar.drct';
 
+// Main page
 import MainController from './main/main.controller';
 import RevolutionSliderDirective from '../app/components/revolution/revolution.directive';
 import TopSidebar from '../app/components/top-sidebar/top-sidebar';
@@ -25,9 +26,12 @@ import Testimonials from '../app/components/testimonials/testimonials';
 
 import AboutUsController from './about/about.controller';
 import ServicesController from './services/services.controller';
+
+// Doctors
 import DoctorsController from './doctors/doctors.controller';
 import DoctorController from './doctors/doctor.controller';
 import DoctorsFactory from './doctors/doctors.factory';
+
 import PrimaryCareController from './primary/care.controller';
 import MapController from './map/map.controller';
 import VirtualTourController from './virtual/tour.controller';
@@ -49,6 +53,7 @@ angular.module('metromed', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', '
 	.directive('sidenav', () => new SidenavDirective())
 	.directive('tabbar', () => new TabbarDirective())
 
+	// Main page
 	.controller('MainController', MainController)
 	.directive('revolutionSlider', () => new RevolutionSliderDirective())
 	.directive('topSidebar', () => new TopSidebarDirective())
@@ -64,9 +69,12 @@ angular.module('metromed', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', '
 
 	.controller('AboutUsController', AboutUsController)
 	.controller('ServicesController', ServicesController)
+
+	// Doctors
 	.controller('DoctorsController', DoctorsController)
 	.controller('DoctorController', DoctorController)
-	.factory('Doctor', () => new DoctorsFactory())
+	.factory('Doctors', () => new DoctorsFactory())
+
 	.controller('PrimaryCareController', PrimaryCareController)
 	.controller('MapController', MapController)
 	.controller('VirtualTourController', VirtualTourController)

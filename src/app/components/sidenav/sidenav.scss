@@ -2,10 +2,11 @@
 	min-width: 250px;
 	max-width: 250px;
 	padding: 0;
-	border-right: 1px solid #eee;
+	border-right: 1px solid rgb(0,141,171);
 
 	// Logo
 	md-toolbar:first-child { //Avatar
+		min-height: 200px;
 		height: 200px;
 		padding-right: 10px;
 		.md-toolbar-tools-bottom {

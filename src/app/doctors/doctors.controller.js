@@ -1,8 +1,8 @@
 class DoctorsController {
-	constructor (Doctor) {
+	constructor (Doctors) {
 		'ngInject';
 
-		this.doctors = Doctor.query();
+		this.list = Doctors.query();
 	}
 }
 

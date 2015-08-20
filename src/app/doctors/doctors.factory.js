@@ -13,12 +13,8 @@ class DoctorsFactory {
 				degree: "Doctor of Medicine",
 				education: "UVM College of Medicine, Johns Hopkins School of Medicine",
 				img: {
-					href: {
-						title: "",
-						src: 'images/clinic/doctors/roshelle-820x465.jpg'
-					},
-					thumbnail: 'images/clinic/doctors/roshelle-440x440.jpg',
-					fullres: 'images/clinic/doctors/roshelle-820x465.jpg',
+					small: 'roshelle-440x440.jpg',
+					big: 'roshelle-820x465.jpg',
 					title: "",
 					alt: ""
 				},
@@ -39,12 +35,8 @@ class DoctorsFactory {
 				degree: "Doctor of Medicine",
 				education: "University of Texas School of Medicine, North Texas State University",
 				img: {
-					href: {
-						title: "",
-						src: 'images/clinic/doctors/matthew-820x465.jpg'
-					},
-					thumbnail: 'images/clinic/doctors/matthew-440x440.jpg',
-					fullres: 'images/clinic/doctors/matthew-820x465.jpg',
+					small: 'matthew-440x440.jpg',
+					big: 'matthew-820x465.jpg',
 					title: "",
 					alt: ""
 				},
@@ -65,12 +57,8 @@ class DoctorsFactory {
 				degree: "Master of PA Science",
 				education: "",
 				img: {
-					href: {
-						title: "",
-						src: 'images/clinic/doctors/trisha-820x465.jpg'
-					},
-					thumbnail: 'images/clinic/doctors/trisha-440x440.jpg',
-					fullres: 'images/clinic/doctors/trisha-820x465.jpg',
+					small: 'trisha-440x440.jpg',
+					big: 'trisha-820x465.jpg',
 					title: "",
 					alt: ""
 				},
@@ -92,12 +80,8 @@ class DoctorsFactory {
 				degree: "Doctor of Medicine",
 				education: "",
 				img: {
-					href: {
-						title: "",
-						src: 'images/clinic/doctors/brian-820x465.jpg'
-					},
-					thumbnail: 'images/clinic/doctors/brian-440x440.jpg',
-					fullres: 'images/clinic/doctors/brian-820x465.jpg',
+					small: 'brian-440x440.jpg',
+					big: 'brian-820x465.jpg',
 					title: "",
 					alt: ""
 				},

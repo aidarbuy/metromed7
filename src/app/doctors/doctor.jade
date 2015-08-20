@@ -1,30 +1,12 @@
-md-content(layout="row" layout-align="center" layout-padding)
+md-card#doctor
+	.md-card-header
+		img.md-card-image(ng-src="assets/images/doctors/{{doc.doctor.img.big}}" alt="Photo of doctor {{doc.doctor.firstname + ' ' + doc.doctor.lastname}}")
+		h2.md-title Doctor {{doc.doctor.firstname + " " + doc.doctor.lastname}}
 
-	.card
-		.image
-			img(ng-src="{{doc.img}}" alt="{{doc.alt}}")
-			span.title {{doc.header}}
+	md-card-content
+		p(ng-repeat="d in doc.doctor.description") {{d}}
 
-		.content
-			p(ng-repeat="desc in doc.doctor.description") {{desc}}
+	md-divider
 
-		.action
-			.md-actions(layout="row" layout-align="end center")
-				a(href="#/doctors") All doctors
-			//- md-button.md-raised.md-accent(href="#/doctors") All doctors
-
-
-	//- md-card.card
-		.image
-			img(ng-src="{{doc.img}}" alt="{{doc.alt}}")
-			span.title {{doc.header}}
-
-		//- md-card-content.content(flex)
-		.content
-			p(ng-repeat="desc in doc.doctor.description") {{desc}}
-
-			md-card-footer
-				.md-actions(layout="row" layout-align="end center")
-					md-button.md-raised.md-accent(href="#/doctors") All doctors
-
-acme-footer
+	.md-actions(layout="row" layout-align="start center")
+		md-button.md-accent.md-hue-3(ui-sref="doctors") All doctors

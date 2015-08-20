@@ -1,0 +1,42 @@
+#doctor {
+	.md-card-header {
+		position: relative;
+		overflow: hidden;
+		img {
+		}
+
+		h2 {
+			background: #56cce1;
+			width: 100%;
+			// background: #eee;
+			opacity: .9;
+			// position: relative;
+			position: absolute;
+			bottom: 6px;
+			margin: 0;
+			padding: 0;
+			padding: 10px 20px;
+			font-size: 200%;
+			// font-size: x-large;
+			// color: rgb(255,64,124);
+			// color: rgb(0,131,143);
+			color: white;
+			// text-shadow: 1px 1px #333;
+			// font-weight: bold;
+			// font-weight: bold;
+		}
+	}
+
+	md-card-content {
+		padding-top: 0;
+		p {
+			font-size: large;
+		}
+	}
+
+	md-divider {}
+
+	.md-actions {
+		.md-button {}
+	}
+}
