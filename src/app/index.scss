@@ -19,6 +19,41 @@ body {
   padding: 0.2em 0;
 }
 
+
+// Temp colors
+.contact_widget_phone > span,
+.contact_widget_email > span {width: 1%;}
+
+#box_color_1 {background-color: #56cce1;}
+#box_color_2 {background-color: #2cbfd9;}
+#box_color_3 {background-color: #2ca6d9;}
+#box_color_4 {background-color: #1b90da;}
+
+.content_icon.icon-glyph-2:before{color:#2ca6d9;}
+.content_icon.icon-glyph-3:before{color:#2cbfd9;}
+.content_icon.icon-glyph-4:before{color:#2ca6d9;}
+.content_icon.icon-glyph-5:before{color:#2cbfd9;}
+
+#text-2 .textwidget h1,
+#text-2 .textwidget h4 {
+	text-align:center;
+}
+#text-2 .textwidget h1 {color:#1b90da;}
+#text-2 .textwidget h4 {color:#898989;}
+
+.post.type-post.one_fourth .cmsms_post_type_img > img {
+	width:130px; 
+	height:130px;
+}
+
+.type-testimonial img.type-testimonial {
+	width:60px; 
+	height:60px;
+}
+
+.textwidget #pb_35 {padding-bottom:35px;}
+
+
 /**
  *  Do not remove this comments bellow. It's the markers used by gulp-inject to inject
  *  all your sass files automatically
