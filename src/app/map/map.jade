@@ -1,5 +1,4 @@
 md-card.map-credentials
-	//- (layout="row" layout-align="space-around center")
 	md-card-content(layout="row" layout-padding)
 
 		//- Address
@@ -27,11 +26,13 @@ md-card.map-credentials
 					p 24 hours a day 7 days a week
 
 
+
 //- Map
 md-card
 	md-card-content
 		ui-gmap-google-map(center='gmap.map.center' zoom='gmap.map.zoom')
 			ui-gmap-marker(idKey='gmap.marker.id' coords='gmap.marker.coords')
+
 
 
 //- Bottom map credentials
@@ -56,4 +57,5 @@ md-card.map-credentials(hide-gt-md)
 					p 24 hours a day 7 days a week
 
 
-acme-footer
+
+metromed-footer

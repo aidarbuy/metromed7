@@ -4,11 +4,12 @@ import runBlock from './index.run';
 
 import Navigation from '../app/components/navigation/navigation';
 import Credentials from '../app/components/navigation/credentials';
-
-import ToolbarDirective from '../app/components/toolbar/toolbar.drct';
-import Toolbar from '../app/components/toolbar/toolbar';
-import SidenavDirective from '../app/components/sidenav/sidenav.drct';
-import TabbarDirective from '../app/components/tabbar/tabbar.drct';
+import ToolbarDirective from '../app/components/navigation/toolbar/toolbar.drct';
+import Toolbar from '../app/components/navigation/toolbar/toolbar';
+import SidenavDirective from '../app/components/navigation/sidenav/sidenav.drct';
+import TabbarDirective from '../app/components/navigation/tabbar/tabbar.drct';
+import FooterDirective from '../app/components/navigation/footer/footer.directive';
+import GridBottomSheetCtrl from '../app/components/navigation/footer/bottom-sheet.ctrl';
 
 // Main page
 import MainController from './main/main.controller';
@@ -19,25 +20,20 @@ import Quote from '../app/components/quote/quote';
 import QuoteDirective from '../app/components/quote/quote.drct';
 import CustomServices from '../app/components/custom-services/custom-services';
 import CustomServicesDirective from '../app/components/custom-services/custom-services.drct';
-import MedicalSchoolDirective from '../app/components/medical-school/medical-school.drct';
-import MedicalSchool from '../app/components/medical-school/medical-school';
+import MedicalSchoolDirective from '../app/components/medical-school/articles.drct';
+import MedicalSchool from '../app/components/medical-school/articles';
 import TestimonialsDirective from '../app/components/testimonials/testimonials.directive';
 import Testimonials from '../app/components/testimonials/testimonials';
 
 import AboutUsController from './about/about.controller';
 import ServicesController from './services/services.controller';
-
-// Doctors
+import DoctorsFactory from './doctors/doctors.factory';
 import DoctorsController from './doctors/doctors.controller';
 import DoctorController from './doctors/doctor.controller';
-import DoctorsFactory from './doctors/doctors.factory';
-
 import PrimaryCareController from './primary/care.controller';
 import MapController from './map/map.controller';
 import VirtualTourController from './virtual/tour.controller';
 import LoginController from './login/login.controller';
-import FooterDirective from '../app/components/footer/footer.directive';
-import GridBottomSheetCtrl from '../app/components/footer/bottom-sheet.ctrl';
 
 angular.module('metromed', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 'ngResource', 
 														'ngMaterial', 'ui.router', 'ngMdIcons', 'uiGmapgoogle-maps', 'firebase'])
@@ -47,11 +43,12 @@ angular.module('metromed', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', '
 
 	.value('Navigation', Navigation)
 	.value('Credentials', Credentials)
-
 	.directive('toolbar', () => new ToolbarDirective())
 	.value('Toolbar', Toolbar)
 	.directive('sidenav', () => new SidenavDirective())
 	.directive('tabbar', () => new TabbarDirective())
+	.directive('metromedFooter', () => new FooterDirective())
+	.controller('GridBottomSheetCtrl', GridBottomSheetCtrl)
 
 	// Main page
 	.controller('MainController', MainController)
@@ -69,15 +66,10 @@ angular.module('metromed', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', '
 
 	.controller('AboutUsController', AboutUsController)
 	.controller('ServicesController', ServicesController)
-
-	// Doctors
+	.factory('Doctors', () => new DoctorsFactory())
 	.controller('DoctorsController', DoctorsController)
 	.controller('DoctorController', DoctorController)
-	.factory('Doctors', () => new DoctorsFactory())
-
 	.controller('PrimaryCareController', PrimaryCareController)
 	.controller('MapController', MapController)
 	.controller('VirtualTourController', VirtualTourController)
-	.controller('LoginController', LoginController)
-	.controller('GridBottomSheetCtrl', GridBottomSheetCtrl)
-	.directive('metromedFooter', () => new FooterDirective());
+	.controller('LoginController', LoginController);

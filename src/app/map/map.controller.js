@@ -1,31 +1,29 @@
 class MapController {
-	constructor () {
+	constructor (uiGmapGoogleMapApi) {
 		'ngInject';
 
-		this.testMsg = "Hi from MapController!";
-
-		this.map = { center: { latitude: 39.116852, longitude: -77.539673 }, zoom: 10 };
-
-		this.marker = {
-			id: 0,
-			coords: {
-				latitude: 39.116852,
-				longitude: -77.539673
-			},
-			options: { draggable: false }
-		};
+		var scopeObject = this;
 
 		// uiGmapGoogleMapApi is a promise.
 		// The "then" callback function provides the google.maps object.
-		// uiGmapGoogleMapApi.then(function(maps) {
+		uiGmapGoogleMapApi.then(function() {
 			// console.log("uiGmapGoogleMapApi is ready!");
+			// console.log(maps);
 
-			// this.map = {
-			// 	center: { latitude: 45, longitude: -73 }
-			// 	,zoom: 8 
-			// };
-		// });
+			var latitude = 39.116852;
+			var longitude = -77.539673;
 
+			scopeObject.map = {
+				center: { latitude: latitude, longitude: longitude }, 
+				zoom: 12 
+			};
+
+			scopeObject.marker = {
+				id: 0,
+				coords: { latitude: latitude, longitude: longitude },
+				options: { draggable: false }
+			};
+		});
 	}
 }
 

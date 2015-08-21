@@ -13,10 +13,15 @@ class QuoteDirective {
 }
 
 class QuoteController {
-	constructor (Quote) {
+	constructor (Quote, Credentials) {
 		'ngInject';
 
 		this.quote = Quote;
+		this.phone = {
+			link: Credentials[0].link,
+			title: Credentials[0].title,
+			icon: Credentials[0].icon
+		};
 	}
 }
 

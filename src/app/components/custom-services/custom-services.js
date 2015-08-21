@@ -5,7 +5,7 @@ var customServices = [
 		text: [
 			"Our clinic is equipped with EKG, X-ray and Laboratory."
 		],
-		href: ''
+		href: '/services'
 	},
 	{
 		icon: "local_hospital",
@@ -13,7 +13,7 @@ var customServices = [
 		text: [
 			"We administer breathing treatments, repair lacerations, dispense medications intravenously, remove foreign objects from the eyes, and more."
 		],
-		href: ''
+		href: '/about'
 	},
 	{
 		icon: "photo_camera",

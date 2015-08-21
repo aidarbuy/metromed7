@@ -4,7 +4,7 @@ class MedicalSchoolDirective {
 
 		let directive = {
 			restrict: 'E',
-			templateUrl: 'app/components/medical-school/medical-school.html',
+			templateUrl: 'app/components/medical-school/articles.html',
 			controller: MedicalSchoolController,
 			controllerAs: 'ms',
 			bindToController: true
