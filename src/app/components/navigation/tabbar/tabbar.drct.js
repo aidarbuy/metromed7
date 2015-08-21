@@ -3,7 +3,7 @@ class TabbarDirective {
 		'ngInject';
 
 		let directive = {
-			templateUrl: 'app/components/tabbar/tabbar.html',
+			templateUrl: 'app/components/navigation/tabbar/tabbar.html',
 			controller: TabbarController,
 			controllerAs: 'tab'
 		};

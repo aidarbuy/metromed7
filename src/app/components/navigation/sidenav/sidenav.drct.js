@@ -3,7 +3,7 @@ class SidenavDirective {
 		'ngInject';
 
 		let directive = {
-			templateUrl: 'app/components/sidenav/sidenav.html',
+			templateUrl: 'app/components/navigation/sidenav/sidenav.html',
 			// replace: true,
 			controller: SidenavController,
 			controllerAs: 'sn'

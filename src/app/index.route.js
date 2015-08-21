@@ -47,7 +47,7 @@ function routerConfig ($stateProvider, $urlRouterProvider, $locationProvider) {
 			url: '/primary',
 			templateUrl: 'app/primary/care.html',
 			controller: 'PrimaryCareController',
-			controllerAs: 'primary'
+			controllerAs: 'pc'
 		})
 		.state('map', {
 			url: '/map',
@@ -87,7 +87,8 @@ function routerConfig ($stateProvider, $urlRouterProvider, $locationProvider) {
 
 	$locationProvider.html5Mode({
 		enabled: true,
-		requireBase: false
+		requireBase: true,
+		rewriteLinks: true
 	});
 }
 

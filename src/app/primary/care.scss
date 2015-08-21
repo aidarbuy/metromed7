@@ -1,0 +1,17 @@
+#primary-care {
+	h1 {text-align: center}
+	p {text-align: center}
+
+	div {
+		md-card {
+			img {}
+			md-card-content {
+				h2 {}
+				p {
+					font-size: large;
+					text-align: left;
+				}
+			}
+		}
+	}
+}
