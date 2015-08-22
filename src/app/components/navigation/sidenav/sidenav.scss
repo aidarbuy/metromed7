@@ -1,13 +1,18 @@
 .md-sidenav-left, md-sidenav.md-locked-open {
+	// background: #2cbfd9;
+	z-index: 999;
 	min-width: 250px;
 	max-width: 250px;
 	padding: 0;
-	border-right: 1px solid rgb(0,141,171);
+	// border-right: 1px solid rgb(0,141,171);
+	border-bottom: 1px solid rgb(0,141,171);
+	// height: 1000px;
+	// height: 100%;
 
 	// Logo
 	md-toolbar:first-child { //Avatar
 		min-height: 200px;
-		height: 200px;
+		// height: 200px;
 		padding-right: 10px;
 		.md-toolbar-tools-bottom {
 			padding: 0;
@@ -27,6 +32,7 @@
 
 	// Menu
 	md-list {
+		padding-top: 0;
 		md-list-item {
 			.md-button {
 				line-height: 48px;
@@ -35,7 +41,7 @@
 				.menu-item {
 					padding-left: 5px;
 					div {
-						margin-left: 5px;
+						margin-left: 7px;
 					}
 				}
 			}

@@ -1,8 +1,8 @@
 class DoctorController {
-	constructor (Doctors, $routeParams) {
+	constructor (Doctors, $stateParams) {
 		'ngInject';
 
-		this.doctor = Doctors.findOne($routeParams.id);
+		this.doctor = Doctors.findOne($stateParams.id);
 		// var name = this.doctor.firstname + " " + this.doctor.lastname;
 		// this.img = "assets/" + this.doctor.img.href.src;
 		// this.alt = "Photo of doctor " + name;

@@ -35,7 +35,7 @@ import MapController from './map/map.controller';
 import VirtualTourController from './virtual/tour.controller';
 import LoginController from './login/login.controller';
 
-angular.module('metromed', ['ngRoute', 'ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 
+angular.module('metromed', ['ui.router', 'ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 
 														'ngMaterial', 'ngMdIcons', 'uiGmapgoogle-maps', 'firebase'])
 	.config(config)
 	.config(routerConfig)
