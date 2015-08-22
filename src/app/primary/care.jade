@@ -4,7 +4,7 @@ div#primary-care
 
 	div(layout="row" layout-sm="column")
 		md-card(flex ng-repeat="c in pc.content")
-			img(src="assets/images/primary/{{c.img}}" class="md-card-image" alt="{{c.alt}}")
+			img(ng-src="assets/images/primary/{{c.img}}" class="md-card-image" alt="{{c.alt}}")
 			md-card-content
 				h2.md-headline {{c.header}}:
 				p(ng-repeat="t in c.text") {{t}}

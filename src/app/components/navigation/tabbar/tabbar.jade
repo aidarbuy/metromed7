@@ -1,5 +1,5 @@
 md-toolbar#tabs-menu(hide-sm hide-md hide-gt-lg)
 	.md-toolbar-tools(layout="column" layout-align="center")
-		md-button(ng-repeat="b in tab.menu" ui-sref="{{b.state}}") {{b.title}}
+		md-button(ng-repeat="b in tab.menu" ng-href="#{{b.href}}") {{b.title}}
 	//- md-tabs
 		md-tab(ng-repeat="t in tb.menu" label="{{t.title}}")

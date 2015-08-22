@@ -1,43 +1,42 @@
 var menu = [
 	{
+		href: '/',
 		state: 'home',
 		title: 'Home',
 		icon: 'home'
 	},
 	{
+		href: '/about',
 		state: 'about',
 		title: 'About Us',
 		icon: 'info'
 	},
 	{
+		href: '/services',
 		state: 'services',
 		title: 'Services',
 		icon: 'local_hospital'
-		// icon: 'add_shopping_cart'
 	},
 	{
+		href: '/doctors',
 		state: 'doctors',
 		title: 'Doctors',
 		icon: 'people'
 	},
-	// {
-	// 	state: 'doctor',
-	// 	title: 'Doctor',
-	// 	icon: 'people'
-	// },
 	{
+		href: '/primary',
 		state: 'primary',
 		title: 'Primary Care',
 		icon: 'verified_user'
 	},
 	{
+		href: '/map',
 		state: 'map',
 		title: 'Map',
-		// icon: 'explore'
 		icon: 'map'
-		// icon: 'room'
 	},
 	{
+		href: '/virtual',
 		state: 'virtual',
 		title: 'Virtual Tour',
 		icon: 'visibility'
@@ -46,21 +45,6 @@ var menu = [
 	// 	state: 'telemedicine',
 	// 	title: 'Telemedicine',
 	// 	icon: 'switch_video'
-	// }
-	// {
-	// 	state: 'index',
-	// 	title: 'Index',
-	// 	icon: 'home'
-	// },
-	// {
-	// 	state: 'route1',
-	// 	title: 'Route 1',
-	// 	icon: 'map'
-	// },
-	// {
-	// 	state: 'route2',
-	// 	title: 'Route 2',
-	// 	icon: 'map'
 	// }
 ];
 

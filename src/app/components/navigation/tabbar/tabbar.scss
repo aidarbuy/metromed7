@@ -1,8 +1,10 @@
 #tabs-menu {
+	z-index: 200;
 	border-top: 1px solid #56cce1;
 	min-height: 40px;
 	height: 40px;
 	.md-toolbar-tools	{
+		z-index: 200;
 		.md-button {
 		}
 	}

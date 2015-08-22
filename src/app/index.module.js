@@ -11,7 +11,6 @@ import TabbarDirective from '../app/components/navigation/tabbar/tabbar.drct';
 import FooterDirective from '../app/components/navigation/footer/footer.directive';
 import GridBottomSheetCtrl from '../app/components/navigation/footer/bottom-sheet.ctrl';
 
-// Main page
 import MainController from './main/main.controller';
 import RevolutionSliderDirective from '../app/components/revolution/revolution.directive';
 import TopSidebar from '../app/components/top-sidebar/top-sidebar';
@@ -24,6 +23,7 @@ import MedicalSchoolDirective from '../app/components/medical-school/articles.dr
 import MedicalSchool from '../app/components/medical-school/articles';
 import TestimonialsDirective from '../app/components/testimonials/testimonials.directive';
 import Testimonials from '../app/components/testimonials/testimonials';
+import GreensockDirective from '../app/components/greensock/greensock.drct';
 
 import AboutUsController from './about/about.controller';
 import ServicesController from './services/services.controller';
@@ -35,8 +35,8 @@ import MapController from './map/map.controller';
 import VirtualTourController from './virtual/tour.controller';
 import LoginController from './login/login.controller';
 
-angular.module('metromed', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 'ngResource', 
-														'ngMaterial', 'ui.router', 'ngMdIcons', 'uiGmapgoogle-maps', 'firebase'])
+angular.module('metromed', ['ngRoute', 'ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 
+														'ngMaterial', 'ngMdIcons', 'uiGmapgoogle-maps', 'firebase'])
 	.config(config)
 	.config(routerConfig)
 	.run(runBlock)
@@ -50,7 +50,6 @@ angular.module('metromed', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', '
 	.directive('metromedFooter', () => new FooterDirective())
 	.controller('GridBottomSheetCtrl', GridBottomSheetCtrl)
 
-	// Main page
 	.controller('MainController', MainController)
 	.directive('revolutionSlider', () => new RevolutionSliderDirective())
 	.directive('topSidebar', () => new TopSidebarDirective())
@@ -63,6 +62,7 @@ angular.module('metromed', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', '
 	.value('MedicalSchool', MedicalSchool)
 	.directive('testimonials', () => new TestimonialsDirective())
 	.value('Testimonials', Testimonials)
+	.directive('greenSock', () => new GreensockDirective())
 
 	.controller('AboutUsController', AboutUsController)
 	.controller('ServicesController', ServicesController)
