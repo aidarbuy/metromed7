@@ -32,14 +32,14 @@ html, body {
   opacity:1;
 }
 /* The starting CSS styles for the leave animation */
-.fade.ng-leave {
+// .fade.ng-leave {
   // transition:.5s linear all;
   // opacity:1;
-}
+// }
 /* The finishing CSS styles for the leave animation */
-.fade.ng-leave.ng-leave-active {
+// .fade.ng-leave.ng-leave-active {
   // opacity:0;
-}
+// }
 
 $gray: #fefefe;
 md-content.md-default-theme {
