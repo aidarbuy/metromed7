@@ -22,7 +22,11 @@
 	}
 
 	md-card {
-		img {}
+		img {
+			// display: block;
+			width: 100%;
+			height: auto;
+		}
 		md-card-content {
 			h2 {}
 			ul {

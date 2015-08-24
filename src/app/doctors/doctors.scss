@@ -2,8 +2,13 @@
 	div {
 		md-card {
 			// background: red;
-			height: 500px;
-			img {}
+			// height: 500px;
+			img {
+				// background: red;
+				// padding: 20px;
+				width: 100%;
+				height: auto;
+			}
 
 			md-card-content {
 				h2 {}

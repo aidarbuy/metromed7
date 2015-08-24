@@ -9,7 +9,7 @@ div#doctors(layout="row" layout-wrap)
 				p {{d.description[0]}}
 
 				.md-actions(layout="row" layout-align="end center")
-					md-button.md-accent(href="#/doctor/{{d.id}}") Read more
+					md-button.md-accent(ui-sref="doctor({id:d.id})") Read more
 
 
 metromed-footer

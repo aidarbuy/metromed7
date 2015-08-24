@@ -16,6 +16,12 @@
 
 		a:nth-child(7) { md-icon { margin-left: 15px; } }
 
+		a.toolbar-phone {
+			// md-icon {color: rgb(197,17,98)}
+			// color: rgb(197,17,98)
+			font-weight: bold;
+		}
+
 		.md-fab.md-accent { md-icon { margin-left: 5px; } }
 	}
 }

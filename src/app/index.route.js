@@ -26,23 +26,12 @@ function routerConfig ($stateProvider, $urlRouterProvider) {
 			controller: 'DoctorsController',
 			controllerAs: 'docs'
 		})
-
-
 		.state('doctor', {
-			url: '/doctor/{id}',
-			// reload: true,
-			// reloadOnSearch: true,
+			url: '/doctor/{id:[0-9]{1,4}}',
 			templateUrl: 'app/doctors/doctor.html',
 			controller: 'DoctorController',
-			controllerAs: 'doc',
-			resolve: {
-				id: ['$stateParams', function ($stateParams) {
-					return $stateParams.id;
-				}]
-			}
+			controllerAs: 'doc'
 		})
-
-
 		.state('primary', {
 			url: '/primary',
 			templateUrl: 'app/primary/care.html',
@@ -60,35 +49,14 @@ function routerConfig ($stateProvider, $urlRouterProvider) {
 			templateUrl: 'app/virtual/tour.html',
 			controller: 'VirtualTourController',
 			controllerAs: 'vtour'
-		})
-		.state('index', {
-			url: "",
-			views: {
-				"viewA": { template: "index.viewA" },
-				"viewB": { template: "index.viewB" }
-			}
-		})
-		.state('route1', {
-			url: "/route1",
-			views: {
-				"viewA": { template: "route1.viewA" },
-				"viewB": { template: "route1.viewB" }
-			}
-		})
-		.state('route2', {
-			url: "/route2",
-			views: {
-				"viewA": { template: "route2.viewA" },
-				"viewB": { template: "route2.viewB" }
-			}
 		});
 
 	$urlRouterProvider.otherwise('/');
 
 	// $locationProvider.html5Mode({
 	// 	enabled: true,
-	// 	requireBase: true,
-	// 	rewriteLinks: true
+	// 	requireBase: false,
+	// 	rewriteLinks: false
 	// });
 }
 

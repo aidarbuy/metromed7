@@ -5,6 +5,8 @@
 // bower:scss
 // endbower
 
+
+
 html, body {
 	font-family: "Whitney SSm A", "Whitney SSm B", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 14px;
@@ -20,11 +22,37 @@ html, body {
   padding: 0.2em 0;
 }
 
+/* The starting CSS styles for the enter animation */
+.fade.ng-enter {
+  transition:.5s linear all;
+  opacity:0;
+}
+/* The finishing CSS styles for the enter animation */
+.fade.ng-enter.ng-enter-active {
+  opacity:1;
+}
+/* The starting CSS styles for the leave animation */
+.fade.ng-leave {
+  // transition:.5s linear all;
+  // opacity:1;
+}
+/* The finishing CSS styles for the leave animation */
+.fade.ng-leave.ng-leave-active {
+  // opacity:0;
+}
+
+$gray: #fefefe;
+md-content.md-default-theme {
+	background-color: $gray;
+}
+
 // Temp colors
 #box_color_1 {background-color: #56cce1;}
 #box_color_2 {background-color: #2cbfd9;}
 #box_color_3 {background-color: #2ca6d9;}
 #box_color_4 {background-color: #1b90da;}
+
+$pink_from_custom-services: #d52dec;
 
 /**
  *  Do not remove this comments bellow. It's the markers used by gulp-inject to inject

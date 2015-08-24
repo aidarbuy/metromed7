@@ -23,10 +23,8 @@
 			}
 			h2 { margin: 0; }
 			h2:nth-child(2) { text-transform: uppercase; }
-			.md-body-2 {
-			}
-			.md-body-1 {
-			}
+			.md-body-2 {font-weight:bold}
+			.md-body-1 {}
 		}
 	}
 
@@ -41,6 +39,7 @@
 				.menu-item {
 					padding-left: 5px;
 					div {
+						// font-weight: bold;
 						margin-left: 7px;
 					}
 				}
@@ -52,7 +51,11 @@
 			min-height: 40px;
 			font-size: small;
 		}
-		.contact-title { 
+		.md-button:first-child .contact-title { 
+			// font-weight: bold;
+			// color: red;
+		}
+		.contact-title:last-child { 
 			text-transform: lowercase; 
 		}
 	}

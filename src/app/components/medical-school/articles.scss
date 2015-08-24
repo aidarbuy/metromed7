@@ -1,4 +1,4 @@
-md-card#medical-school {
+#medical-school {
 	md-toolbar.md-hue-2 {	
 		.md-toolbar-tools {
 			span {}
@@ -16,7 +16,10 @@ md-card#medical-school {
 	br {}
 	div {	
 		md-card {
-			img.md-card-image {}
+			img.md-card-image {
+				width: 100%;
+				height: auto;
+			}
 			md-card-content {	
 				h2 {}
 				md-content {

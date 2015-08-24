@@ -3,13 +3,18 @@
 	p {text-align: center}
 
 	div {
-		md-card {
-			img {}
-			md-card-content {
-				h2 {}
-				p {
-					font-size: large;
-					text-align: left;
+		div {
+			md-card {
+				img {
+					width: 100%;
+					height: auto;
+				}
+				md-card-content {
+					h2 {}
+					p {
+						font-size: large;
+						text-align: left;
+					}
 				}
 			}
 		}
