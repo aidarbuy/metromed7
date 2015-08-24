@@ -19,13 +19,13 @@ class GridBottomSheetCtrl {
 				icon: 'linkedin',
 				href: 'https://www.linkedin.com/'
 			},{ 
-				name: 'Youtube', 
-				icon: 'youtube',
-				href: 'https://www.youtube.com/'
-			},{ 
 				name: 'Twitter', 
 				icon: 'twitter',
 				href: 'https://twitter.com/metromeduc'
+			},{ 
+				name: 'Youtube', 
+				icon: 'youtube',
+				href: 'https://www.youtube.com/MetroMedUrgentCare'
 		}];
 
 		this.listItemClick = function() {

@@ -1,5 +1,10 @@
 var testimonials = [
 	{
+		name: 'Qali Aden',
+		text: "Amazing staff!! Extremely, caring, and very professional.. Dr. Beckwith really listens to her patients and genuinely wants to help as well as understands patients needs.. I would recommend Dr. Beckwith to everyone and anyone; as she has become my primary care doctor now.",
+		img: 'qali-aden.jpg'
+	},
+	{
 		name: 'Chris P.',
 		age: 57,
 		text: "Absolutely  fabulous.  Kind and detailed care, simple as that. Sort of makes you feel good being sick....   cjp",
