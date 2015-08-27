@@ -8,6 +8,8 @@ class LayersliderDirective {
 			controllerAs: 'ls',
 			link: function (scope, elem) {
 				elem.layerSlider({
+					showCircleTimer: false,
+					showBarTimer: false,
 					skin: 'none'
 				});
 			}
