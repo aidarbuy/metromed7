@@ -7,8 +7,8 @@ class PrimaryCareController {
 
 		this.content = [
 			{	
-				img: 'male-doctor-710400.jpg',
-				alt: "Photo of a male doctor",
+				img: 'reception.jpg',
+				alt: "Photo of reception of MetroMed Urgent Care",
 				header: "Option 1",
 				text: [
 					"This option is based on a membership fee of 100 dollars a month. A client gets full work-up, including X-Ray of the chest, EKG, complete blood count, lipid panel, thyroid hormone check, urine analysis and ultrasound screening of the heart, kidneys, gallbladder, liver and pelvic organs. The client also gets a phone access to a doctor any time he needs it.",

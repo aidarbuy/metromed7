@@ -1,60 +1,61 @@
-md-card.map-credentials
-	md-card-content(layout="row" layout-padding)
+md-content.md-padding(flex layout="column")
+	md-card.map-credentials
+		md-card-content(layout="row" layout-padding)
 
-		//- Address
-		md-button.md-primary.md-hue-2.md-raised(flex href="#/map")
-			md-list-item.md-2-line
-				md-icon(md-svg-src="assets/icons/location.svg")
-				.md-list-item-text(layout="column" layout-align="center start")
-					h3.cap 952 Edwards Ferry Road NE
-					p.cap Leesburg VA 20176
+			//- Address
+			md-button.md-primary.md-hue-2.md-raised(flex href="#/map")
+				md-list-item.md-2-line
+					md-icon(md-svg-src="assets/icons/location.svg")
+					.md-list-item-text(layout="column" layout-align="center start")
+						h3.cap 952 Edwards Ferry Road NE
+						p.cap Leesburg VA 20176
 
-		//- Phone
-		md-button.md-primary.md-hue-2.md-raised(flex href="tel:(703) 687-4158" hide show-gt-sm)
-			md-list-item.md-2-line
-				md-icon(md-svg-src="assets/icons/ic_phone_24px.svg")
-				.md-list-item-text(layout="column" layout-align="center start")
-					h3 (703) 687-4158
-					p Every day from 10am to 8pm
+			//- Phone
+			md-button.md-primary.md-hue-2.md-raised(flex href="tel:(703) 687-4158" hide show-gt-sm)
+				md-list-item.md-2-line
+					md-icon(md-svg-src="assets/icons/ic_phone_24px.svg")
+					.md-list-item-text(layout="column" layout-align="center start")
+						h3 (703) 687-4158
+						p Every day from 10am to 8pm
 
-		//- Email
-		md-button.md-primary.md-hue-2.md-raised(flex href="mailto:info@metromeduc.com" hide show-gt-md)
-			md-list-item.md-2-line
-				md-icon(md-svg-src="assets/icons/ic_email_24px.svg")
-				.md-list-item-text(layout="column" layout-align="center start")
-					h3 info@metromeduc.com
-					p 24 hours a day 7 days a week
-
-
-
-//- Map
-md-card
-	md-card-content
-		ui-gmap-google-map(center='gmap.map.center' zoom='gmap.map.zoom')
-			ui-gmap-marker(idKey='gmap.marker.id' coords='gmap.marker.coords')
+			//- Email
+			md-button.md-primary.md-hue-2.md-raised(flex href="mailto:info@metromeduc.com" hide show-gt-md)
+				md-list-item.md-2-line
+					md-icon(md-svg-src="assets/icons/ic_email_24px.svg")
+					.md-list-item-text(layout="column" layout-align="center start")
+						h3 info@metromeduc.com
+						p 24 hours a day 7 days a week
 
 
 
-//- Bottom map credentials
-md-card.map-credentials(hide-gt-md)
-	//- (layout="row" layout-align="space-around center")
-	md-card-content(layout="column" layout-padding)
+	//- Map
+	md-card
+		md-card-content
+			ui-gmap-google-map(center='gmap.map.center' zoom='gmap.map.zoom')
+				ui-gmap-marker(idKey='gmap.marker.id' coords='gmap.marker.coords')
 
-		//- Phone
-		md-button.md-primary.md-hue-2.md-raised(flex href="tel:(703) 687-4158" hide-gt-sm)
-			md-list-item.md-2-line
-				md-icon(md-svg-src="assets/icons/ic_phone_24px.svg")
-				.md-list-item-text(layout="column" layout-align="center start")
-					h3 (703) 687-4158
-					p Every day from 10am to 8pm
 
-		//- Email
-		md-button.md-primary.md-hue-2.md-raised(flex href="mailto:info@metromeduc.com")
-			md-list-item.md-2-line
-				md-icon(md-svg-src="assets/icons/ic_email_24px.svg")
-				.md-list-item-text(layout="column" layout-align="center start")
-					h3 info@metromeduc.com
-					p 24 hours a day 7 days a week
+
+	//- Bottom map credentials
+	md-card.map-credentials(hide-gt-md)
+		//- (layout="row" layout-align="space-around center")
+		md-card-content(layout="column" layout-padding)
+
+			//- Phone
+			md-button.md-primary.md-hue-2.md-raised(flex href="tel:(703) 687-4158" hide-gt-sm)
+				md-list-item.md-2-line
+					md-icon(md-svg-src="assets/icons/ic_phone_24px.svg")
+					.md-list-item-text(layout="column" layout-align="center start")
+						h3 (703) 687-4158
+						p Every day from 10am to 8pm
+
+			//- Email
+			md-button.md-primary.md-hue-2.md-raised(flex href="mailto:info@metromeduc.com")
+				md-list-item.md-2-line
+					md-icon(md-svg-src="assets/icons/ic_email_24px.svg")
+					.md-list-item-text(layout="column" layout-align="center start")
+						h3 info@metromeduc.com
+						p 24 hours a day 7 days a week
 
 
 

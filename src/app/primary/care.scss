@@ -1,6 +1,12 @@
 #primary-care {
-	h1 {text-align: center}
-	p {text-align: center}
+	h1 {
+		text-align: center;
+		color: $md-primary;
+	}
+	h2 {
+		text-align: center;
+		color: $md-hue-2;
+	}
 
 	div {
 		div {

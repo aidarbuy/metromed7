@@ -1,15 +1,16 @@
-div#doctors(layout="row" layout-wrap)
-	div(flex-sm="100" flex-md="50" flex-gt-md="25" layout-wrap ng-repeat="d in docs.list")
-		md-card
-			img.md-card-image(ng-src="assets/images/doctors/{{d.img.big}}" alt="photo of doctor {{d.firstname + ' ' + d.lastname}}")
+md-content.md-padding(flex layout="column")
+	div#doctors(layout="row" layout-wrap)
+		div(flex-sm="100" flex-md="50" flex-gt-md="25" layout-wrap ng-repeat="d in docs.list")
+			md-card
+				img.md-card-image(ng-src="assets/images/doctors/{{d.img.big}}" alt="photo of doctor {{d.firstname + ' ' + d.lastname}}")
 
-			md-card-content
-				h2.md-title {{d.firstname + " " + d.lastname}}
+				md-card-content
+					h2.md-title {{d.firstname + " " + d.lastname}}
 
-				p {{d.description[0]}}
+					p {{d.description[0]}}
 
-				.md-actions(layout="row" layout-align="end center")
-					md-button.md-accent(ui-sref="doctor({id:d.id})") Read more
+					.md-actions(layout="row" layout-align="end center")
+						md-button.md-accent(ui-sref="doctor({id:d.id})") Read more
 
 
 metromed-footer
