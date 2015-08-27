@@ -5,7 +5,7 @@ class RevolutionSliderDirective {
 		let directive = {
 			templateUrl: 'app/components/revolution/revolution.html',
 			controller: RevolutionSliderController,
-			controllerAs: 'ls',
+			controllerAs: 'rs',
 			link: function () {
 				var tpj=angular.element;
 				tpj.noConflict();

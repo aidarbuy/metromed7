@@ -95,11 +95,11 @@ gulp.task('layerslider', function () {
 });
 
 // Copy Revolution slider to dist
-gulp.task('revolution', function () {
-	$.del(path.join(conf.paths.dist, '/revolution'));
+gulp.task('layerslider', function () {
+	$.del(path.join(conf.paths.dist, '/layerslider'));
 
-	return gulp.src(path.join(conf.paths.src, 'revolution/**/*'))
-		.pipe(gulp.dest(path.join(conf.paths.dist, '/revolution')));
+	return gulp.src(path.join(conf.paths.src, 'layerslider/**/*'))
+		.pipe(gulp.dest(path.join(conf.paths.dist, '/layerslider')));
 });
 
 // Clean dist folder

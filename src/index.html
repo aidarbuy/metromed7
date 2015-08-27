@@ -29,9 +29,12 @@
 		</style>
 
 		<!-- RevolutionSlider styles -->
-		<link rel="stylesheet" type="text/css" href="revolution/css/dynamic-captions.css" media="screen" />
-		<link rel="stylesheet" type="text/css" href="revolution/css/static-captions.css" media="screen" />
-		<link rel="stylesheet" type="text/css" href="revolution/css/settings.css" media="screen" />
+		<!-- <link rel="stylesheet" type="text/css" href="revolution/css/dynamic-captions.css" media="screen" /> -->
+		<!-- <link rel="stylesheet" type="text/css" href="revolution/css/static-captions.css" media="screen" /> -->
+		<!-- <link rel="stylesheet" type="text/css" href="revolution/css/settings.css" media="screen" /> -->
+
+		<!-- LayerSlider stylesheet -->
+		<link rel="stylesheet" href="/layerslider/css/layerslider.css" type="text/css">
 	</head>
 
 
@@ -47,7 +50,7 @@
 			</md-sidenav>
 
 			<div id="content" layout="column" flex>
-				<md-content class="md-padding" layout="column" flex>
+				<md-content flex class="md-paddin" layout="column">
 					<div class="fade" ui-view></div>
 				</md-content>
 			</div>
@@ -55,10 +58,18 @@
 
 
 		<!-- RevolutionSlider scripts -->
-		<script type="text/javascript" src="revolution/js/jquery.min.js"></script>
-		<script type="text/javascript" src="revolution/js/jquery.themepunch.revolution.js"></script>
-		<script type="text/javascript" src="revolution/js/jquery.themepunch.revolution.min.js"></script>
-		<script type="text/javascript" src="revolution/js/jquery.themepunch.plugins.min.js"></script>
+		<!-- // <script type="text/javascript" src="revolution/js/jquery.min.js"></script> -->
+		<!-- // <script type="text/javascript" src="revolution/js/jquery.themepunch.revolution.js"></script> -->
+		<!-- // <script type="text/javascript" src="revolution/js/jquery.themepunch.revolution.min.js"></script> -->
+		<!-- // <script type="text/javascript" src="revolution/js/jquery.themepunch.plugins.min.js"></script> -->
+
+		<!-- External libraries: jQuery & GreenSock -->
+		<script src="layerslider/js/jquery.js" type="text/javascript"></script>
+		<script src="layerslider/js/greensock.js" type="text/javascript"></script>
+
+		<!-- LayerSlider script files -->
+		<script src="layerslider/js/layerslider.transitions.js" type="text/javascript"></script>
+		<script src="layerslider/js/layerslider.kreaturamedia.jquery.js" type="text/javascript"></script>
 
 		<!-- build:js(src) scripts/vendor.js -->
 		<!-- bower:js -->

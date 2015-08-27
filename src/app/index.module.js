@@ -12,7 +12,7 @@ import FooterDirective from '../app/components/navigation/footer/footer.directiv
 import GridBottomSheetCtrl from '../app/components/navigation/footer/bottom-sheet.ctrl';
 
 import MainController from './main/main.controller';
-import RevolutionSliderDirective from '../app/components/revolution/revolution.directive';
+import LayersliderDirective from '../app/components/layerslider/layerslider.directive';
 import TopSidebar from '../app/components/top-sidebar/top-sidebar';
 import TopSidebarDirective from '../app/components/top-sidebar/top-sidebar.drct';
 import Quote from '../app/components/quote/quote';
@@ -23,7 +23,6 @@ import MedicalSchoolDirective from '../app/components/medical-school/articles.dr
 import MedicalSchool from '../app/components/medical-school/articles';
 import TestimonialsDirective from '../app/components/testimonials/testimonials.directive';
 import Testimonials from '../app/components/testimonials/testimonials';
-import GreensockDirective from '../app/components/greensock/greensock.drct';
 
 import AboutUsController from './about/about.controller';
 import ServicesController from './services/services.controller';
@@ -51,7 +50,7 @@ angular.module('metromed', ['ui.router', 'ngAnimate', 'ngCookies', 'ngTouch', 'n
 	.controller('GridBottomSheetCtrl', GridBottomSheetCtrl)
 
 	.controller('MainController', MainController)
-	.directive('revolutionSlider', () => new RevolutionSliderDirective())
+	.directive('layerslider', () => new LayersliderDirective())
 	.directive('topSidebar', () => new TopSidebarDirective())
 	.value('TopSidebar', TopSidebar)
 	.directive('quote', () => new QuoteDirective())
@@ -62,7 +61,6 @@ angular.module('metromed', ['ui.router', 'ngAnimate', 'ngCookies', 'ngTouch', 'n
 	.value('MedicalSchool', MedicalSchool)
 	.directive('testimonials', () => new TestimonialsDirective())
 	.value('Testimonials', Testimonials)
-	.directive('greenSock', () => new GreensockDirective())
 
 	.controller('AboutUsController', AboutUsController)
 	.controller('ServicesController', ServicesController)
