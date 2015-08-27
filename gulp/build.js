@@ -94,7 +94,7 @@ gulp.task('layerslider', function () {
 		.pipe(gulp.dest(path.join(conf.paths.dist, '/layerslider')));
 });
 
-// Copy Revolution slider to dist
+// Copy layerslider to dist
 gulp.task('layerslider', function () {
 	$.del(path.join(conf.paths.dist, '/layerslider'));
 
@@ -107,4 +107,4 @@ gulp.task('clean', function (done) {
 	$.del([path.join(conf.paths.dist, '/'), path.join(conf.paths.tmp, '/')], done);
 });
 
-gulp.task('build', ['html', 'fonts', 'other', 'revolution']);
+gulp.task('build', ['html', 'fonts', 'other', 'layerslider']);

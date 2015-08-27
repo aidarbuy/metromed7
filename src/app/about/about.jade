@@ -1,30 +1,46 @@
-div#about(layout="row" layout-wrap)
-	div(flex-gt-md="49" flex="100" layout-wrap)
-		md-card
-			md-card-content
-				h1.md-display-2 {{ about.welcome.title }}
+md-content.md-padding(flex layout="column")
 
-				h2.md-headline {{ about.welcome.conditions.header }}
+	div#about(layout="row" layout-wrap)
+		div(flex-gt-md="49" flex="100" layout-wrap)
+			md-card
+				md-card-content
+					h1.md-display-2 {{ about.welcome.title }}
 
-				md-list
-					md-list-item(ng-repeat="i in about.welcome.conditions.list")
-						md-icon(md-svg-icon="assets/icons/checkmark.svg")
-						p {{ i }}
-						md-divider
+					h2.md-headline {{ about.welcome.conditions.header }}
 
-				h2.md-subhead {{ about.welcome.asterix}}
+					md-list
+						md-list-item(ng-repeat="i in about.welcome.conditions.list")
+							md-icon(md-svg-icon="assets/icons/checkmark.svg")
+							p {{ i }}
+							md-divider
 
-	div(flex-gt-md="49" flex="100" layout-wrap)
-		md-card
-			img.md-card-image(ng-src="{{about.imagePath}}" alt="Three members of MetroMed Urgent Care team")
+					h2.md-subhead {{ about.welcome.asterix}}
 
-			md-card-content 
-				h2.md-display-1 {{ about.whyMetroMed.title }}
+		div(flex-gt-md="49" flex="100" layout-wrap)
+			md-card
+				#layerslider(style="width:710px; height:399px")
+					.ls-slide(data-ls="slidedelay:7000; transition2d:42")
+						img.md-card-image(src="assets/images/team/three-medics.jpg" class="ls-bg" alt="Three members of MetroMed Urgent Care team")
+					.ls-slide(data-ls="slidedelay:7000; transition2d:42")
+						img.md-card-image(src="assets/images/doctors/trisha-820x465.jpg" class="ls-bg" alt="Three members of MetroMed Urgent Care team")
+					.ls-slide(data-ls="slidedelay:7000; transition2d:42")
+						img.md-card-image(src="assets/images/team/karl.jpg" class="ls-bg" alt="Three members of MetroMed Urgent Care team")
+					.ls-slide(data-ls="slidedelay:7000; transition2d:42")
+						img.md-card-image(src="assets/images/team/orchids.jpg" class="ls-bg" alt="Three members of MetroMed Urgent Care team")
 
-				ul.md-title
-					li(ng-repeat="a in about.whyMetroMed.items ") {{ a[0] }}
-						ul
-							li(ng-repeat="i in a" ng-hide="$first") {{ i }}
+				md-card-content 
+					h2.md-display-1 {{ about.whyMetroMed.title }}
+
+					ul.md-title
+						li(ng-repeat="a in about.whyMetroMed.items ") {{ a[0] }}
+							ul
+								li(ng-repeat="i in a" ng-hide="$first") {{ i }}
 
 
 metromed-footer
+
+script.
+	$('#layerslider').layerSlider({
+		showCircleTimer: false,
+		skin: 'noskin'
+	});

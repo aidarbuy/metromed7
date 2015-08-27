@@ -4,13 +4,14 @@ class LayersliderDirective {
 
 		let directive = {
 			templateUrl: 'app/components/layerslider/layerslider.html',
+			replace: true,
 			controller: LayersliderController,
 			controllerAs: 'ls',
-			link: function (scope, elem) {
+			compile: function (elem) {
 				elem.layerSlider({
 					showCircleTimer: false,
 					showBarTimer: false,
-					skin: 'none'
+					skin: 'noskin'
 				});
 			}
 		};
