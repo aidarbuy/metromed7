@@ -19,13 +19,13 @@ md-content.md-padding(flex layout="column")
 		div(flex-gt-md="49" flex="100" layout-wrap)
 			md-card
 				#layerslider(style="width:710px; height:399px")
-					.ls-slide(data-ls="slidedelay:7000; transition2d:42")
+					.ls-slide(data-ls="slidedelay:7000; transition2d:1")
 						img.md-card-image(src="assets/images/team/three-medics.jpg" class="ls-bg" alt="Three members of MetroMed Urgent Care team")
-					.ls-slide(data-ls="slidedelay:7000; transition2d:42")
+					.ls-slide(data-ls="slidedelay:7000; transition2d:1")
 						img.md-card-image(src="assets/images/doctors/trisha-820x465.jpg" class="ls-bg" alt="Three members of MetroMed Urgent Care team")
-					.ls-slide(data-ls="slidedelay:7000; transition2d:42")
+					.ls-slide(data-ls="slidedelay:7000; transition2d:1")
 						img.md-card-image(src="assets/images/team/karl.jpg" class="ls-bg" alt="Three members of MetroMed Urgent Care team")
-					.ls-slide(data-ls="slidedelay:7000; transition2d:42")
+					.ls-slide(data-ls="slidedelay:7000; transition2d:1")
 						img.md-card-image(src="assets/images/team/orchids.jpg" class="ls-bg" alt="Three members of MetroMed Urgent Care team")
 
 				md-card-content 
@@ -40,7 +40,12 @@ md-content.md-padding(flex layout="column")
 metromed-footer
 
 script.
-	$('#layerslider').layerSlider({
-		showCircleTimer: false,
-		skin: 'noskin'
+	$(document).ready(function(){
+		$('#layerslider').layerSlider({
+			autoStart: 'true',
+			showBarTimer: false,
+			pauseOnHover: false,
+			showCircleTimer: false,
+			skin: 'noskin'
+		});
 	});
