@@ -23,5 +23,13 @@
 		}
 
 		.md-fab.md-accent { md-icon { margin-left: 5px; } }
+
+		a:nth-last-child(2) { 
+			md-icon { 
+				margin-left: 15px;
+				// background: red;
+				padding-top: 2px;
+			} 
+		}
 	}
 }

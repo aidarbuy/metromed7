@@ -1,0 +1,39 @@
+#login {
+	md-card {
+		text-align: center;
+		.md-button {
+			width: 55%;
+			padding-left: 10px;
+			padding-right: 35px;
+
+			md-icon {}
+
+			span {
+				margin-left: 10px;
+			}
+		}
+
+		.md-button:hover {
+			background: $md-primary;
+		}
+
+
+		.h-sep {
+			border-top: 1px solid #ccc;
+			width: 55%;
+
+			span {
+				background: white;
+				position: relative;
+				top: -0.7em;
+				padding-left: 20px;
+				padding-right: 20px;
+				letter-spacing: 3px;
+			}
+		}
+
+		md-input-container {
+			width: 55%;
+		}
+	}
+}

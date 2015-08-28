@@ -49,6 +49,12 @@ function routerConfig ($stateProvider, $urlRouterProvider) {
 			templateUrl: 'app/virtual/tour.html',
 			controller: 'VirtualTourController',
 			controllerAs: 'vtour'
+		})
+		.state('login', {
+			url: '/login',
+			templateUrl: 'app/login/login.html',
+			controller: 'LoginController',
+			controllerAs: 'login'
 		});
 
 	$urlRouterProvider.otherwise('/');

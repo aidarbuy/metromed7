@@ -1,63 +1,64 @@
-md-card
-	//- md-content.md-padding
-		//- div.fb-like(data-share="true" data-width="450" data-show-faces="true")
-	md-toolbar.md-warn(ng-show="error")
+md-content#login.md-padding(flex layout="column")
+	md-card(layout="column" layout-align="space-around center")
+
+		//- Social
+
+		h2.md-title Log in to MetroMed Urgent Care with:
+
+		md-button.md-raised.md-primary.md-hue-2(ng-click="login.login('facebook')")
+			div(layout="row")
+				md-icon(md-svg-src="assets/icons/facebook3.svg")
+				span(flex)
+				span Facebook
+				span(flex)
+
+		md-button.md-raised.md-primary.md-hue-2(ng-click="login.login('google')")
+			div(layout="row")
+				md-icon(md-svg-src="assets/icons/google-plus.svg")
+				span(flex)
+				span Google
+				span(flex)
+
+		md-button.md-raised.md-primary.md-hue-2(ng-click="login.login('twitter')")
+			div(layout="row")
+				md-icon(md-svg-src="assets/icons/twitter.svg")
+				span(flex)
+				span Twitter
+				span(flex)
+
+		h5.md-subhead We'll never post without your permission
+
+
+		//- Login to existing account
+
+		br
+		div.h-sep(style="margin-bottom:0")
+			span.sep-text.md-title or
+
+		h5(style="margin-top:-10px").md-title Log in to your MetroMed UC account
+
+		md-input-container
+			md-icon(md-svg-src="assets/icons/email.svg")
+			input(ng-model="user.email" type="email" placeholder="Email" ng-required="true")
+
+		md-input-container
+			md-icon(md-svg-src="assets/icons/key.svg")
+			input(ng-model="user.password" type="password" placeholder="Password" ng-required="true")
+
+		md-button.md-raised.md-accent
+			div(layout="row")
+				md-icon(md-svg-src="assets/icons/enter.svg")
+				span(flex)
+				span Sign-in
+				span(flex)
+
+		div(layout="row" layout-align="space-around center")
+			a.md-subhead(href="#") Forgot password
+			span(style="margin:20px; color:#ccc") |
+			a.md-subhead(href="#") Create a new account
+
+metromed-footer
+	//- md-toolbar.md-warn(ng-show="error")
 		.md-toolbar-tools(layout="column")
 			h1(flex) {{error.code}}
 			h2(flex) {{error.details}}
-	md-tabs(md-dynamic-height md-border-bottom)
-		md-tab
-			md-tab-label
-				//- md-icon.email(md-svg-src="assets/icons/ic_email_24px.svg")
-				md-icon.email(md-svg-src="assets/icons/email.svg")
-				span.login-label Email and Password
-			md-tab-body
-				md-content.md-padding
-					div(layout="column")
-						br
-						md-content(layout-padding class="autoScroll")
-
-							md-input-container.md-icon-float
-								md-icon.name(md-svg-src="assets/icons/ic_person_24px.svg")
-								input(ng-model="user.name" type="text" placeholder="Name")
-
-							md-input-container
-								md-icon(md-svg-src="assets/icons/ic_phone_24px.svg")
-								input(ng-model="user.phone" type="text" placeholder="Phone Number")
-
-							md-input-container
-								md-icon.email(md-svg-src="assets/icons/ic_email_24px.svg")
-								input(ng-model="user.email" type="email" placeholder="Email (required)" ng-required="true")
-
-							md-input-container
-								md-icon(md-svg-src="assets/icons/ic_place_24px.svg" style="display:inline-block;")
-								input(ng-model="user.address" type="text" placeholder="Address")
-		md-tab
-			md-tab-label
-				md-icon(md-svg-src="assets/icons/facebook3.svg")
-				span.login-label Facebook
-			md-tab-body
-				md-content.md-padding
-					h1 Facebook
-					md-button.md-raised(ng-click="login.login('facebook')") Facebook login
-		md-tab(label="Twitter")
-			md-tab-label
-				md-icon(md-svg-src="assets/icons/twitter.svg")
-				span.login-label Twitter
-			md-tab-body
-				md-content.md-padding
-					h1 Twitter
-		md-tab(label="Google")
-			md-tab-label
-				md-icon(md-svg-src="assets/icons/google-plus.svg")
-				span.login-label Google
-			md-tab-body
-				md-content.md-padding
-					h1 Google
-		md-tab(label="GitHub")
-			md-tab-label
-				md-icon(md-svg-src="assets/icons/github-icon.svg")
-				span.login-label GitHub
-			md-tab-body
-				md-content.md-padding
-					h1 GitHub	}

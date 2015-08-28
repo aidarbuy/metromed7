@@ -1,0 +1,19 @@
+div(layout="column")
+	br
+	md-content(layout-padding class="autoScroll")
+
+		md-input-container.md-icon-float
+			md-icon.name(md-svg-src="assets/icons/ic_person_24px.svg")
+			input(ng-model="user.name" type="text" placeholder="Name")
+
+		md-input-container
+			md-icon(md-svg-src="assets/icons/ic_phone_24px.svg")
+			input(ng-model="user.phone" type="text" placeholder="Phone Number")
+
+		md-input-container
+			md-icon.email(md-svg-src="assets/icons/ic_email_24px.svg")
+			input(ng-model="user.email" type="email" placeholder="Email (required)" ng-required="true")
+
+		md-input-container
+			md-icon(md-svg-src="assets/icons/ic_place_24px.svg" style="display:inline-block;")
+			input(ng-model="user.address" type="text" placeholder="Address")
