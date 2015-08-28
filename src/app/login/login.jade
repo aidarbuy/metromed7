@@ -5,37 +5,37 @@ md-content#login.md-padding(flex layout="column")
 
 		h2.md-title Log in to MetroMed Urgent Care with:
 
-		md-button.md-raised.md-primary.md-hue-2(ng-click="login.login('facebook')")
+		md-button.md-raised.md-primary.md-hue-2(ng-click="login.login('facebook')" style="background:#3a5795")
 			div(layout="row")
 				md-icon(md-svg-src="assets/icons/facebook3.svg")
 				span(flex)
 				span Facebook
 				span(flex)
 
-		md-button.md-raised.md-primary.md-hue-2(ng-click="login.login('google')")
+		md-button.md-raised.md-primary.md-hue-2(ng-click="login.login('google')" style="background:#d73d32")
 			div(layout="row")
-				md-icon(md-svg-src="assets/icons/google-plus.svg")
+				md-icon(md-svg-src="assets/icons/google-plus3.svg")
 				span(flex)
 				span Google
 				span(flex)
 
-		md-button.md-raised.md-primary.md-hue-2(ng-click="login.login('twitter')")
+		md-button.md-raised.md-primary.md-hue-2(ng-click="login.login('twitter')" style="background:#0084B4")
 			div(layout="row")
-				md-icon(md-svg-src="assets/icons/twitter.svg")
+				md-icon(md-svg-src="assets/icons/twitter3.svg")
 				span(flex)
 				span Twitter
 				span(flex)
 
-		h5.md-subhead We'll never post without your permission
+		h5.md-subhead(style="color:#999") We'll never post without your permission
 
 
 		//- Login to existing account
 
 		br
-		div.h-sep(style="margin-bottom:0")
+		div.h-sep
 			span.sep-text.md-title or
 
-		h5(style="margin-top:-10px").md-title Log in to your MetroMed UC account
+		h5(style="margin-top:-5px").md-title Log in to your MetroMed UC account:
 
 		md-input-container
 			md-icon(md-svg-src="assets/icons/email.svg")
@@ -45,17 +45,19 @@ md-content#login.md-padding(flex layout="column")
 			md-icon(md-svg-src="assets/icons/key.svg")
 			input(ng-model="user.password" type="password" placeholder="Password" ng-required="true")
 
-		md-button.md-raised.md-accent
+		md-button.md-raised.md-primary
 			div(layout="row")
-				md-icon(md-svg-src="assets/icons/enter.svg")
+				md-icon(md-svg-src="assets/icons/enter.svg" style="padding-top:2px; margin-left:-3px")
 				span(flex)
 				span Sign-in
 				span(flex)
 
-		div(layout="row" layout-align="space-around center")
-			a.md-subhead(href="#") Forgot password
+		div.forgot-pass(layout="row" layout-align="space-around center")
+			a.md-subhead(ui-sref="forgotpass") Forgot password
 			span(style="margin:20px; color:#ccc") |
-			a.md-subhead(href="#") Create a new account
+			a.md-subhead(ui-sref="signup") Create a new account
+
+		p.md-body-1(style="font-size:11px; color:#999; margin-top:0") By logging in, you agree to our Terms of Service and Privacy Policy.
 
 metromed-footer
 	//- md-toolbar.md-warn(ng-show="error")

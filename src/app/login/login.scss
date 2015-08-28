@@ -25,7 +25,7 @@
 			span {
 				background: white;
 				position: relative;
-				top: -0.7em;
+				top: -0.95em;
 				padding-left: 20px;
 				padding-right: 20px;
 				letter-spacing: 3px;
@@ -34,6 +34,14 @@
 
 		md-input-container {
 			width: 55%;
+
+			md-icon {
+				color: $md-hue-2;
+			}
+		}
+
+		.forgot-pass {
+			color: $md-hue-2;
 		}
 	}
 }
