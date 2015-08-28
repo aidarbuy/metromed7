@@ -8,7 +8,8 @@ md-toolbar#toolbar.md-whiteframe-z2
 		//- Brand
 		a(ui-sref="home" layout="row" layout-align="start center")
 			md-icon(md-svg-src="assets/icons/logo.svg")
-			span MetroMed Urgent Care
+			span(hide show-gt-sm) MetroMed Urgent Care
+			span(hide-gt-sm) MetroMed UC
 
 		span(flex)
 
@@ -21,7 +22,7 @@ md-toolbar#toolbar.md-whiteframe-z2
 		a.toolbar-phone(href="tel:(703) 687-4158" hide-sm layout="row")
 			md-icon(md-svg-src="assets/icons/ic_phone_24px.svg")
 			span (703) 687-4158
-		md-button.md-fab.md-accent(href="tel:(703) 687-4158" aria-label="Call MetroMed Urgent Care" hide-gt-sm)
+		md-button.md-fab.md-accent(href="tel:(703) 687-4158" aria-label="Call MetroMed Urgent Care" hide-gt-sm style="margin-right:0")
 			md-icon(md-svg-src="assets/icons/ic_phone_24px.svg")
 
 		//- Email
@@ -33,5 +34,5 @@ md-toolbar#toolbar.md-whiteframe-z2
 		a(ui-sref="login" hide-sm layout="row")
 			md-icon(md-svg-src="assets/icons/enter.svg" aria-label="Login")
 			span.toolbar-label Login
-		md-button(ui-sref="login" aria-label="Login MetroMed Urgent Care" hide-gt-sm)
+		md-button.login-btn(ui-sref="login" aria-label="Login MetroMed Urgent Care" hide-gt-sm)
 			md-icon.toolbar-icon-login-sm(md-svg-src="assets/icons/enter.svg" aria-label="Login")

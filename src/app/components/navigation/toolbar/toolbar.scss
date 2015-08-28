@@ -27,9 +27,19 @@
 		a:nth-last-child(2) { 
 			md-icon { 
 				margin-left: 15px;
-				// background: red;
 				padding-top: 2px;
 			} 
+		}
+
+		.md-button.login-btn {
+			// background: red;
+			// width: 20px;
+			min-width: 50px;
+			// padding: 0;
+			// margin: 0;
+			md-icon {
+				margin: 0;
+			}
 		}
 	}
 }
