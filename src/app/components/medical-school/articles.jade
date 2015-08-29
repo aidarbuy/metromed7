@@ -9,13 +9,13 @@ md-card#medical-school
 
 	div(ng-repeat="a in ms.articles | limitTo: 2")
 		md-card
-			img.md-card-image(ng-src="{{a.img.src}}" alt="{{a.img.alt}}")
+			img.md-card-image(ng-src="{{::a.img.src}}" alt="{{::a.img.alt}}")
 			md-card-content
-				h2.md-headline {{a.header}}
+				h2.md-headline(ng-bind="::a.header")
 				md-content(layout-padding)
-					p(ng-repeat="t in a.text") {{t}}
+					p(ng-repeat="t in a.text" ng-bind="::t")
 				div(layout="row" layout-align="end end")
-					p {{ a.date }}
+					p(ng-bind="::a.date")
 			//- .md-actions(layout="row" layout-align="end start")
 				//- md-button Learn more
 		//- br

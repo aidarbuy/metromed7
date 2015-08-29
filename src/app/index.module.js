@@ -5,7 +5,6 @@ import runBlock from './index.run';
 import Navigation from '../app/components/navigation/navigation';
 import Credentials from '../app/components/navigation/credentials';
 import ToolbarDirective from '../app/components/navigation/toolbar/toolbar.drct';
-import Toolbar from '../app/components/navigation/toolbar/toolbar';
 import SidenavDirective from '../app/components/navigation/sidenav/sidenav.drct';
 import TabbarDirective from '../app/components/navigation/tabbar/tabbar.drct';
 import FooterDirective from '../app/components/navigation/footer/footer.directive';
@@ -43,7 +42,6 @@ angular.module('metromed', ['ui.router', 'ngAnimate', 'ngCookies', 'ngTouch', 'n
 	.value('Navigation', Navigation)
 	.value('Credentials', Credentials)
 	.directive('toolbar', () => new ToolbarDirective())
-	.value('Toolbar', Toolbar)
 	.directive('sidenav', () => new SidenavDirective())
 	.directive('tabbar', () => new TabbarDirective())
 	.directive('metromedFooter', () => new FooterDirective())

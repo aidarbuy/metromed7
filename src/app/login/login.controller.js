@@ -1,13 +1,35 @@
 class LoginController {
-	constructor ($log, $http, $scope, $firebaseAuth) {
+	constructor ($firebaseAuth, $scope) {
 		'ngInject';
-		/*global Firebase */
 
 		// Reference a Firebase
-		var refFirebase = new Firebase('https://metromeduc.firebaseio.com/');
+		var ref = new Firebase('https://metromeduc.firebaseio.com/');
 
 		// Instantiate an authorization object
-		var authObject = $firebaseAuth(refFirebase);
+		var auth = $firebaseAuth(ref);
+
+		// Retrieve current auth state
+		var authData = auth.$getAuth();
+		if (authData) {
+			// console.log("Logged in as: ", authData.uid);
+			this.authData = authData;
+		} else {
+			// console.log("Logged out");
+		}
+
+		// Login function
+		this.login = function(method) {
+			$scope.authData = null;
+			$scope.error = null;
+
+			auth.$authWithOAuthPopup(method).then(function(authData) {
+				console.info(authData);
+				$scope.authData = authData;
+			}).catch(function (error) {
+				console.error(error);
+				$scope.error = error;
+			});
+		};
 
 		// Create an user
 		// authObject.$createUser({
@@ -20,27 +42,18 @@ class LoginController {
 		// });
 
 		// Check authentication
-		authObject.$onAuth(function (authData) {
-			$scope.authData = authData;
-			if (authData) {
-				getRepos();
-			}
+		// authObject.$onAuth(function (authData) {
+		// 	$scope.authData = authData;
+		// 	if (authData) {
+		// 		getRepos();
+		// 	}
 			// $log.log(authData);
-		});
-
-		// Login
-		this.login = function (method) {
-			authObject.$authWithOAuthPopup(method)
-			.catch(function (error) {
-				$scope.error = error;
-				$log.error(error);
-			});
-		};
+		// });
 
 		// Logout
-		this.logout = function () {
-			authObject.$unauth();
-		};
+		// this.logout = function () {
+		// 	authObject.$unauth();
+		// };
 
 		// Sending Password Reset Emails
 		// authObject.$resetPassword({
@@ -52,15 +65,15 @@ class LoginController {
 		// });
 
 		// Get repositories
-		function getRepos () {
-			$http.get($scope.authData.github.cachedUserProfile.repos_url)
-			.success(function (repos) {
-				$scope.repos = repos;
-			})
-			.error(function (error) {
-				$log.error(error);
-			});
-		}
+		// function getRepos () {
+		// 	$http.get($scope.authData.github.cachedUserProfile.repos_url)
+		// 	.success(function (repos) {
+		// 		$scope.repos = repos;
+		// 	})
+		// 	.error(function (error) {
+		// 		$log.error(error);
+		// 	});
+		// }
 	}
 }
 

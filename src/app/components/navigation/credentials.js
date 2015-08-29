@@ -2,7 +2,7 @@ var credentials = [
 	{
 		link : 'tel:1-703-687-4158',
 		title: '(703) 687-4158',
-		icon: 'call'
+		icon: 'ic_phone_24px'
 	},
 	{
 		link : 'mailto:info@metromeduc.com',

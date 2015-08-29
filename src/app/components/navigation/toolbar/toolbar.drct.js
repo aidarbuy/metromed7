@@ -18,6 +18,8 @@ class ToolbarController {
 	constructor ($mdSidenav) {
 		'ngInject';
 
+		// this.userAuth = userAuthStatus
+
 		this.toggleSidenav = function (navID) {
 			$mdSidenav(navID).toggle();
 		};

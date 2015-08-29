@@ -3,10 +3,10 @@ md-toolbar#footer.md-hue-2
 		p Amygdala LLC © 2015 | All Rights Reserved
 		span(flex)
 
-		md-button(ng-click="ft.openBottomSheet($event)" hide-gt-md)
-			i.material-icons more_vert
+		md-button(ng-click="ft.openBottomSheet($event)" aria-label="asd" hide-gt-md)
+			md-icon(md-svg-src="assets/icons/more_vert.svg")
 
 		//- Social buttons
 		span(ng-controller="GridBottomSheetCtrl as bs" hide-sm hide-md)
-			md-button(ng-repeat="item in bs.items" ng-href="{{item.href}}" aria-label="{{item.name}}")
-				md-icon(md-svg-src="assets/icons/{{item.icon}}.svg")
+			md-button(ng-repeat="item in bs.items" ng-href="{{::item.href}}" aria-label="{{::item.name}}")
+				md-icon(md-svg-src="assets/icons/{{::item.icon}}.svg")

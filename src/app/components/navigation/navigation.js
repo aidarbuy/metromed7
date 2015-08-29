@@ -9,7 +9,7 @@ var menu = [
 		href: 'about',
 		state: 'about',
 		title: 'About Us',
-		icon: 'info'
+		icon: 'info2'
 	},
 	{
 		href: 'services',

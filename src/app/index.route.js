@@ -1,6 +1,7 @@
 function routerConfig ($stateProvider, $urlRouterProvider) {
 	'ngInject';
 
+
 	$stateProvider
 		.state('home', {
 			url: '/',
@@ -54,7 +55,7 @@ function routerConfig ($stateProvider, $urlRouterProvider) {
 			url: '/login',
 			templateUrl: 'app/login/login.html',
 			controller: 'LoginController',
-			controllerAs: 'login'
+			controllerAs: 'li'
 		});
 
 	$urlRouterProvider.otherwise('/');

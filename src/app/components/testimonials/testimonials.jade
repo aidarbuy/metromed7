@@ -9,9 +9,9 @@ md-card#testimonials(flex)
 	md-card-content
 		md-list
 			md-list-item.md-3-line(ng-repeat="t in t.testimonials")
-				img.md-avatar(ng-src="assets/images/testimonials/{{ t.img }}" alt="{{ t.name }}")
+				img.md-avatar(ng-src="assets/images/testimonials/{{::t.img}}" alt="{{::t.name}}")
 				.md-list-item-text
-					h3 {{ t.name }}
-					h4 {{ t.city }}
-					p {{ t.text }}
+					h3(ng-bind="::t.name")
+					h4(ng-bind="::t.city")
+					p(ng-bind="::t.text")
 				md-divider(md-inset ng-if="!$last")

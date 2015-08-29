@@ -16,7 +16,8 @@ md-toolbar#toolbar.md-whiteframe-z2
 		//- Address
 		a(ui-sref="map" hide-md hide-sm layout="row")
 			md-icon(md-svg-src="assets/icons/ic_place_24px.svg")
-			span 952 Edwards Ferry Road NE Leesburg VA 20176
+			span 952 Edwards Ferry Road NE Leesburg VA
+			span(hide) &nbsp;20176
 
 		//- Phone
 		a.toolbar-phone(href="tel:(703) 687-4158" hide-sm layout="row")
@@ -31,8 +32,18 @@ md-toolbar#toolbar.md-whiteframe-z2
 			span info@metromeduc.com
 
 		//- Login
-		a(ui-sref="login" hide-sm layout="row")
+		a(ui-sref="login" hide show-gt-lg layout="row" ng-controller="LoginController as li" ng-hide="li.authData")
 			md-icon(md-svg-src="assets/icons/enter.svg" aria-label="Login")
 			span.toolbar-label Login
-		md-button.login-btn(ui-sref="login" aria-label="Login MetroMed Urgent Care" hide-gt-sm)
-			md-icon.toolbar-icon-login-sm(md-svg-src="assets/icons/enter.svg" aria-label="Login")
+		md-button.login-btn(ui-sref="login" aria-label="Login MetroMed Urgent Care" title="Login" hide-gt-lg ng-controller="LoginController as li" ng-hide="li.authData")
+			md-icon(md-svg-src="assets/icons/enter.svg" aria-label="Login")
+
+		//- Logged-in
+		//- md-menu
+			//- Trigger element is a md-button with an icon
+			md-button.md-icon-button(ng-click="$mdOpenMenu($event)" aria-label="Open user menu")
+				md-icon(md-svg-icon="call:phone")
+
+			md-menu-content
+				md-menu-item
+					md-button(ng-click="doSomething()") Menu item button
