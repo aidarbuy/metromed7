@@ -14,14 +14,20 @@ class SidenavDirective {
 }
 
 class SidenavController {
-	constructor (Navigation, Credentials, $mdSidenav) {
+	constructor (Navigation, Credentials, $mdSidenav, $location) {
 		'ngInject';
 
 		this.menu = Navigation;
 		this.contact = Credentials;
+		this.currentPath = $location.$$path;
 
-		this.toggleSidenav = function (navID) {
+		this.toggleSidenav = function(navID, path) {
 			$mdSidenav(navID).toggle();
+			this.currentPath = path;
+		};
+
+		this.isSelected = function(path) {
+			return this.currentPath === path;
 		};
 	}
 }

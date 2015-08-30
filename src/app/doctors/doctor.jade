@@ -1,5 +1,6 @@
-md-content.md-padding(flex layout="column")
-	md-card#doctor
+#doctor.md-padding
+
+	md-card
 		.md-card-header
 			img.md-card-image(ng-src="assets/images/doctors/{{::doc.doctor.img.big}}" alt="Photo of doctor {{::doc.doctor.firstname + ' ' + doc.doctor.lastname}}")
 			h2.md-title Doctor {{::doc.doctor.firstname + " " + doc.doctor.lastname}}

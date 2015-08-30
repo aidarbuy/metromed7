@@ -1,6 +1,7 @@
 class LoginController {
-	constructor ($firebaseAuth, $scope) {
+	constructor (Firebase, $window, $firebaseAuth, $scope) {
 		'ngInject';
+		'Firebase';
 
 		// Reference a Firebase
 		var ref = new Firebase('https://metromeduc.firebaseio.com/');
@@ -23,10 +24,10 @@ class LoginController {
 			$scope.error = null;
 
 			auth.$authWithOAuthPopup(method).then(function(authData) {
-				console.info(authData);
+				$window.console.info(authData);
 				$scope.authData = authData;
 			}).catch(function (error) {
-				console.error(error);
+				$window.console.error(error);
 				$scope.error = error;
 			});
 		};

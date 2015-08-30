@@ -1,5 +1,11 @@
-md-toolbar#tabs-menu(hide-sm hide-md hide-gt-lg)
-	.md-toolbar-tools(layout="column" layout-align="center")
-		md-button(ng-repeat="b in tab.menu" ui-sref="{{::b.state}}" ng-bind="::b.title")
+style.
+	.current-btn {
+		border-top: 1px solid white;
+		//- border-bottom: 1px solid white;
+		//- background: #56cce1;
+	}
+md-toolbar#tabs-menu(hide show-lg)
+	.md-toolbar-tools(layout="row" layout-align="center")
+		md-button(ng-repeat="b in tab.menu" area-label="{{::b.title}}" ui-sref="{{::b.state}}" ng-class="{'current-btn':tab.isSelected(b.path)}" ng-click="tab.setCurrent(b.path)") {{::b.title}}
 	//- md-tabs
-		md-tab(ng-repeat="t in tb.menu" label="{{::t.title}}")
+		md-tab(ng-repeat="t in tab.menu" label="{{::t.title}}")

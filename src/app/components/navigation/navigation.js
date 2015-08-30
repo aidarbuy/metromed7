@@ -1,42 +1,42 @@
 var menu = [
 	{
-		href: '/',
+		path: '/',
 		state: 'home',
 		title: 'Home',
 		icon: 'home'
 	},
 	{
-		href: 'about',
+		path: '/about',
 		state: 'about',
 		title: 'About Us',
 		icon: 'info2'
 	},
 	{
-		href: 'services',
+		path: '/services',
 		state: 'services',
 		title: 'Services',
 		icon: 'local_hospital'
 	},
 	{
-		href: 'doctors',
+		path: '/doctors',
 		state: 'doctors',
 		title: 'Doctors',
 		icon: 'people'
 	},
 	{
-		href: 'primary',
+		path: '/primary',
 		state: 'primary',
 		title: 'Primary Care',
 		icon: 'verified_user'
 	},
 	{
-		href: 'map',
+		path: '/map',
 		state: 'map',
 		title: 'Map',
 		icon: 'map'
 	},
 	{
-		href: 'virtual',
+		path: '/virtual',
 		state: 'virtual',
 		title: 'Virtual Tour',
 		icon: 'visibility'

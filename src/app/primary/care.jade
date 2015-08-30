@@ -1,15 +1,15 @@
-md-content.md-padding(flex layout="column")
-	div#primary-care
-		h1.md-display-2(ng-bind="::pc.pageHeader")
-		h2.md-headline(ng-bind="::pc.headline")
+#primary-care.md-padding
 
-		div(layout="row" layout-sm="column")
-			div(flex ng-repeat="c in pc.content")
-				md-card
-					img(ng-src="assets/images/primary/{{::c.img}}" class="md-card-image" alt="{{::c.alt}}")
-					md-card-content
-						h2.md-headline {{::c.header}}:
-						p(ng-repeat="t in c.text" ng-bind="::t")
+	h1.md-display-2(ng-bind="::pc.pageHeader")
+	h2.md-headline(ng-bind="::pc.headline")
+
+	div(layout="row" layout-sm="column")
+		div(flex ng-repeat="c in pc.content")
+			md-card
+				img(ng-src="assets/images/primary/{{::c.img}}" class="md-card-image" alt="{{::c.alt}}")
+				md-card-content
+					h2.md-headline {{::c.header}}:
+					p(ng-repeat="t in c.text" ng-bind="::t")
 
 
 metromed-footer

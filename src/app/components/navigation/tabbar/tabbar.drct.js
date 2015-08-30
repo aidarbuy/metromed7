@@ -13,10 +13,21 @@ class TabbarDirective {
 }
 
 class TabbarController {
-	constructor (Navigation) {
+	constructor (Navigation, $location) {
 		'ngInject';
 
+		// console.log($location.$$path);
+		
 		this.menu = Navigation;
+		this.currentPath = $location.$$path;
+
+		this.isSelected = function(path) {
+			return this.currentPath === path;
+		};
+
+		this.setCurrent = function(path) {
+			this.currentPath = path;
+		};
 	}
 }
 
