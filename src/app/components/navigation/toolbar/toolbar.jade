@@ -32,12 +32,12 @@ md-toolbar#toolbar.md-whiteframe-z2
 			span info@metromeduc.com
 
 		//- Login
-		//- a(ui-sref="login" hide show-gt-lg layout="row" ng-controller="LoginController as li" ng-hide="li.authData")
+		a(ui-sref="login" hide show-gt-lg layout="row" ng-controller="LoginController as li" ng-hide="li.authData")
 			md-icon(md-svg-src="assets/icons/enter.svg" aria-label="Login")
 			span.toolbar-label Login
-		//- md-button.login-btn(ui-sref="login" aria-label="Login MetroMed Urgent Care" title="Login" hide-gt-lg ng-controller="LoginController as li" ng-hide="li.authData")
-			md-icon(md-svg-src="assets/icons/enter.svg" aria-label="Login")
-
+		md-button.login-btn(ui-sref="login" aria-label="Login MetroMed Urgent Care" hide-gt-lg ng-controller="LoginController as li" ng-hide="li.authData")
+			md-tooltip(md-direction="left") Insert Drive
+			md-icon(md-svg-src="assets/icons/enter.svg")
 		//- Logged-in
 		//- md-menu
 			//- Trigger element is a md-button with an icon

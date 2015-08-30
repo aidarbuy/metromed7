@@ -57,6 +57,15 @@ function routerConfig ($stateProvider, $urlRouterProvider) {
 			controller: 'LoginController',
 			controllerAs: 'li'
 		});
+		// .state('/account', {
+		// 	templateUrl: 'app/login/account.html',
+		// 	controller: 'AccountController',
+		// 	resolve: {
+		// 		currentAuth: function(Auth) {
+		// 			return Auth.$waitForAuth();
+		// 		}
+		// 	}
+		// });
 
 	$urlRouterProvider.otherwise('/');
 
