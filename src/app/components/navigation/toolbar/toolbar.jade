@@ -32,18 +32,17 @@ md-toolbar#toolbar.md-whiteframe-z2
 			span info@metromeduc.com
 
 		//- Login
-		a(ui-sref="login" hide show-gt-lg layout="row" ng-controller="LoginController as li" ng-hide="li.authData")
+		a(ui-sref="login" hide show-gt-lg layout="row" ng-if="!tb.authData")
 			md-icon(md-svg-src="assets/icons/enter.svg" aria-label="Login")
 			span.toolbar-label Login
-		md-button.login-btn(ui-sref="login" aria-label="Login MetroMed Urgent Care" hide-gt-lg ng-controller="LoginController as li" ng-hide="li.authData")
+		md-button.login-btn(ui-sref="login" aria-label="Login MetroMed Urgent Care" hide-gt-lg ng-if="!tb.authData")
 			md-tooltip(md-direction="left") Insert Drive
 			md-icon(md-svg-src="assets/icons/enter.svg")
-		//- Logged-in
-		//- md-menu
-			//- Trigger element is a md-button with an icon
-			md-button.md-icon-button(ng-click="$mdOpenMenu($event)" aria-label="Open user menu")
-				md-icon(md-svg-icon="call:phone")
 
-			md-menu-content
-				md-menu-item
-					md-button(ng-click="doSomething()") Menu item button
+		//- Account
+		a(ui-sref="account" hide show-gt-lg layout="row" ng-if="tb.authData")
+			md-icon(md-svg-src="assets/icons/enter.svg" aria-label="Login")
+			span.toolbar-label Login
+		md-button.login-btn(ui-sref="account" aria-label="Login MetroMed Urgent Care" hide-gt-lg ng-if="tb.authData")
+			md-tooltip(md-direction="left") Insert Drive
+			md-icon(md-svg-src="assets/icons/person.svg")

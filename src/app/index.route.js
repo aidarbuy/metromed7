@@ -56,16 +56,18 @@ function routerConfig ($stateProvider, $urlRouterProvider) {
 			templateUrl: 'app/login/login.html',
 			controller: 'LoginController',
 			controllerAs: 'li'
+		})
+		.state('account', {
+			url: '/account',
+			templateUrl: 'app/account/account.html',
+			controller: 'AccountController',
+			controllerAs: 'acc',
+			resolve: {
+				currentAuth: function(Auth) {
+					return Auth.$waitForAuth();
+				}
+			}
 		});
-		// .state('/account', {
-		// 	templateUrl: 'app/login/account.html',
-		// 	controller: 'AccountController',
-		// 	resolve: {
-		// 		currentAuth: function(Auth) {
-		// 			return Auth.$waitForAuth();
-		// 		}
-		// 	}
-		// });
 
 	$urlRouterProvider.otherwise('/');
 

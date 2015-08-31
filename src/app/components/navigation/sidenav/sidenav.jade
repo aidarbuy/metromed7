@@ -20,11 +20,13 @@ md-list
 			md-divider
 
 	//- Contact Info
-	md-toolbar.md-hue-2
+	//- md-toolbar.md-hue-2
 		span(flex)
-		.md-toolbar-tools-bottom.inset Contact Info:
+		//- .md-toolbar-tools-bottom.inset Contact Info:
+	md-subheader(style="padding-top:10px") Contact Info:
+	md-divider
 	md-list-item(ng-repeat="i in sn.contact | limitTo:2")
-		md-button.md-primary.md-hue-2(aria-label="Home" href="{{::i.link}}")
+		md-button.md-primary.md-hue-3(aria-label="{{::i.title}}" href="{{::i.link}}")
 			.menu-item(layout="row" layout-align="start center")
 				//- i.material-icons {{i.icon}}
 				md-icon(md-svg-src="assets/icons/{{::i.icon}}.svg" aria-label="{{::i.icon}}")

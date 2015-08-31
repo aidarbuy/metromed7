@@ -15,10 +15,15 @@ class ToolbarDirective {
 }
 
 class ToolbarController {
-	constructor ($mdSidenav) {
+	constructor ($mdSidenav, Auth, $window) {
 		'ngInject';
 
-		// this.userAuth = userAuthStatus
+		var self = this;
+
+		Auth.$onAuth(function(authData) {
+			self.authData = authData;
+			// $window.console.log(self.authData);
+		});
 
 		this.toggleSidenav = function (navID) {
 			$mdSidenav(navID).toggle();

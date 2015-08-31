@@ -32,8 +32,10 @@ import PrimaryCareController from './primary/care.controller';
 import MapController from './map/map.controller';
 import VirtualTourController from './virtual/tour.controller';
 import LoginController from './login/login.ctrl';
+import AccountController from './account/account.ctrl';
 import AuthController from '../app/components/auth/auth.ctrl';
 import AuthFactory from '../app/components/auth/auth.fctr';
+import AuthStateFactory from '../app/components/auth/auth-state.fctr';
 
 angular.module('metromed', ['ui.router', 'ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 
 														'ngMaterial', 'ngMdIcons', 'uiGmapgoogle-maps', 'firebase'])
@@ -71,5 +73,7 @@ angular.module('metromed', ['ui.router', 'ngAnimate', 'ngCookies', 'ngTouch', 'n
 	.controller('MapController', MapController)
 	.controller('VirtualTourController', VirtualTourController)
 	.controller('LoginController', LoginController)
+	.controller('AccountController', AccountController)
 	.controller('AuthController', AuthController)
-	.factory('Auth', ['$firebaseAuth', ($firebaseAuth) => new AuthFactory($firebaseAuth)]);
+	.factory('Auth', ['$firebaseAuth', ($firebaseAuth) => new AuthFactory($firebaseAuth)])
+	.factory('AuthState', () => new AuthStateFactory());

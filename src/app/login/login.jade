@@ -10,23 +10,22 @@ md-content#login.md-padding(flex layout="column")
 					h2(flex ng-bind="::error.details")
 
 			//- Login container
-			.login-cnt(layout="column" layout-align="space-around center" ng-controller="AuthController as auth")
+			.login-cnt(layout="column" layout-align="space-around center")
 				//- Social
 				h2.md-title Log in to MetroMed Urgent Care with:
-				md-button.md-raised.md-primary.md-hue-2(ng-click="auth.login('facebook')" style="background:#3a5795")
-					md-tooltip(md-direction="left") Facebook
+				md-button.md-raised.md-primary.md-hue-2(ng-click="li.login('facebook')" style="background:#3a5795")
 					div(layout="row")
 						md-icon(md-svg-src="assets/icons/facebook3.svg")
 						span(flex)
 						span Facebook
 						span(flex)
-				md-button.md-raised.md-primary.md-hue-2(ng-click="auth.login('google')" style="background:#d73d32")
+				md-button.md-raised.md-primary.md-hue-2(ng-click="li.login('google')" style="background:#d73d32")
 					div(layout="row")
 						md-icon(md-svg-src="assets/icons/google-plus3.svg")
 						span(flex)
 						span Google
 						span(flex)
-				md-button.md-raised.md-primary.md-hue-2(ng-click="auth.login('twitter')" style="background:#0084B4")
+				md-button.md-raised.md-primary.md-hue-2(ng-click="li.login('twitter')" style="background:#0084B4")
 					div(layout="row")
 						md-icon(md-svg-src="assets/icons/twitter3.svg")
 						span(flex)

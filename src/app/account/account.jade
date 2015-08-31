@@ -1,0 +1,15 @@
+md-content#account.md-padding(flex layout="column")
+	md-card
+		md-toolbar
+			.md-toolbar-tools
+				span(flex)
+				md-icon(md-svg-src="assets/icons/person.svg" style="width:35px; height:35px")
+				h2(style="margin-left:5px") Your MetroMed Account
+				span(flex)
+		md-card-content(layout="row" layout-align="start start")
+			img.md-card-image(ng-src="{{::acc.img}}")
+			span(flex="5")
+			h2.md-display-1(ng-bind="::acc.name" style="margin-top:0")
+			md-button.md-raised(ng-click="acc.logout()") Logout
+
+metromed-footer

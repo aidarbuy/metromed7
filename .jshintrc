@@ -13,5 +13,8 @@
     "angular": false,
     "inject": false,
     "module": false
+  },
+  "predef": {
+    "Firebase": false
   }
 }

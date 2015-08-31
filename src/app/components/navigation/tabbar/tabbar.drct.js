@@ -16,7 +16,7 @@ class TabbarController {
 	constructor (Navigation, $location, $scope) {
 		'ngInject';
 
-		console.log($location.$$path);
+		// console.log($location.$$path);
 		
 		this.menu = Navigation;
 		this.currentPath = $location.$$path;
