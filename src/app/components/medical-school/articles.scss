@@ -16,12 +16,25 @@
 	br {}
 	div {	
 		md-card {
-			img.md-card-image {
-				width: 100%;
-				height: auto;
+			.md-card-header {
+				position: relative;
+				overflow: hidden;
+
+				img.md-card-image {
+					width: 100%;
+					height: auto;
+				}
+				h2 {
+					position: absolute;
+					bottom: 0px; 
+					// width: auto; 
+					padding: 45px 25px 20px 25px; 
+					margin-bottom: 7px; 
+					color: white; 
+					background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.7));
+				}
 			}
 			md-card-content {	
-				h2 {}
 				md-content {
 					height: 400px;
 					margin-bottom: 20px;

@@ -15,7 +15,7 @@ class ToolbarDirective {
 }
 
 class ToolbarController {
-	constructor ($mdSidenav, Auth, $window) {
+	constructor ($mdSidenav, Auth) {
 		'ngInject';
 
 		var self = this;

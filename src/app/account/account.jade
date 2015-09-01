@@ -7,9 +7,11 @@ md-content#account.md-padding(flex layout="column")
 				h2(style="margin-left:5px") Your MetroMed Account
 				span(flex)
 		md-card-content(layout="row" layout-align="start start")
-			img.md-card-image(ng-src="{{::acc.img}}")
+			img.md-card-image(ng-src="{{::acc.img}}" style="width:100px;height:auto")
 			span(flex="5")
-			h2.md-display-1(ng-bind="::acc.name" style="margin-top:0")
-			md-button.md-raised(ng-click="acc.logout()") Logout
+			h2.md-display-1(style="margin-top:0") Welcome, {{::acc.name}}!
+		.md-actions(layout="row" layout-align="end center")
+				md-button.md-raised.md-primary(ng-click="acc.logout()") Logout
+				md-button.md-raised.md-warn(ng-click="acc.delete()") Delete account
 
 metromed-footer

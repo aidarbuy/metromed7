@@ -4,11 +4,11 @@ div(layout="column")
 
 		md-input-container.md-icon-float
 			md-icon.name(md-svg-src="assets/icons/ic_person_24px.svg")
-			input(ng-model="user.name" type="text" placeholder="Name")
+			input(ng-model="user.name" type="text" placeholder="First name")
 
 		md-input-container
 			md-icon(md-svg-src="assets/icons/ic_phone_24px.svg")
-			input(ng-model="user.phone" type="text" placeholder="Phone Number")
+			input(ng-model="user.phone" type="text" placeholder="Last name")
 
 		md-input-container
 			md-icon.email(md-svg-src="assets/icons/ic_email_24px.svg")
@@ -16,4 +16,7 @@ div(layout="column")
 
 		md-input-container
 			md-icon(md-svg-src="assets/icons/ic_place_24px.svg" style="display:inline-block;")
-			input(ng-model="user.address" type="text" placeholder="Address")
+			input(ng-model="user.address" type="text" placeholder="Birthday")
+
+		md-button.md-raised.md-accent(ng-click="") Sign up
+		md-button.md-raised.md-accent.md-hue-2(ng-click="su.createNewUserAccount()") Create a new user account

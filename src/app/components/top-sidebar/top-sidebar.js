@@ -31,9 +31,9 @@ var topSidebars = [
 	{
 		header: "Hours of operation",
 		text: [
-			"Open 7 days a week",
-			"from 10am to 8pm.",
-			"We observe major holidays"
+			"Open 7 days a week.",
+			"From 10am to 8pm.",
+			"We observe major holidays."
 		],
 		bgColor: '#1b90da',
 		marginRight: 8,
