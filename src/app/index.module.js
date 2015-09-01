@@ -37,6 +37,7 @@ import AccountController from './account/account.ctrl';
 import AuthController from '../app/components/auth/auth.ctrl';
 import AuthFactory from '../app/components/auth/auth.fctr';
 import AuthStateFactory from '../app/components/auth/auth-state.fctr';
+import unsafeFilter from '../app/components/filters/unsafe.fltr';
 
 angular.module('metromed', ['ui.router', 'ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 
 														'ngMaterial', 'ngMdIcons', 'uiGmapgoogle-maps', 'firebase'])
@@ -78,4 +79,5 @@ angular.module('metromed', ['ui.router', 'ngAnimate', 'ngCookies', 'ngTouch', 'n
 	.controller('AccountController', AccountController)
 	.controller('AuthController', AuthController)
 	.factory('Auth', ['$firebaseAuth', ($firebaseAuth) => new AuthFactory($firebaseAuth)])
-	.factory('AuthState', () => new AuthStateFactory());
+	.factory('AuthState', () => new AuthStateFactory())
+	.filter('unsafe', ['$sce', ($sce) => new unsafeFilter($sce)]);

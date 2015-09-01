@@ -1,7 +1,7 @@
 #custom-services {
 	div {
 		md-card {
-			height: 320px;
+			height: 360px;
 			md-card-content {
 				// margin: auto;
 				padding-top: 10%;
@@ -34,14 +34,20 @@
 	}
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 1199px) {
 		#custom-services div md-card {
 			height: 360px;
 		}
 }
 
+@media screen and (max-width: 1200px) {
+		#custom-services div md-card {
+			height: 420px;
+		}
+}
+
 @media screen and (max-width: 720px) {
 		#custom-services div md-card {
-			height: 300px;
+			height: 320px;
 		}
 }

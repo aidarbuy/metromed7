@@ -24,3 +24,30 @@
 		}
 	}
 }
+
+ // 480, 600, 840, 960, 1280, 1440, and 1600dp.
+
+@media screen and (max-width: 1440px) {
+	#doctors div md-card {
+		// background: red;
+		height: 600px;
+	}
+}
+@media screen and (max-width: 1199px) {
+	#doctors div md-card {
+		// background: red;
+		height: 550px;
+	}
+}
+@media screen and (max-width: 950px) {
+	#doctors div md-card {
+		// background: red;
+		height: 520px;
+	}
+}
+@media screen and (max-width: 600px) {
+	#doctors div md-card {
+		// background: red;
+		height: auto;
+	}
+}
