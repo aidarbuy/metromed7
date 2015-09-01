@@ -1,5 +1,8 @@
 #tabs-menu {
-	z-index: 200;
+	margin-top: 64px;
+	// background: red;
+	z-index: 90;
+	// z-index: 200;
 	border-top: 1px solid #56cce1;
 	min-height: 40px;
 	height: 40px;
@@ -8,4 +11,10 @@
 		.md-button {
 		}
 	}
+}
+
+.current-btn {
+	border-top: 1px solid white;
+	//- border-bottom: 1px solid white;
+	//- background: #56cce1;
 }

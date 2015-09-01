@@ -4,7 +4,7 @@ class SidenavDirective {
 
 		let directive = {
 			templateUrl: 'app/components/navigation/sidenav/sidenav.html',
-			// replace: true,
+			replace: true,
 			controller: SidenavController,
 			controllerAs: 'sn'
 		};

@@ -4,7 +4,7 @@
 	padding-top: 0;
 	div {
 		md-card {
-			height: 350px;
+			height: 400px;
 			margin: 0;
 			color: #fefefe;
 			opacity: 0.9;
@@ -15,7 +15,7 @@
 			transition: opacity 0.3s ease-out 0s;
 			md-card-content {
 				// background: blue;
-				padding-top: 0;
+				// padding-top: 0;
 				h2 {
 					// background: red;
 				}
@@ -30,5 +30,23 @@
 		md-card:hover {
 			opacity: 1;
 		}
+	}
+}
+
+@media screen and (max-width: 960px) {
+	#top-sidebar div md-card {
+		height: 420px;
+	}
+}
+
+@media screen and (max-width: 720px) {
+	#top-sidebar div md-card {
+		height: 320px;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	#top-sidebar div md-card {
+		// height: 320px;
 	}
 }

@@ -1,6 +1,6 @@
 .md-sidenav-left, md-sidenav.md-locked-open {
 	// background: #2cbfd9;
-	z-index: 999;
+	z-index: 1999999999;
 	min-width: 250px;
 	max-width: 250px;
 	padding: 0;
@@ -67,4 +67,34 @@
 			text-transform: lowercase; 
 		}
 	}
+}
+
+md-sidenav {
+	position: fixed;
+}
+
+md-sidenav.md-locked-open, 
+md-sidenav.md-locked-open.md-closed, 
+md-sidenav.md-locked-open.md-closed.md-sidenav-left, 
+md-sidenav.md-locked-open.md-closed, 
+md-sidenav.md-locked-open.md-closed.md-sidenav-right, 
+md-sidenav.md-locked-open-remove.md-closed {
+
+	// background: red;
+	position:fixed; 
+	left:0; 
+	top:0; 
+	margin:0; 
+	padding:0; 
+	visibility:visible; 
+	left:0; 
+	opacity:1; 
+	width:230px; 
+	height:10000px; 
+	display:block;
+
+}
+
+md-backdrop {
+	height: 10000px;
 }

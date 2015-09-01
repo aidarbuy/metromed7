@@ -1,7 +1,13 @@
 #toolbar {
-	z-index: 200; 
+	z-index: 1999999998;
 	.md-toolbar-tools {
 		font-size: large;
+
+		h1 {
+			font-size: inherit;
+			font-weight: inherit;
+			margin: inherit;
+		}
 
 		a:nth-child(2) {
 			md-icon {
@@ -42,4 +48,17 @@
 			}
 		}
 	}
+}
+
+
+#masthead-positioner {
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	z-index: 1999999999;
+	-moz-transform: translateZ(0);
+	-ms-transform: translateZ(0);
+	-webkit-transform: translateZ(0);
+	transform: translateZ(0);
 }

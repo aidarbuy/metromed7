@@ -5,23 +5,23 @@ var articles = [
 		text: [
 			["Often patients with nasal symptoms wonder if they have a sinus infection or allergies."],
 			["This is where medicine becomes more an art than a science, because even to an experienced physician this is sometimes a difficult distinction to make."],
-			["Nasal allergy symptoms comprise 2 different groups:",
-				"Early­phase symptoms: sneezing, itchy eyes, itchy nose, and runny nose.",
-				"Late­phase symptoms: ​nasal congestion and post­nasal drip."],
-			["Sinus infection symptoms include nasal congestion, headache, facial pain, post­nasal drip and malaise."],
+			["Nasal allergy symptoms comprise 2 different groups",
+				"Early phase symptoms: sneezing, itchy eyes, itchy nose, and runny nose.",
+				"Latephase symptoms: ​nasal congestion and postnasal drip."],
+			["Sinus infection symptoms include nasal congestion, headache, facial pain, postnasal drip and malaise."],
 			["Malaise is a word that describes just generally feeling sick."],
-			["As you can see, late­phase allergy symptoms and sinus infection symptoms overlap quite a bit."],
+			["As you can see, latephase allergy symptoms and sinus infection symptoms overlap quite a bit."],
 			["The treatment for a sinus infection is an antibiotic."],
-			["The treatment for allergy symptoms is different depending on if you have early­phase or late­phase symptoms:",
-				"For early­phase allergy symptoms, the treatment is an anti­histamine (such as loratadine, fexofenadine or cetirizine).",
-				"For late­phase allergy symptoms, the treatment is a steroid nasal spray, such as fluticasone or flunisolide."],
+			["The treatment for allergy symptoms is different depending on if you have earlyphase or latephase symptoms:",
+				"For earlyphase allergy symptoms, the treatment is an antihistamine (such as loratadine, fexofenadine or cetirizine).",
+				"For latephase allergy symptoms, the treatment is a steroid nasal spray, such as fluticasone or flunisolide."],
 			["Whether you have nasal allergies or a sinus infection, nasal irrigation is an effective treatment."],
-			["There are several over­the­counter nasal irrigation preparations available. Nasal irrigation involves putting salt water up the nose to wash out the nasal passages, either using a squeeze bottle or using a neti pot."]
+			["There are several overthecounter nasal irrigation preparations available. Nasal irrigation involves putting salt water up the nose to wash out the nasal passages, either using a squeeze bottle or using a neti pot."]
 		],
 		img: {
-		title: "Upper respiratory infection image",
-		src: 'assets/images/articles/sinus-600x300.jpg',
-		alt: "upper respiratory infection"
+			title: "Upper respiratory infection image",
+			src: 'assets/images/articles/sinus-600x300.jpg',
+			alt: "upper respiratory infection"
 		}
 	},
 	{
