@@ -6,10 +6,11 @@
 				md-card-content
 					h1.md-display-2(ng-bind="::about.welcome.title")
 
-					h2.md-headline(ng-bind="::about.welcome.conditions.header")
+					h2.md-headline(ng-bind="::about.welcome.header")
 
+					//- div(ng-bind-html="::about.welcome.conditionsTable | unsafe")
 					md-list
-						md-list-item(ng-repeat="i in about.welcome.conditions.list")
+						md-list-item(ng-repeat="i in about.welcome.conditions")
 							md-icon(md-svg-icon="assets/icons/checkmark.svg")
 							p(ng-bind="::i")
 							md-divider
@@ -24,18 +25,14 @@
 				md-card-content 
 					h2.md-display-1(ng-bind="::about.whyMetroMed.title")
 					ul.md-title
-						li(ng-repeat="a in about.whyMetroMed.items") {{::a[0]}}
-							ul
-								li(ng-repeat="i in a" ng-hide="$first" ng-bind="::i")
+						li(ng-repeat="a in about.whyMetroMed.items" ng-bind-html="::a | unsafe")
 
 			md-card(hide-sm)
 				.md-card-image(ng-include="'app/about/about.slider.html'")
 				md-card-content 
 					h2.md-display-1(ng-bind="::about.whyMetroMed.title")
 					ul.md-title
-						li(ng-repeat="a in about.whyMetroMed.items") {{::a[0]}}
-							ul
-								li(ng-repeat="i in a" ng-hide="$first" ng-bind="::i")
+						li(ng-repeat="a in about.whyMetroMed.items" ng-bind-html="::a | unsafe")
 
 
 metromed-footer

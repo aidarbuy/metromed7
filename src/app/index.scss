@@ -66,8 +66,10 @@ md-content.md-default-theme {
 #box_color_4 {background-color: #1b90da;}
 
 $pink_from_custom-services: #d52dec;
-$md-primary:rgb(0,188,212);
-$md-hue-2:rgb(0,131,143);
+$md-primary: rgb(0,188,212);
+$md-hue-2: rgb(0,131,143);
+$md-accent: rgb(255,64,129);
+$md-accent-hue-2: rgb(197,17,98);
 
 img {
 	// display: block;
@@ -114,6 +116,19 @@ img {
 #content {
 	// background: red;
 	// padding-top: 64px;
+}
+
+// http://drbl.in/pQJu
+$g-yellow: #fcbd14;
+$g-green: #36a956;
+$g-blue: #4687f4;
+$g-red: #eb483d;
+$g-biege: #eae9d5;
+$g-yellow-light: #fee5a3;
+$g-green-light: #91cea8;
+
+.tooltip-big{
+	font-size: 90%;
 }
 
 /**

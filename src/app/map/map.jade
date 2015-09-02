@@ -4,7 +4,8 @@
 		md-card-content(layout="row" layout-padding)
 
 			//- Address
-			md-button.md-primary.md-hue-2.md-raised(flex href="#/map")
+			md-button.md-primary.md-hue-2.md-raised(flex href="http://maps.google.com/?q=952 Edwards Ferry Road NE, Leesburg, Virginia, 20176")
+				md-tooltip.tooltip-big Open MetroMed Urgent Care on Google Maps
 				md-list-item.md-2-line
 					md-icon(md-svg-src="assets/icons/location.svg")
 					.md-list-item-text(layout="column" layout-align="center start")
@@ -13,6 +14,7 @@
 
 			//- Phone
 			md-button.md-primary.md-hue-2.md-raised(flex href="tel:(703) 687-4158" hide show-gt-sm)
+				md-tooltip.tooltip-big Make a phone call to MetroMed Urgent Care
 				md-list-item.md-2-line
 					md-icon(md-svg-src="assets/icons/ic_phone_24px.svg")
 					.md-list-item-text(layout="column" layout-align="center start")
@@ -21,6 +23,7 @@
 
 			//- Email
 			md-button.md-primary.md-hue-2.md-raised(flex href="mailto:info@metromeduc.com" hide show-gt-md)
+				md-tooltip.tooltip-big Write an email to MetroMed Urgent Care
 				md-list-item.md-2-line
 					md-icon(md-svg-src="assets/icons/ic_email_24px.svg")
 					.md-list-item-text(layout="column" layout-align="center start")

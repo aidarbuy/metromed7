@@ -1,0 +1,36 @@
+#signup {
+	margin: 40px auto;
+	h2 {
+		text-align: center;
+	}
+}
+@media screen and (max-width: 1440px) {
+	#signup {
+		width: 50%;
+	}
+}
+@media screen and (max-width: 960px) {
+	#signup {
+		width: 55%;
+	}
+}
+@media screen and (max-width: 840px) {
+	#signup {
+		width: 60%;
+	}
+}
+@media screen and (max-width: 720px) {
+	#signup {
+		width: 70%;
+	}
+}
+@media screen and (max-width: 600px) {
+	#signup {
+		width: 90%;
+	}
+}
+@media screen and (max-width: 480px) {
+	#signup {
+		// width: 100%;
+	}
+}

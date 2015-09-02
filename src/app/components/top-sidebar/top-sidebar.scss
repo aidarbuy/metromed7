@@ -16,11 +16,23 @@
 			md-card-content {
 				// background: blue;
 				// padding-top: 0;
+				font-size: 110%;
 				h2 {
 					// background: red;
+					.accent{
+						font-size: 140%;
+						font-weight: bold;
+						color: $md-accent;
+						// color: $md-hue-2;
+					}
 				}
 				p {
+					// font-size: 110%;
+					a{color:white}
+				}
+				p.p-accent{
 					font-size: 120%;
+					// font-weight: bold;
 				}
 			}
 		}
@@ -45,28 +57,46 @@
 }
 @media screen and (max-width: 1199px) {
 	#top-sidebar div md-card {
+		height: 420px;
+	}
+}
+@media screen and (max-width: 1080px) {
+	#top-sidebar div md-card {
+		height: 480px;
+	}
+}
+@media screen and (max-width: 998px) {
+	#top-sidebar div md-card {
 		height: 500px;
 	}
 }
 @media screen and (max-width: 959px) {
 	#top-sidebar div md-card {
-		height: 420px;
+		height: 310px;
 	}
 }
 @media screen and (max-width: 840px) {
 	#top-sidebar div md-card {
-		height: 420px;
+		height: 330px;
 	}
 }
-
 @media screen and (max-width: 720px) {
 	#top-sidebar div md-card {
-		height: 380px;
+		height: 350px;
 	}
 }
-
+@media screen and (max-width: 680px) {
+	#top-sidebar div md-card {
+		height: 370px;
+	}
+}
+@media screen and (max-width: 599px) {
+	#top-sidebar div md-card {
+		height: 300px;
+	}
+}
 @media screen and (max-width: 480px) {
 	#top-sidebar div md-card {
-		// height: 320px;
+		height: 320px;
 	}
 }

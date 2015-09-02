@@ -2,7 +2,7 @@
 	div {
 		md-card {
 			// background: red;
-			height: 450px;
+			height: 400px;
 			md-card-content {
 				div {
 					// background: blue;
@@ -53,5 +53,17 @@
 				}
 			}
 		}
+	}
+
+
+	.ng-enter{
+		transition: 2.75s;
+		opacity: 0;
+	}
+	.ng-enter-stagger{
+		transition-delay: 0.5s;
+	}
+	.ng-enter-active{
+		opacity: 1;
 	}
 }

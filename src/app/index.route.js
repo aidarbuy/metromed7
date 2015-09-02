@@ -63,11 +63,11 @@ function routerConfig ($stateProvider, $urlRouterProvider) {
 			controller: 'SignupController',
 			controllerAs: 'su'
 		})
-		.state('account', {
-			url: '/account',
-			templateUrl: 'app/account/account.html',
-			controller: 'AccountController',
-			controllerAs: 'acc',
+		.state('member', {
+			url: '/team',
+			templateUrl: 'app/team/member.html',
+			controller: 'MemberController',
+			controllerAs: 'team',
 			resolve: {
 				currentAuth: function(Auth) {
 					return Auth.$waitForAuth();

@@ -6,6 +6,16 @@
 
 			h2 {color:$md-hue-2}
 
+			table {
+				tr {
+					td {
+						border: 1px solid $md-primary;
+						margin: 0;
+						padding: 10px;
+					}
+				}
+			}
+
 			md-list {
 				md-list-item {
 					md-icon {

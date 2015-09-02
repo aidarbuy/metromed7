@@ -38,7 +38,15 @@
 				md-content {
 					height: 400px;
 					margin-bottom: 20px;
-					p {font-size: large}
+					color: #333;
+					.article-intro {
+						font-size: 110%;
+						font-style: italic;
+					}
+					p {
+						font-size: 113%;
+						font-size: large;
+					}
 				}
 			}
 			.md-actions {

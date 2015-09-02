@@ -24,7 +24,9 @@ import TestimonialsDirective from '../app/components/testimonials/testimonials.d
 import Testimonials from '../app/components/testimonials/testimonials';
 
 import AboutUsController from './about/about.controller';
-import ServicesController from './services/services.controller';
+import AboutUsFactory from './about/about.fctr';
+import ServicesController from './services/services.ctrl';
+import ServicesFactory from './services/services.fctr';
 import DoctorsFactory from './doctors/doctors.factory';
 import DoctorsController from './doctors/doctors.controller';
 import DoctorController from './doctors/doctor.controller';
@@ -33,7 +35,8 @@ import MapController from './map/map.controller';
 import VirtualTourController from './virtual/tour.controller';
 import LoginController from './login/login.ctrl';
 import SignupController from './signup/signup.ctrl';
-import AccountController from './account/account.ctrl';
+import MemberController from './team/member.ctrl';
+import MemberFactory from './team/member.fctr';
 import AuthController from '../app/components/auth/auth.ctrl';
 import AuthFactory from '../app/components/auth/auth.fctr';
 import AuthStateFactory from '../app/components/auth/auth-state.fctr';
@@ -67,7 +70,9 @@ angular.module('metromed', ['ui.router', 'ngAnimate', 'ngCookies', 'ngTouch', 'n
 	.value('Testimonials', Testimonials)
 
 	.controller('AboutUsController', AboutUsController)
+	.factory('AboutUs', () => new AboutUsFactory())
 	.controller('ServicesController', ServicesController)
+	.factory('Services', () => new ServicesFactory())
 	.factory('Doctors', () => new DoctorsFactory())
 	.controller('DoctorsController', DoctorsController)
 	.controller('DoctorController', DoctorController)
@@ -76,7 +81,8 @@ angular.module('metromed', ['ui.router', 'ngAnimate', 'ngCookies', 'ngTouch', 'n
 	.controller('VirtualTourController', VirtualTourController)
 	.controller('LoginController', LoginController)
 	.controller('SignupController', SignupController)
-	.controller('AccountController', AccountController)
+	.controller('MemberController', MemberController)
+	.factory('Member', ['$firebaseObject', ($firebaseObject) => new MemberFactory($firebaseObject)])
 	.controller('AuthController', AuthController)
 	.factory('Auth', ['$firebaseAuth', ($firebaseAuth) => new AuthFactory($firebaseAuth)])
 	.factory('AuthState', () => new AuthStateFactory())

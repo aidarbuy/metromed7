@@ -14,8 +14,18 @@ class ToolbarDirective {
 	}
 }
 
+
+/*
+	id: 1,
+	firstname: 'Roshelle',
+	lastname: 'Beckwith',
+	birthdate: '1.1.1972',
+	email: 'rbeckwi1@gmail.com'
+	creationDate: '2.2.2015',
+*/
+
 class ToolbarController {
-	constructor ($mdSidenav, Auth) {
+	constructor ($mdSidenav, Auth, $window) {
 		'ngInject';
 
 		var self = this;
@@ -30,5 +40,6 @@ class ToolbarController {
 		};
 	}
 }
+
 
 export default ToolbarDirective;
