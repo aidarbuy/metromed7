@@ -19,8 +19,8 @@ class LoginController {
 				email: email,
 				password: password
 			}).then(function(authData) {
-				$window.console.info("Logged in as: ", authData.uid);
-				$window.console.log("authData:\n" + authData);
+				// $window.console.info("Logged in as: ", authData.uid);
+				// $window.console.log("authData:\n" + authData);
 				$location.url('/profile');
 			}).catch(function(error) {
 				$window.console.error("Authentication failed: ", error);

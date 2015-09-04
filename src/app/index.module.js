@@ -43,9 +43,6 @@ import SignupController from './auth/signup/signup.ctrl';
 import ProfileController from './auth/profile/profile.ctrl';
 import ProfileFactory from './auth/profile/profile.fctr';
 
-import MessageService from '../app/components/services/message.srvc';
-import FBURL from '../app/components/constants/fburl.cnst';
-
 angular.module('metromed', ['ui.router', 'ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 
 														'ngMaterial', 'ngMdIcons', 'uiGmapgoogle-maps', 'firebase'])
 	.config(config)
@@ -91,7 +88,4 @@ angular.module('metromed', ['ui.router', 'ngAnimate', 'ngCookies', 'ngTouch', 'n
 	.controller('LoginController', LoginController)
 	.controller('SignupController', SignupController)
 	.controller('ProfileController', ProfileController)
-	.factory('Profile', ['$firebaseObject', ($firebaseObject) => new ProfileFactory($firebaseObject)])
-
-	.service('Message', ['$q', '$firebaseObject', '$firebaseArray', ($q, $firebaseObject, $firebaseArray) => new MessageService($q, $firebaseObject, $firebaseArray)]);
-	// .constant('FBURL', () => new FBURL());
+	.factory('Profile', ['$firebaseObject', ($firebaseObject) => new ProfileFactory($firebaseObject)]);

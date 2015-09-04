@@ -51,19 +51,18 @@ class ProfileController {
 								$scope.name = data.firstname;
 							})
 							.catch(function(error) {
-								console.error("Error:", error);
+								$window.console.error("Error:", error);
 							});
 						break;
 				}
 			}
 		});
 
-		// calling $save() on the synchronized object syncs all data back to our database
 		this.saveProfile = function() {
 			$scope.profile.$save().then(function() {
-				alert('Profile saved!');
+				$window.alert('Profile saved!');
 			}).catch(function(error) {
-				alert('Error!');
+				$window.alert('Error:', error);
 			});
 		};
 
@@ -74,7 +73,7 @@ class ProfileController {
 
 		this.delete = function() {
 			Auth.$removeUser({
-				email: self.name,
+				email: $scope.name,
 				password: "mypassword"
 			}).then(function() {
 				$window.console.log("User removed successfully!");

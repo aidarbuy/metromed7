@@ -22,10 +22,8 @@ class FooterController {
 			$mdBottomSheet.show({
 				templateUrl: 'app/components/navigation/footer/bottom-sheet.html',
 				controller: 'GridBottomSheetCtrl',
-				controllerAs: 'bs',
-				targetEvent: $event
-			}).then(function (clickedItem) {
-				this.alert = clickedItem.name + ' clicked!';
+				controllerAs: 'bs'
+				// targetEvent: $event
 			});
 		};
 	}

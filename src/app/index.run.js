@@ -7,7 +7,8 @@ function runBlock ($log, $rootScope, $mdColorPalette) {
 		return 'rgb(' +color[0]+ ',' +color[1]+ ',' +color[2]+ ')';
 	};
 
-	$log.debug('runBlock end');
+	// $log.debug('runBlock end');
+	// $log.debug('status ok');
 }
 
 export default runBlock;

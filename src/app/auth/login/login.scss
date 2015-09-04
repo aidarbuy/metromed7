@@ -25,9 +25,11 @@
 					letter-spacing: 3px;
 				}
 			}
-			md-input-container {
+			form {
 				width: 100%;
-				md-icon {color: $md-hue-2}
+				md-input-container {
+					md-icon {color: $md-hue-2}
+				}
 			}
 			.forgot-pass {color: $md-hue-2}
 		}
