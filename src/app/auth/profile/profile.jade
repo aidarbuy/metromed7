@@ -1,0 +1,34 @@
+md-content#account.md-padding(flex layout="column")
+	md-card
+		md-toolbar
+			.md-toolbar-tools
+				span(flex)
+				md-icon(md-svg-src="assets/icons/person.svg" style="width:35px; height:35px")
+				h2(style="margin-left:5px") Your MetroMed Account ({{authData.password.email}})
+				span(flex)
+		md-card-content(layout="column" layout-align="start start")
+			img.md-card-image(ng-src="{{::img}}" style="width:100px;height:auto")
+			span(flex="5")
+			h2.md-display-1(style="margin-top:0") Welcome, {{name}}!
+			h3.md-title
+				//- pre {{ authData | json }}
+
+			//- $id is a special meta variable containing the object's key in our Firebase database.
+			//- In this case, it would be "physicsmarie"
+			//- h3 Edit {{ profile.$id }}
+
+			//- we can edit the $firebaseObject instance just like any other JS object
+			//- form(ng-submit="pr.saveProfile()")
+				label Name:
+				input(type="text" ng-model="profile.name")
+
+				label Email:
+				input(type="text" ng-model="profile.email")
+
+				button(type="submit") Save Changes
+
+		.md-actions(layout="row" layout-align="end center")
+				md-button.md-raised.md-primary(ng-click="pr.logout()") Logout
+				//- md-button.md-raised.md-warn(ng-click="pr.delete()") Delete account
+
+metromed-footer

@@ -33,14 +33,18 @@ import DoctorController from './doctors/doctor.controller';
 import PrimaryCareController from './primary/care.controller';
 import MapController from './map/map.controller';
 import VirtualTourController from './virtual/tour.controller';
-import LoginController from './login/login.ctrl';
-import SignupController from './signup/signup.ctrl';
-import MemberController from './team/member.ctrl';
-import MemberFactory from './team/member.fctr';
-import AuthController from '../app/components/auth/auth.ctrl';
-import AuthFactory from '../app/components/auth/auth.fctr';
-import AuthStateFactory from '../app/components/auth/auth-state.fctr';
 import unsafeFilter from '../app/components/filters/unsafe.fltr';
+
+import AuthController from './auth/services/auth.ctrl';
+import AuthFactory from './auth/services/auth.fctr';
+import AuthStateFactory from './auth/services/auth-state.fctr';
+import LoginController from './auth/login/login.ctrl';
+import SignupController from './auth/signup/signup.ctrl';
+import ProfileController from './auth/profile/profile.ctrl';
+import ProfileFactory from './auth/profile/profile.fctr';
+
+import MessageService from '../app/components/services/message.srvc';
+import FBURL from '../app/components/constants/fburl.cnst';
 
 angular.module('metromed', ['ui.router', 'ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 
 														'ngMaterial', 'ngMdIcons', 'uiGmapgoogle-maps', 'firebase'])
@@ -79,11 +83,15 @@ angular.module('metromed', ['ui.router', 'ngAnimate', 'ngCookies', 'ngTouch', 'n
 	.controller('PrimaryCareController', PrimaryCareController)
 	.controller('MapController', MapController)
 	.controller('VirtualTourController', VirtualTourController)
-	.controller('LoginController', LoginController)
-	.controller('SignupController', SignupController)
-	.controller('MemberController', MemberController)
-	.factory('Member', ['$firebaseObject', ($firebaseObject) => new MemberFactory($firebaseObject)])
+	.filter('unsafe', ['$sce', ($sce) => new unsafeFilter($sce)])
+
 	.controller('AuthController', AuthController)
 	.factory('Auth', ['$firebaseAuth', ($firebaseAuth) => new AuthFactory($firebaseAuth)])
 	.factory('AuthState', () => new AuthStateFactory())
-	.filter('unsafe', ['$sce', ($sce) => new unsafeFilter($sce)]);
+	.controller('LoginController', LoginController)
+	.controller('SignupController', SignupController)
+	.controller('ProfileController', ProfileController)
+	.factory('Profile', ['$firebaseObject', ($firebaseObject) => new ProfileFactory($firebaseObject)])
+
+	.service('Message', ['$q', '$firebaseObject', '$firebaseArray', ($q, $firebaseObject, $firebaseArray) => new MessageService($q, $firebaseObject, $firebaseArray)]);
+	// .constant('FBURL', () => new FBURL());

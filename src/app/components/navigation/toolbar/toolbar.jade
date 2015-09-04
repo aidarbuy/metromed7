@@ -36,13 +36,13 @@ md-toolbar#toolbar.md-whiteframe-z2(layout="row")
 			md-icon(md-svg-src="assets/icons/enter.svg" aria-label="Login")
 			span.toolbar-label Login
 		md-button.login-btn(ui-sref="login" aria-label="Login MetroMed Urgent Care" hide-gt-lg ng-if="!tb.authData")
-			md-tooltip(md-direction="left") Insert Drive
+			md-tooltip(md-direction="left") Login
 			md-icon(md-svg-src="assets/icons/enter.svg")
 
-		//- Account
-		a(ui-sref="account" hide show-gt-lg layout="row" ng-if="tb.authData")
-			md-icon(md-svg-src="assets/icons/enter.svg" aria-label="Login")
-			span.toolbar-label Login
-		md-button.login-btn(ui-sref="account" aria-label="Login MetroMed Urgent Care" hide-gt-lg ng-if="tb.authData")
-			md-tooltip(md-direction="left") Insert Drive
+		//- Profiles
+		a(ui-sref="profile" hide show-gt-lg layout="row" ng-if="tb.authData")
+			md-icon(md-svg-src="assets/icons/enter.svg" aria-label="Profile")
+			span.toolbar-label Profile
+		md-button.login-btn(ui-sref="profile" aria-label="Profile of user of MetroMed Urgent Care" hide-gt-lg ng-if="tb.authData")
+			md-tooltip(md-direction="left") Show user profile
 			md-icon(md-svg-src="assets/icons/person.svg")

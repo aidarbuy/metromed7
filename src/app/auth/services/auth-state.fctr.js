@@ -2,7 +2,7 @@ class AuthStateFactory {
 	constructor () {
 		'ngInject';
 
-
+		/*
 		var self = this;
 
 		Auth.$onAuth(function(authData) {
@@ -24,6 +24,7 @@ class AuthStateFactory {
 				this.authData = data;
 			}
 		};
+		*/
 	}
 }
 

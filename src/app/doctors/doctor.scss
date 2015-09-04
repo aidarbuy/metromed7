@@ -43,13 +43,11 @@
 }
 
 
-
-
-
-
-
-
-
+@media screen and (max-width: 480px){
+	#doctor .md-card-header h2 {
+		font-size: 150%;
+	}
+}
 
 
 /*

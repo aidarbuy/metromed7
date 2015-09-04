@@ -53,26 +53,21 @@ function routerConfig ($stateProvider, $urlRouterProvider) {
 		})
 		.state('login', {
 			url: '/login',
-			templateUrl: 'app/login/login.html',
+			templateUrl: 'app/auth/login/login.html',
 			controller: 'LoginController',
 			controllerAs: 'li'
 		})
 		.state('signup', {
 			url: '/signup',
-			templateUrl: 'app/signup/signup.html',
+			templateUrl: 'app/auth/signup/signup.html',
 			controller: 'SignupController',
 			controllerAs: 'su'
 		})
-		.state('member', {
-			url: '/team',
-			templateUrl: 'app/team/member.html',
-			controller: 'MemberController',
-			controllerAs: 'team',
-			resolve: {
-				currentAuth: function(Auth) {
-					return Auth.$waitForAuth();
-				}
-			}
+		.state('profile', {
+			url: '/profile',
+			templateUrl: 'app/auth/profile/profile.html',
+			controller: 'ProfileController',
+			controllerAs: 'pr'
 		});
 
 	$urlRouterProvider.otherwise('/');

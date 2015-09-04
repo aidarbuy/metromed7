@@ -37,12 +37,12 @@ html, body {
 
 /* The starting CSS styles for the enter animation */
 .fade.ng-enter {
-	transition:.5s linear all;
-	opacity:0;
+	transition: 0.5s linear all;
+	opacity: 0;
 }
 /* The finishing CSS styles for the enter animation */
 .fade.ng-enter.ng-enter-active {
-	opacity:1;
+	opacity: 1;
 }
 /* The starting CSS styles for the leave animation */
 // .fade.ng-leave {
@@ -70,6 +70,15 @@ $md-primary: rgb(0,188,212);
 $md-hue-2: rgb(0,131,143);
 $md-accent: rgb(255,64,129);
 $md-accent-hue-2: rgb(197,17,98);
+
+.center-txt{text-align: center}
+
+.md-primary-txt {
+	color: $md-primary;
+}
+.md-accent-txt {
+	color: $md-accent;
+}
 
 img {
 	// display: block;

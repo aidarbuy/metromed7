@@ -38,22 +38,24 @@ md-content#login.md-padding(flex layout="column")
 				div.h-sep
 					span.sep-text.md-title or
 				h5(style="margin-top:-5px").md-title Log in to your MetroMed UC account:
-				md-input-container
-					md-icon(md-svg-src="assets/icons/email.svg")
-					input(ng-model="li.user.email" type="email" placeholder="Email" ng-required="true")
-				md-input-container
-					md-icon(md-svg-src="assets/icons/key.svg")
-					input(ng-model="li.user.password" type="password" placeholder="Password" ng-required="true" ng-keydown="li.signin($event)")
-				md-button.md-raised.md-primary(ng-click="li.signin(li.user.email, li.user.password)")
-					div(layout="row")
-						md-icon(md-svg-src="assets/icons/enter.svg" style="padding-top:2px; margin-left:-3px")
-						span(flex)
-						span Sign in
-						span(flex)
+				form(name="emailForm")
+					md-input-container
+						md-icon(md-svg-src="assets/icons/email.svg")
+						input(ng-model="li.user.email" type="email" placeholder="Email" ng-required="true")
+					md-input-container
+						md-icon(md-svg-src="assets/icons/key.svg")
+						input(ng-model="li.user.password" type="password" placeholder="Password" ng-required="true" ng-keydown="li.signin($event)")
+					md-button.md-raised.md-primary(ng-click="li.signin(li.user.email, li.user.password)")
+						div(layout="row")
+							md-icon(md-svg-src="assets/icons/enter.svg" style="padding-top:2px; margin-left:-3px")
+							span(flex)
+							span Sign in
+							span(flex)
 				div.forgot-pass(layout="row" layout-align="space-around center")
 					a.md-subhead(ui-sref="forgotpass") Forgot password?
 					span(style="margin:20px; color:#ccc") |
 					a.md-subhead(ui-sref="signup") Create a new account
 				p.md-body-1(style="font-size:11px; color:#999; margin-top:0") By logging in, you agree to our Terms of Service and Privacy Policy.
+
 
 metromed-footer

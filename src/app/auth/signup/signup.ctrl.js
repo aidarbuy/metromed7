@@ -11,7 +11,7 @@ class SignupController {
 		this.get = function () {
 			obj.$loaded(
 				function(data) {
-					$window.console.log(data === obj);
+					// $window.console.log(data === obj);
 					self.article = data.testArticle;
 				},
 				function(error) {
@@ -29,10 +29,11 @@ class SignupController {
 				date: MedicalSchool[0].date
 			};
 			obj.$save().then(function(ref) {
-			  ref.key() === obj.$id; // true
-			  $window.console.log("Saved new article");
+				// ref.key() === obj.$id; // true
+				$window.console.log("Saved new article");
+				$window.console.info(ref);
 			}, function(error) {
-			  $window.console.log("Error:", error);
+				$window.console.log("Error:", error);
 			});
 		};
 
@@ -41,6 +42,7 @@ class SignupController {
 			obj.$remove().then(function(ref) {
 				// data has been deleted locally and in the database
 				$window.console.log("Deleted");
+				$window.console.info(ref);
 			}, function(error) {
 				$window.console.error("Error:", error);
 			});
@@ -49,14 +51,14 @@ class SignupController {
 		// Create a new user account
 		this.createNewUserAccount = function() {
 			ref.createUser({
-			  email: "rbeckwi11@gmail.com",
-			  password: "Temirbulat30"
+				email: "rbeckwi11@gmail.com",
+				password: "Temirbulat30"
 			}, function(error, userData) {
-			  if (error) {
-			    $window.console.log("Error creating user:", error);
-			  } else {
-			    $window.console.log("Successfully created user account with uid:", userData.uid);
-			  }
+				if (error) {
+					$window.console.log("Error creating user:", error);
+				} else {
+					$window.console.log("Successfully created user account with uid:", userData.uid);
+				}
 			});
 		};
 
