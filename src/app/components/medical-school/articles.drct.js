@@ -18,8 +18,19 @@ class MedicalSchoolController {
 	constructor (MedicalSchool) {
 		'ngInject';
 
-		this.articles = MedicalSchool;
+		this.articleIndex = 0;
+		this.articlesQuantity = MedicalSchool.length;
+		this.article = MedicalSchool[this.articleIndex];
 
+		this.prevArticle = function(){
+			this.articleIndex++;
+			this.article = MedicalSchool[this.articleIndex];
+		};
+		
+		this.nextArticle = function(){
+			this.articleIndex--;
+			this.article = MedicalSchool[this.articleIndex];
+		};
 	}
 }
 

@@ -17,7 +17,7 @@ var articles = [
 		img: {
 			title: 'Upper respiratory infection image',
 			src: 'assets/images/articles/sinus-600x300.jpg',
-			alt: 'upper respiratory infection'
+			alt: 'Sinus infections'
 		}
 	},
 	{

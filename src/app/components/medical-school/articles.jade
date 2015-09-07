@@ -1,23 +1,32 @@
 md-card#medical-school.md-whiteframe-z2
+
 	md-toolbar.md-hue-2
 		.md-toolbar-tools(layout="row")
+			//- md-button(ng-click="ms.prevArticle()" ng-if="ms.articleIndex <= ms.articlesQuantity") Previous article
 			span(flex)
 			md-icon(md-svg-src="assets/icons/school.svg")
 			h2 Nano Medical School for Patients
 			span(flex)
+			//- md-button(ng-click="ms.nextArticle()" ng-if="ms.articleIndex > 0") Next article
 
-	div(ng-repeat="a in ms.articles | limitTo: 2")
-		md-card
-			.md-card-header
-				img.md-card-image(ng-src="{{::a.img.src}}" alt="{{::a.img.alt}}")
-				h2.md-display-1(ng-bind="::a.header" hide-sm)
-				h2.md-headline(ng-bind="::a.header" hide-gt-sm)
-			md-card-content
-				md-content(layout-padding)
-					p(ng-repeat="t in a.text" ng-bind-html="::t | unsafe")
-				div(layout="row" layout-align="end end")
-					p(ng-bind="::a.date")
-			//- .md-actions(layout="row" layout-align="end start")
-				//- md-button Learn more
-		//- md-divider(ng-if="!$last")
-		//- br(ng-if="!$last")
+	.md-card-header
+		img.md-card-image(ng-src="{{ms.article.img.src}}" alt="{{ms.article.img.alt}}")
+		h2.md-display-2(ng-bind="ms.article.header" hide-sm)
+		h2.md-headline(ng-bind="ms.article.header" hide-gt-sm)
+		.md-card-header-date(ng-bind="ms.article.date")
+
+	.md-actions(layout="row" layout-align="end start")
+		md-button.md-accent.md-hue-3(ng-click="ms.prevArticle()" ng-if="ms.articleIndex <= ms.articlesQuantity") Previous article
+		span(flex)
+		md-button.md-accent.md-hue-3(ng-click="ms.nextArticle()" ng-if="ms.articleIndex > 0") Next article
+	md-divider
+
+	md-card-content
+		p(ng-repeat="t in ms.article.text" ng-bind-html="t | unsafe")
+		.date(ng-bind="ms.article.date")
+
+	md-divider
+	.md-actions(layout="row" layout-align="end start")
+		md-button.md-accent.md-hue-3(ng-click="ms.prevArticle()" ng-if="ms.articleIndex <= ms.articlesQuantity") Previous article
+		span(flex)
+		md-button.md-accent.md-hue-3(ng-click="ms.nextArticle()" ng-if="ms.articleIndex > 0") Next article

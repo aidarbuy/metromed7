@@ -1,5 +1,6 @@
 #medical-school {
-	md-toolbar.md-hue-2 {	
+
+	md-toolbar.md-hue-2 {
 		.md-toolbar-tools {
 			span {}
 			md-icon {
@@ -13,47 +14,56 @@
 		}
 	}
 
-	br {}
-	div {	
-		md-card {
-			.md-card-header {
-				position: relative;
-				overflow: hidden;
+	.md-card-header {
+		position: relative;
+		overflow: hidden;
 
-				img.md-card-image {
-					width: 100%;
-					height: auto;
-				}
-				h2 {
-					position: absolute;
-					bottom: 0px; 
-					// width: auto; 
-					padding: 45px 25px 20px 25px; 
-					margin-bottom: 7px; 
-					color: white; 
-					background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.7));
-				}
-			}
-			md-card-content {	
-				md-content {
-					height: 400px;
-					margin-bottom: 20px;
-					color: #333;
-					.article-intro {
-						font-size: 110%;
-						font-style: italic;
-					}
-					p {
-						font-size: 113%;
-						font-size: large;
-					}
-				}
-			}
-			.md-actions {
-				md-button {}
-			}
-		br {}
-		md-divider {}
+		img.md-card-image {
+			width: 100%;
+			height: auto;
 		}
+		h2 {
+			position: absolute;
+			bottom: 0px; 
+			// width: auto; 
+			padding: 45px 25px 30px 25px; 
+			margin-bottom: 7px; 
+			color: white; 
+			background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.9));
+		}
+		.md-card-header-date {
+			position: absolute;
+			bottom: -10px; 
+			right: 0px;
+			// width: auto; 
+			padding: 45px 25px 20px 25px; 
+			margin-bottom: 7px; 
+			color: white; 
+			// background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.7));
+		}
+	}
+
+	md-card-content {	
+		p {
+			font-size: 113%;
+			font-size: large;
+			.article-intro {
+				font-size: 110%;
+				font-style: italic;
+			}
+		}
+
+		.date {
+			font-style: italic;
+			text-align: right;
+			padding-right: 10px;
+			font-size: 90%;
+		}
+	}
+
+	.md-actions {
+		padding-left: 10px;
+		padding-right: 10px;
+		md-button {}
 	}
 }
