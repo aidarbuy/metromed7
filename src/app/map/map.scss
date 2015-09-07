@@ -1,42 +1,66 @@
-.map-credentials {
-	.md-button {
-		// background: red;
+#map {
+	h1 {}
 
-		md-list-item {
-			// background: blue;
-			padding-left: 2%;
-			md-icon {
-				// background: yellow;
-				margin-top: auto;
-				margin-bottom: auto;
-				margin-right: 10px;
-				// margin-left: 0px; 
-				// width: 30px;
-				// height: 30px;
-			}
-			.md-list-item-text {
-				// background: red;
-				text-transform: lowercase;
-				margin-top: auto;
-				margin-bottom: auto;
-				h3 {
-					// font-size: 130%;
-				}
-				h3.cap {
-					// font-size: 130%;
-					text-transform: capitalize;
-				}
-				p {
-					font-size: 110%;
-				}
-				p.cap {
-					text-transform: capitalize;
+	div {
+		md-card.map-credentials {
+
+			md-card-content {
+				padding: 10px 12px 5px 12px;
+
+				.md-button {
+					width: 100%;
+					margin: 0;
+					padding: 0;
+
+					md-tooltip {}
+					md-list-item {
+						padding-left: 2%;
+
+						md-icon {
+							margin-top: auto;
+							margin-bottom: auto;
+							margin-right: 10px;
+						}
+
+						.md-list-item-text {
+							text-transform: lowercase;
+							margin-top: auto;
+							margin-bottom: auto;
+
+							h3 {
+							}
+							h3.cap {
+								text-transform: capitalize;
+							}
+
+							p {
+								font-size: 110%;
+							}
+							p.cap {
+								text-transform: capitalize;
+							}
+						}
+					}
 				}
 			}
 		}
 	}
-}
 
-.angular-google-map-container { 
-	height: 400px;
+	//- Map
+	md-card.ng-gmap {
+		md-card-content {
+			ui-gmap-google-map {
+				height: 100%;
+
+				.angular-google-map-container {
+					min-height: 400px;
+					height: 100%;
+				}
+
+				ui-gmap-marker {
+					// background: red;
+				}
+			}
+		}
+	}
 }

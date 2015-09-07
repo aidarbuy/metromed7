@@ -1,21 +1,14 @@
 #virtual-tour.md-padding
 
-	h1.md-display-2.md-primary-txt.center-txt Virtual Tour
+	h1.md-display-1.md-primary-txt.center-txt Virtual Tour
 
 	md-card.md-whiteframe-z2
 		md-card-content(layout="column" layout-align="center center")
-				h2.md-headline.md-accent-txt Explore MetroMed Urgent Care clinic through immersive interactive 360° virtual tour:
+				h2.md-title.md-accent-txt Explore our clinic through interactive 360° virtual tour:
+
 				//- p(flex) You can walk through rooms, turn around and make the tour by full screen pressing the upper top button inside the tour window.
-				div(flex style="width:100%; height:400px;" hide-gt-sm)
-					iframe( 
-						src="https://www.google.com/maps/embed?pb=!1m0!3m2!1sen!2sus!4v1435317827152!6m8!1m7!1sDV3R4lZfUPwAAAQqg2kDFw!2m2!1d39.116755!2d-77.539826!3f328!4f0!5f0.7820865974627469" 
-						width="100%" 
-						height="100%" 
-						frameborder="0" 
-						style="border:0" 
-						allowfullscreen)
-				div(flex style="width:100%; height:500px;" hide-sm)
-					iframe(src="https://www.google.com/maps/embed?pb=!1m0!3m2!1sen!2sus!4v1435317827152!6m8!1m7!1sDV3R4lZfUPwAAAQqg2kDFw!2m2!1d39.116755!2d-77.539826!3f328!4f0!5f0.7820865974627469" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen)
+
+				iframe(ng-src="{{vt.vtSrc}}" ng-style="{height: vt.iframeHeight + 'px'}" frameborder="0" allowfullscreen)
 
 
 metromed-footer

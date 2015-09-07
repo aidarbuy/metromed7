@@ -15,7 +15,7 @@ class MapController {
 
 			scopeObject.map = {
 				center: { latitude: latitude, longitude: longitude }, 
-				zoom: 12 
+				zoom: 17
 			};
 
 			scopeObject.marker = {

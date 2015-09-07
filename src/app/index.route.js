@@ -49,7 +49,7 @@ function routerConfig ($stateProvider, $urlRouterProvider) {
 			url: '/virtual',
 			templateUrl: 'app/virtual/tour.html',
 			controller: 'VirtualTourController',
-			controllerAs: 'vtour'
+			controllerAs: 'vt'
 		})
 		.state('login', {
 			url: '/login',
