@@ -1,4 +1,5 @@
 var articles = [
+
 	{
 		header: 'Is it a sinus infection or allergies?',
 		date: 'August 30, 2015',
@@ -16,10 +17,11 @@ var articles = [
 		],
 		img: {
 			title: 'Upper respiratory infection image',
-			src: 'assets/images/articles/sinus-600x300.jpg',
+			src: 'sinus-600x300.jpg',
 			alt: 'Sinus infections'
 		}
 	},
+
 	{
 		header: 'Upper Respiratory Infection: An Often Misused Term',
 		date: 'August 09, 2015',
@@ -33,10 +35,11 @@ var articles = [
 		],
 		img: {
 			title: 'Upper respiratory infection image',
-			src: 'assets/images/articles/respiratory2-600x300.jpg',
+			src: 'respiratory2-600x300.jpg',
 			alt: 'upper respiratory infection'
 		}
 	},
+
 	{
 		header: 'I have a cough - is it bronchitis?',
 		date: 'July 20, 2015',
@@ -52,10 +55,11 @@ var articles = [
 		],
 		img: {
 			title: 'blueberries and blackberries',
-			src: 'assets/images/articles/cough2-600x300.jpg',
+			src: 'cough2-600x300.jpg',
 			alt: 'a woman coughs'
 		}
 	},
+
 	{
 		header: 'Now is the season for berries!',
 		date: 'May 27, 2015',
@@ -64,10 +68,11 @@ var articles = [
 		],
 		img: {
 			title: 'blueberries and blackberries',
-			src: 'assets/images/articles/berries-600x300.jpg',
+			src: 'berries-600x300.jpg',
 			alt: 'a handful of blueberries and blackberries'
 		}
 	},
+
 	{
 		header: 'Meningitis',
 		date: 'April 26, 2015',
@@ -82,10 +87,11 @@ var articles = [
 		],
 		img: {
 			title: 'Dr. Roshelle Beckwith',
-			src: 'assets/images/articles/badge-roshelle-600x300.jpg',
+			src: 'meningitis-600x300.jpg',
 			alt: 'A badge of dr. Roshelle Beckwith'
 		}
 	},
+
 	{
 		header: 'Nutritional Education and News',
 		date: 'March 25, 2015',
@@ -94,10 +100,11 @@ var articles = [
 		],
 		img: {
 			title: 'a broccoli',
-			src: 'images/articles/broccoli.jpg',
+			src: 'food-for-brain-600x300.jpg',
 			alt: 'a broccoli'
 		}
 	}
+
 ];
 
 export default articles;

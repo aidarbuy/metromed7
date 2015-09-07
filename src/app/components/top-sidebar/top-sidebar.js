@@ -25,7 +25,7 @@ var topSidebars = [
 	},
 	{
 		header: 'Hours of operation:',
-		text: '<p><ul><li>Open 7 days a week.</li><li>From 10am to 8pm.</li><li>We observe major holidays.</li><li class="md-warn-txt"><b>We will be closed at 2 pm on Labor Day</b></li></ul></p>',
+		text: '<p><ul><li>Open 7 days a week.</li><li>From 10am to 8pm.</li><li>We observe major holidays.</li><li class="md-warn-txt"><b>We will be closed at 2&nbsp;pm on Labor Day</b></li></ul></p>',
 
 		bgColor: '#1b90da',
 		marginRight: 8,

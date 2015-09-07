@@ -10,10 +10,11 @@ md-card#medical-school.md-whiteframe-z2
 			//- md-button(ng-click="ms.nextArticle()" ng-if="ms.articleIndex > 0") Next article
 
 	.md-card-header
-		img.md-card-image(ng-src="{{ms.article.img.src}}" alt="{{ms.article.img.alt}}")
-		h2.md-display-2(ng-bind="ms.article.header" hide-sm)
-		h2.md-headline(ng-bind="ms.article.header" hide-gt-sm)
-		.md-card-header-date(ng-bind="ms.article.date")
+		img.md-card-image(ng-src="assets/images/articles/{{ms.article.img.src}}" alt="{{ms.article.img.alt}}")
+		.header-wrapper
+			h2.md-display-2(ng-bind="ms.article.header" hide-sm)
+			h2.md-headline(ng-bind="ms.article.header" hide-gt-sm)
+			.md-card-header-date(ng-bind="ms.article.date")
 
 	.md-actions(layout="row" layout-align="end start")
 		md-button.md-accent.md-hue-3(ng-click="ms.prevArticle()" ng-if="ms.articleIndex <= ms.articlesQuantity") Previous article

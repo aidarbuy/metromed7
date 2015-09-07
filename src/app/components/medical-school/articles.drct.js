@@ -19,7 +19,7 @@ class MedicalSchoolController {
 		'ngInject';
 
 		this.articleIndex = 0;
-		this.articlesQuantity = MedicalSchool.length;
+		this.articlesQuantity = MedicalSchool.length-2;
 		this.article = MedicalSchool[this.articleIndex];
 
 		this.prevArticle = function(){
