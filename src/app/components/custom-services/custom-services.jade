@@ -1,8 +1,8 @@
-div#custom-services(layout="row" layout-wrap)
+#custom-services(layout="row" layout-wrap)
 	div(ng-repeat="i in cs.data" flex="25" flex-md="50" flex-sm="100")
 		md-card.md-whiteframe-z2.stick-to-scree
 			md-card-content
 				a(ng-href="{{::i.href}}" layout="column" layout-align="start center")
-					ng-md-icon(icon="{{::i.icon}}" size="64" style="fill:#2cbfd9")
+					md-icon(md-svg-src="assets/icons/custom-services/{{::i.icon}}.svg" size="64" style="fill:#2cbfd9")
 					h2.md-title(ng-bind="::i.title")
 				p(ng-repeat="t in i.text" ng-bind="::t")

@@ -1,6 +1,6 @@
 var customServices = [
 	{
-		icon: "favorite",
+		icon: "heart",
 		title: "Cardio Health",
 		text: [
 			"Our clinic is equipped with EKG, X-ray and Laboratory."
@@ -8,7 +8,7 @@ var customServices = [
 		href: '#/about'
 	},
 	{
-		icon: "local_hospital",
+		icon: "aid-kit",
 		title: "Medical Treatment",
 		text: [
 			"We administer breathing treatments, repair lacerations, dispense medications intravenously, remove foreign objects from the eyes, and more."
@@ -16,7 +16,7 @@ var customServices = [
 		href: '#/services'
 	},
 	{
-		icon: "photo_camera",
+		icon: "images",
 		title: "Photo Gallery",
 		text: [
 			"Check out our pictures!"
@@ -24,7 +24,7 @@ var customServices = [
 		href: ''
 	},
 	{
-		icon: "accessibility",
+		icon: "history",
 		title: "Anti-aging Institute",
 		text: [
 			"We organize regular meetings with clients who want to be healthy, youthful and energetic."
