@@ -18,7 +18,7 @@ class LoginController {
 			Auth.$authWithPassword({
 				email: email,
 				password: password
-			}).then(function(authData) {
+			}).then(function() {
 				// $window.console.info("Logged in as: ", authData.uid);
 				// $window.console.log("authData:\n" + authData);
 				$location.url('/profile');

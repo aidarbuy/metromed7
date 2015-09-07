@@ -2,7 +2,7 @@
 
 		//- Welcome to MetroMed Urgent Care
 		div(flex-gt-md="49" flex="100" layout-wrap)
-			md-card
+			md-card.md-whiteframe-z2
 				md-card-content
 					h1.md-display-2(ng-bind="::about.welcome.title")
 
@@ -19,7 +19,7 @@
 
 		//- Why MetroMed Urgent Care
 		div(flex-gt-md="49" flex="100" layout-wrap)
-			md-card(hide-gt-sm)
+			md-card.md-whiteframe-z2(hide-gt-sm)
 				img.md-card-image(src="assets/images/team/three-medics.jpg" alt="Three members of MetroMed Urgent Care team")
 
 				md-card-content 
@@ -27,7 +27,7 @@
 					ul.md-title
 						li(ng-repeat="a in about.whyMetroMed.items" ng-bind-html="::a | unsafe")
 
-			md-card(hide-sm)
+			md-card.md-whiteframe-z2(hide-sm)
 				.md-card-image(ng-include="'app/about/about.slider.html'")
 				md-card-content 
 					h2.md-display-1(ng-bind="::about.whyMetroMed.title")

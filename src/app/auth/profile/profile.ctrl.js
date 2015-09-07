@@ -24,7 +24,7 @@ class ProfileController {
 					case "password": 
 						// e12383d9-e389-40c8-9852-153fe093d8f1
 						var profile = Profile($scope.authData.uid);
-						$scope.img = $scope.authData.password.profileImageURL;
+						$scope.img = $scope.authData.uid + '.jpg';
 						profile.type = "employee";
 						profile.firstname = "Roshelle";
 						profile.lastname = "Beckwith";
@@ -41,14 +41,16 @@ class ProfileController {
 						profile.state = "MD";
 						profile.email = "rbeckwi1@gmail.com";
 						profile.createdDate = '4 Sep 2015';
-						// $scope.profile.$save().then(function(ref) {
-						// 	$scope.profile = ref;
+						profile.allergies = 'none';
+						profile.problems = 'insomnia';
+						// profile.$save().then(function(ref) {
+						// 	$scope.profile = profile;
 						// }, function(error) {
 						// 	console.error("Error: ", error);
 						// });
 						profile.$loaded()
 							.then(function(data) {
-								$scope.name = data.firstname;
+								$scope.profile = data;
 							})
 							.catch(function(error) {
 								$window.console.error("Error:", error);

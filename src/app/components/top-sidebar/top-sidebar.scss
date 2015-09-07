@@ -1,26 +1,35 @@
 #top-sidebar {
-	// background: red;
 	padding: 8px;
 	padding-top: 0;
-	div {
-		md-card {
-			height: 400px;
-			margin: 0;
-			color: #fefefe;
-			opacity: 0.9;
-			-webkit-transition: opacity 0.3s ease-out 0s;
-			-moz-transition: opacity 0.3s ease-out 0s;
-			-o-transition: opacity 0.3s ease-out 0s;
-			-ms-transition: opacity 0.3s ease-out 0s;
-			transition: opacity 0.3s ease-out 0s;
+	md-card {
+		opacity: 0.9;
+		-webkit-transition: opacity 0.3s ease-out 0s;
+		-moz-transition: opacity 0.3s ease-out 0s;
+		-o-transition: opacity 0.3s ease-out 0s;
+		-ms-transition: opacity 0.3s ease-out 0s;
+		transition: opacity 0.3s ease-out 0s;
+
+		// font-size: 100%;
+		// -webkit-transition: font-size 0.3s ease-out 0s;
+		// -moz-transition: font-size 0.3s ease-out 0s;
+		// -o-transition: font-size 0.3s ease-out 0s;
+		// -ms-transition: font-size 0.3s ease-out 0s;
+		// transition: font-size 0.3s ease-out 0s;
+
+		// color: #fefefe;
+		color: white;
+		margin: 0;
 			md-card-content {
-				// background: blue;
-				// padding-top: 0;
 				font-size: 110%;
 				h2 {
-					// background: red;
+					-webkit-transition: font-size 0.3s ease-out 0s;
+					-moz-transition: font-size 0.3s ease-out 0s;
+					-o-transition: font-size 0.3s ease-out 0s;
+					-ms-transition: font-size 0.3s ease-out 0s;
+					transition: font-size 0.3s ease-out 0s;
 					.accent{
 						font-size: 140%;
+
 						font-weight: bold;
 						color: $md-accent;
 						// color: $md-hue-2;
@@ -35,68 +44,13 @@
 					// font-weight: bold;
 				}
 			}
-		}
-		md-card:first-child {
-			// background: #2cbfd9;
-		}
-		md-card:hover {
-			opacity: 1;
-		}
 	}
-}
-
-@media screen and (max-width: 1440px) {
-	#top-sidebar div md-card {
-		height: 420px;
+	md-card:first-child {
+		// background: #2cbfd9;
 	}
-}
-@media screen and (max-width: 1340px) {
-	#top-sidebar div md-card {
-		height: 500px;
-	}
-}
-@media screen and (max-width: 1199px) {
-	#top-sidebar div md-card {
-		height: 420px;
-	}
-}
-@media screen and (max-width: 1080px) {
-	#top-sidebar div md-card {
-		height: 480px;
-	}
-}
-@media screen and (max-width: 998px) {
-	#top-sidebar div md-card {
-		height: 500px;
-	}
-}
-@media screen and (max-width: 959px) {
-	#top-sidebar div md-card {
-		height: 310px;
-	}
-}
-@media screen and (max-width: 840px) {
-	#top-sidebar div md-card {
-		height: 330px;
-	}
-}
-@media screen and (max-width: 720px) {
-	#top-sidebar div md-card {
-		height: 350px;
-	}
-}
-@media screen and (max-width: 680px) {
-	#top-sidebar div md-card {
-		height: 370px;
-	}
-}
-@media screen and (max-width: 599px) {
-	#top-sidebar div md-card {
-		height: 300px;
-	}
-}
-@media screen and (max-width: 480px) {
-	#top-sidebar div md-card {
-		height: 320px;
+	md-card:hover {
+		opacity: 1;
+		// font-size: 101%;
+		// h2 {font-size:136%}
 	}
 }

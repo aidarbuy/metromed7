@@ -44,7 +44,7 @@ import ProfileController from './auth/profile/profile.ctrl';
 import ProfileFactory from './auth/profile/profile.fctr';
 
 angular.module('metromed', ['ui.router', 'ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 
-														'ngMaterial', 'ngMdIcons', 'uiGmapgoogle-maps', 'firebase'])
+														'ngMaterial', 'uiGmapgoogle-maps', 'firebase'])
 	.config(config)
 	.config(routerConfig)
 	.run(runBlock)

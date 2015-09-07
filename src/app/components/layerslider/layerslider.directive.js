@@ -12,6 +12,7 @@ class LayersliderDirective {
 					showCircleTimer: false,
 					showBarTimer: false,
 					skin: 'noskin'
+					// globalBGColor: '#2cbfd9'
 				});
 			}
 		};

@@ -70,6 +70,7 @@ $md-primary: rgb(0,188,212);
 $md-hue-2: rgb(0,131,143);
 $md-accent: rgb(255,64,129);
 $md-accent-hue-2: rgb(197,17,98);
+$md-warn: rgb(244,67,54);
 
 .center-txt{text-align: center}
 
@@ -78,6 +79,10 @@ $md-accent-hue-2: rgb(197,17,98);
 }
 .md-accent-txt {
 	color: $md-accent;
+}
+.md-warn-txt {
+	// color: $md-warn;
+	font-size: 110%;
 }
 
 img {
@@ -138,6 +143,11 @@ $g-green-light: #91cea8;
 
 .tooltip-big{
 	font-size: 90%;
+}
+
+.clearfix {
+	overflow: auto;
+	zoom: 1;
 }
 
 /**

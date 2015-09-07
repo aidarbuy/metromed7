@@ -4,7 +4,7 @@
 
 	div(layout="row" layout-wrap)
 		div.repeated-service(ng-repeat="s in srv.prices" flex="25" flex-md="50" flex-sm="100")
-			md-card
+			md-card.md-whiteframe-z2
 				md-toolbar(layout="row" layout-align="center center")
 					h2.md-headline(ng-bind="::s.title")
 				md-card-content(layout="column" layout-align="start center")

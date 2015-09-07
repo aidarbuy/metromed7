@@ -18,7 +18,7 @@ class FooterController {
 	constructor ($mdBottomSheet) {
 		'ngInject';
 
-		this.openBottomSheet = function ($event) {
+		this.openBottomSheet = function() {
 			$mdBottomSheet.show({
 				templateUrl: 'app/components/navigation/footer/bottom-sheet.html',
 				controller: 'GridBottomSheetCtrl',

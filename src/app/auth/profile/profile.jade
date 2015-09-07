@@ -1,21 +1,60 @@
-md-content#account.md-padding(flex layout="column")
-	md-card
+md-content#profile.md-padding(flex layout="column")
+	md-card.md-whiteframe-z2
 		md-toolbar
 			.md-toolbar-tools
 				span(flex)
 				md-icon(md-svg-src="assets/icons/person.svg" style="width:35px; height:35px")
-				h2(style="margin-left:5px") Your MetroMed Account ({{authData.password.email}})
+				h2(style="margin-left:5px") Your MetroMed Account
+				//- ({{authData.password.email}})
 				span(flex)
-		md-card-content(layout="column" layout-align="start start")
-			img.md-card-image(ng-src="{{::img}}" style="width:100px;height:auto")
-			span(flex="5")
-			h2.md-display-1(style="margin-top:0") Welcome, {{name}}!
-			h3.md-title
-				//- pre {{ authData | json }}
 
-			//- $id is a special meta variable containing the object's key in our Firebase database.
-			//- In this case, it would be "physicsmarie"
-			//- h3 Edit {{ profile.$id }}
+		md-card-content
+			div(layout="row" layout-align="start center")
+				img.md-card-image(ng-src="assets/images/avatars/{{::img}}" style="width:100px;height:auto")
+				span(flex="5")
+				h2.md-headline(style="margin-top:0") Welcome, {{profile.firstname}}!
+
+			md-list
+				md-divider
+				md-list-item First name: {{profile.firstname}}
+				md-divider
+				md-list-item Last name: {{profile.lastname}}
+				md-divider
+				md-list-item Gender: {{profile.gender}}
+				md-divider
+				md-list-item Birth date: {{profile.birthdate}}
+				md-divider
+				md-list-item Blood group: {{profile.bloodGroup}}
+				md-divider
+				md-list-item Weight: {{profile.weight}}
+				md-divider
+				md-list-item Height: {{profile.height}}
+				md-divider
+				md-list-item Timezone: {{profile.timezone}}
+				md-divider
+				md-list-item Locale: {{profile.locale}}
+				md-divider
+				md-list-item Phone: {{profile.phone}}
+				md-divider
+				md-list-item Address: {{profile.address}}
+				md-divider
+				md-list-item City: {{profile.city}}
+				md-divider
+				md-list-item State: {{profile.state}}
+				md-divider
+				md-list-item Email: {{profile.email}}
+				md-divider
+				md-list-item Created date: {{profile.createdDate}}
+				md-divider
+
+		.md-actions(layout="row" layout-align="end center")
+			md-button.md-raised.md-primary(ng-click="pr.logout()") Logout
+			//- md-button.md-raised.md-warn(ng-click="pr.delete()") Delete account
+
+
+metromed-footer
+
+			//- pre {{ profile | json }}
 
 			//- we can edit the $firebaseObject instance just like any other JS object
 			//- form(ng-submit="pr.saveProfile()")
@@ -26,9 +65,3 @@ md-content#account.md-padding(flex layout="column")
 				input(type="text" ng-model="profile.email")
 
 				button(type="submit") Save Changes
-
-		.md-actions(layout="row" layout-align="end center")
-				md-button.md-raised.md-primary(ng-click="pr.logout()") Logout
-				//- md-button.md-raised.md-warn(ng-click="pr.delete()") Delete account
-
-metromed-footer

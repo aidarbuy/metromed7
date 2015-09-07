@@ -2,7 +2,7 @@
 
 	h1.md-display-2.md-primary-txt.center-txt Our Location
 
-	md-card.map-credentials
+	md-card.map-credentials.md-whiteframe-z1
 		md-card-content(layout="row" layout-padding)
 
 			//- Address
@@ -35,7 +35,7 @@
 
 
 	//- Map
-	md-card
+	md-card.md-whiteframe-z2
 		md-card-content
 			ui-gmap-google-map(center='gmap.map.center' zoom='gmap.map.zoom')
 				ui-gmap-marker(idKey='gmap.marker.id' coords='gmap.marker.coords')
@@ -43,7 +43,7 @@
 
 
 	//- Bottom map credentials
-	md-card.map-credentials(hide-gt-md)
+	md-card.map-credentials.md-whiteframe-z1(hide-gt-md)
 		//- (layout="row" layout-align="space-around center")
 		md-card-content(layout="column" layout-padding)
 
