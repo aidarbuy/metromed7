@@ -47,9 +47,32 @@ class PhotogalleryController {
 			// colorSchemeViewer: 'darkBlue',
 			locationHash: false,
 			thumbnailWidth: 'auto', thumbnailHeight: 200,
+			// thumbnailWidth: 260, thumbnailHeight: 'auto',
 			itemsBaseURL:'assets/images/gallery/',
-			// thumbnailHoverEffect: 'scaleLabelOverImage,borderDarker',
-			thumbnailHoverEffect: [{ name: 'labelAppear75', duration: 300 }],
+
+			/* 
+				Thumbnail mouse hover effect. The effect will also be triggered by 'tap' on touch-screen.
+				Possible parameters: 'name', 'duration', 'durationBack', 'easing', 'easingBack', 'delay', 'delayBack'. (Only 'name' is mandatory.) 
+				Combinations: define multiple effect names in the parameter to combine them.
+				Example: thumbnailHoverEffect='borderDarker,labelAppear75'
+				Please note that some effects can not be combined (for example: 'imageSlideUp' and 'imageFlipHorizontal'). And some combinations can results in weirds effects...
+				Possible values:
+					'none'
+					'borderLighter', 'borderDarker', 
+					'scale120', 'scaleLabelOverImage', 'overScale', 'overScaleOutside', 
+					'slideUp', 'slideDown', 'slideRight', 'slideLeft', 
+					'rotateCornerBL', 'rotateCornerBR', 
+					'imageScale150', 'imageScaleIn80', 'imageScale150Outside', 
+					'imageSplit4', 'imageSplitVert', 
+					'imageSlideUp', 'imageSlideDown', 'imageSlideRight', 'imageSlideLeft', 
+					'imageRotateCornerBL', 'imageRotateCornerBR', 'imageFlipHorizontal', 'imageFlipVertical', 
+					'labelAppear', 'labelAppear75', 'labelOpacity50', 
+					'descriptionAppear', 'descriptionSlideUp', 
+					'labelSlideUpTop', 'labelSlideUp', 'labelSlideDown', 
+					'labelSplit4', 'labelSplitVert', 'labelAppearSplit4', 'labelAppearSplitVert'
+			*/
+			thumbnailHoverEffect: [{name:'imageScale150', duration:400, easing:'swing' }, {name:'borderLighter'}, {name:'labelAppear75'}],
+
 			thumbnailGutterWidth : 0,
 			thumbnailGutterHeight : 0,
 			thumbnailLabel: { display:true, position:'overImageOnMiddle', align:'center' },
