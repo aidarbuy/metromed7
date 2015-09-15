@@ -94,9 +94,17 @@ gulp.task('layerslider', function () {
 		.pipe(gulp.dest(path.join(conf.paths.dist, '/layerslider')));
 });
 
+// Copy nanoGallery to dist
+gulp.task('nanogallery', function () {
+	$.del(path.join(conf.paths.dist, '/nanogallery'));
+
+	return gulp.src(path.join(conf.paths.src, 'nanogallery/**/*'))
+		.pipe(gulp.dest(path.join(conf.paths.dist, '/nanogallery')));
+});
+
 // Clean dist folder
 gulp.task('clean', function (done) {
 	$.del([path.join(conf.paths.dist, '/'), path.join(conf.paths.tmp, '/')], done);
 });
 
-gulp.task('build', ['html', 'fonts', 'other', 'layerslider']);
+gulp.task('build', ['html', 'fonts', 'other', 'layerslider', 'nanogallery']);

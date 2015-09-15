@@ -51,9 +51,9 @@ function routerConfig ($stateProvider, $urlRouterProvider) {
 			controller: 'VirtualTourController',
 			controllerAs: 'vt'
 		})
-		.state('photos', {
-			url: '/photos',
-			templateUrl: 'app/photos/gallery.html',
+		.state('gallery', {
+			url: '/gallery',
+			templateUrl: 'app/gallery/gallery.html',
 			controller: 'PhotogalleryController',
 			controllerAs: 'pg'
 		})

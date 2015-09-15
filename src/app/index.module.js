@@ -33,7 +33,7 @@ import DoctorController from './doctors/doctor.controller';
 import PrimaryCareController from './primary/care.controller';
 import MapController from './map/map.controller';
 import VirtualTourController from './virtual/tour.controller';
-import PhotogalleryController from './photos/gallery.ctrl';
+import PhotogalleryController from './gallery/gallery.ctrl';
 import unsafeFilter from '../app/components/filters/unsafe.fltr';
 
 import AuthController from './auth/services/auth.ctrl';
