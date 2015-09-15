@@ -6,7 +6,7 @@ var articles = [
 		text: [
 			'<span class="article-intro">Often patients with nasal symptoms wonder if they have a sinus infection or allergies.</span>',
 			'<span class="article-intro">This is where medicine becomes more an art than a science, because even to an experienced physician this is sometimes a difficult distinction to make.</span>',
-			'Nasal allergy symptoms comprise 2 different groups:<ul><li><b>Early phase symptoms:</b> sneezing, itchy eyes, itchy nose, and runny nose.</li><li><b>Latephase symptoms:</b> ​nasal congestion and postnasal drip.</li></ul>',
+			'Nasal allergy symptoms comprise 2 different groups:<ul><li><b>Early phase symptoms:</b> sneezing, itchy eyes, itchy nose, and runny nose.</li><li><b>Late phase symptoms:</b> ​nasal congestion and postnasal drip.</li></ul>',
 			'Sinus infection symptoms include nasal congestion, headache, facial pain, postnasal drip and malaise.',
 			'Malaise is a word that describes just generally feeling sick.',
 			'As you can see, latephase allergy symptoms and sinus infection symptoms overlap quite a bit.',

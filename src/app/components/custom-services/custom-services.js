@@ -21,7 +21,7 @@ var customServices = [
 		text: [
 			"Check out our pictures!"
 		],
-		href: ''
+		href: '#/photos'
 	},
 	{
 		icon: "history",

@@ -12,7 +12,9 @@
     "angular-ui-router": "~0.2.15",
     "angularfire": "~1.1.2",
     "firebase": "~2.2.9",
-    "svg-morpheus": "~0.1.8"
+    "gsap": "greensock#~1.18.0",
+    "jquery": "~2.1.4",
+    "nanogallery": "~5.8.0"
   },
   "devDependencies": {
     "angular-mocks": "~1.4.0"

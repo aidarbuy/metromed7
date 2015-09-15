@@ -51,6 +51,12 @@ function routerConfig ($stateProvider, $urlRouterProvider) {
 			controller: 'VirtualTourController',
 			controllerAs: 'vt'
 		})
+		.state('photos', {
+			url: '/photos',
+			templateUrl: 'app/photos/gallery.html',
+			controller: 'PhotogalleryController',
+			controllerAs: 'pg'
+		})
 		.state('login', {
 			url: '/login',
 			templateUrl: 'app/auth/login/login.html',

@@ -1,36 +1,55 @@
 var topSidebars = [
 	{
-		header: 'Flu Shots <span class="accent">$20</span>',
-		text: '<p class="p-accent">Starting from September 1, 2015 we offer flu shots for just $20!</p><p class="p-accent">Looking forward to seeing you here!</p>',
-		bgColor: '#56cce1',
+		header: 'Contact Info:',
+		text: '<p>Phone: <a href="tel:7036874158"><b>(703) 687-4158</b></a></p><p>Address: <a href="http://maps.google.com/?q=952 Edwards Ferry Road NE, Leesburg, Virginia, 20176"><b>952 Edwards Ferry Road NE Leesburg VA</b></a></p><p>Email: <a href="mailto:info@metromeduc.com"><b>info@metromeduc.com</b></a></p>',
+		// bgColor: '#56cce1',
 		// bgColor: '#24cdd2',
 		// bgColor: '#3aC0f3',
+		bgColor: '#00bcd4',
+		// bgColor: '#26C6DA',
+		// bgColor: '#78909C',
 		marginRight: 0,
 		marginLeft: 8
 	},
 	{
-		header: 'Urgent Care',
-		text: '<p>Our Emergency Medicine doctors can diagnose and treat a wide variety of illnessess and injuries.</p><p>You only need to go to the emergency department to be admitted for extended care or surgery.</p>',
-		bgColor: '#2cbfd9',
-		// bgColor: '#f24592',
-		marginRight: 0,
-		marginLeft: 0
-	},
-	{
-		header: 'Self-pay prices',
-		text: '<p>We guarantee the lowest self-pay prices in the area.</p><p>Our phone: <a href="tel:7036874158">(703) 687-4158</a></p><p>Address: <a href="http://maps.google.com/?q=952 Edwards Ferry Road NE, Leesburg, Virginia, 20176">952 Edwards Ferry Road NE Leesburg VA</a></p>',
-		bgColor: '#2ca6d9',
-		marginRight: 0,
-		marginLeft: 0
-	},
-	{
 		header: 'Hours of operation:',
-		text: '<p><ul><li>Open 7 days a week.</li><li>From 10am to 8pm.</li><li>We observe major holidays.</li><li class="md-warn-txt"><b>We will be closed at 2&nbsp;pm on Labor Day</b></li></ul></p>',
-
-		bgColor: '#1b90da',
+		text: '<p><ul><li>Open 7 days a week.</li><md-divider><li>10:00 am - 8:00 pm.</li><md-divider><li>We observe major holidays.</li><li class="md-warn-txt"><md-divider><b>We will be closed at 2&nbsp;pm on Labor Day</b></li></ul></p>',
+		// bgColor: '#2ca6d9',
+		// bgColor: '#1b90da',
+		// bgColor: '#3aC0f3',
+		// bgColor: '#00ACC1',
+		// bgColor: '#00BCD4',
+		// bgColor: '#607D8B',
+		bgColor: '#06a5cf',
 		marginRight: 8,
+		marginLeft: 0
+	},
+	{
+		header: 'Flu Shots <span class="accent">$20</span>',
+		// header: 'Self-pay prices',
+		text: '<p class="p-accent">Starting from September 1, 2015 we offer flu shots for just $20!</p><p class="p-accent">Looking forward to seeing you here!</p>',
+		// bgColor: '#1b90da',
+		// bgColor: '#0097A7',
+		// bgColor: '#00ACC1',
+		// bgColor: '#546E7A',
+		// bgColor: '#218e89',
+		bgColor: '#04b4e9',
+		marginRight: 0,
+		marginLeft: 0
+	},
+	{
+		header: 'Urgent Care',
+		text: '<p>Our Emergency Medicine doctors can diagnose and treat a wide variety of illnessess and injuries.</p><p>We guarantee the lowest self-pay prices in the area.</p>',
+		// bgColor: '#2cbfd9',
+		// bgColor: '#f24592',
+		// bgColor: '#00838F',
+		bgColor: '#0291c4',
+		// bgColor: '#0097A7',
+		// bgColor: '#455A64',
+		marginRight: 0,
 		marginLeft: 0
 	}
 ];
 
 export default topSidebars;
+// <p>You only need to go to the emergency department to be admitted for extended care or surgery.</p>

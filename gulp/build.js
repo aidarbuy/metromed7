@@ -94,14 +94,6 @@ gulp.task('layerslider', function () {
 		.pipe(gulp.dest(path.join(conf.paths.dist, '/layerslider')));
 });
 
-// Copy layerslider to dist
-gulp.task('layerslider', function () {
-	$.del(path.join(conf.paths.dist, '/layerslider'));
-
-	return gulp.src(path.join(conf.paths.src, 'layerslider/**/*'))
-		.pipe(gulp.dest(path.join(conf.paths.dist, '/layerslider')));
-});
-
 // Clean dist folder
 gulp.task('clean', function (done) {
 	$.del([path.join(conf.paths.dist, '/'), path.join(conf.paths.tmp, '/')], done);
