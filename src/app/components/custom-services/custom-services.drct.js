@@ -1,3 +1,5 @@
+import CustomServices from './custom-services';
+
 class CustomServicesDirective {
 	constructor () {
 		'ngInject';
@@ -13,7 +15,7 @@ class CustomServicesDirective {
 }
 
 class CustomServicesController {
-	constructor (CustomServices) {
+	constructor () {
 		'ngInject';
 
 		this.data = CustomServices;

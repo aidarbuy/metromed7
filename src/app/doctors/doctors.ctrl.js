@@ -3,6 +3,7 @@ class DoctorsController {
 		'ngInject';
 
 		this.list = Doctors.query();
+
 	}
 }
 

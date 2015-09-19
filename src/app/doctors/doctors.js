@@ -16,7 +16,7 @@ var doctors = [
 		},
 		description: [
 			"I graduated from University of Vermont College of Medicine in 2005, then I finished my residency training in emergency medicine from Johns Hopkins University School of Medicine in 2008.",
-			" I worked as an emergency room physician in Frederick Memorial Hospital until 2013. Currently, in addition to working in Leesburg Urgent Care, I also work as a special operations emergency room physician for Team Health. I provide urgent care and primary care services."
+			"I worked as an emergency room physician in Frederick Memorial Hospital until 2013. Currently, in addition to working in Leesburg Urgent Care, I also work as a special operations emergency room physician for Team Health. I provide urgent care and primary care services."
 		],
 		phone: "(703) 687-4158",
 		email: "rbeckwith@metromeduc.com"

@@ -5,9 +5,11 @@
 			md-card.md-whiteframe-z2
 				md-card-content
 					h1.md-display-1(ng-bind="::about.welcome.title")
-					.md-card-image(ng-include="'app/about/about.slider.html'" hide show-gt-sm)
-					div(hide-gt-sm)
-						img.md-card-image(src="assets/images/team/three-medics.jpg" alt="Three members of MetroMed Urgent Care team")
+					md-card.md-whiteframe-z2
+						md-card-content(style="padding:10px")
+							.md-card-image(ng-include="'app/about/about.slider.html'" hide show-gt-sm)
+							div(hide-gt-sm)
+								img.md-card-image(src="assets/images/team/three-medics.jpg" alt="Three members of MetroMed Urgent Care team")
 					h2.md-headline(ng-bind="::about.welcome.header")
 					div(ng-bind-html="::about.welcome.conditionsTable | unsafe" hide show-gt-sm)
 					md-list(hide-gt-sm)

@@ -16,7 +16,8 @@ class PrimaryCareController {
 					"Primary Care is by appointments only.",
 					"This option is good for people with chronic conditions like diabetes, hypertension or COPD."
 				]
-			}, {
+			}, 
+			{
 				img: 'roshelle-primary-care.jpg',
 				header: "Option 2",
 				text: [

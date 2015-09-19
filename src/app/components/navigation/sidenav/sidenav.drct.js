@@ -10,6 +10,7 @@ class SidenavDirective {
 		};
 
 		return directive;
+
 	}
 }
 
@@ -29,6 +30,7 @@ class SidenavController {
 		this.isSelected = function(path) {
 			return this.currentPath === path;
 		};
+
 	}
 }
 

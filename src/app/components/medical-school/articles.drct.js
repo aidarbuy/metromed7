@@ -1,3 +1,5 @@
+import articles from './articles';
+
 class MedicalSchoolDirective {
 	constructor () {
 		'ngInject';
@@ -15,21 +17,21 @@ class MedicalSchoolDirective {
 }
 
 class MedicalSchoolController {
-	constructor (MedicalSchool) {
+	constructor () {
 		'ngInject';
 
 		this.articleIndex = 0;
-		this.articlesQuantity = MedicalSchool.length-2;
-		this.article = MedicalSchool[this.articleIndex];
+		this.articlesQuantity = articles.length-2;
+		this.article = articles[this.articleIndex];
 
 		this.prevArticle = function(){
 			this.articleIndex++;
-			this.article = MedicalSchool[this.articleIndex];
+			this.article = articles[this.articleIndex];
 		};
 		
 		this.nextArticle = function(){
 			this.articleIndex--;
-			this.article = MedicalSchool[this.articleIndex];
+			this.article = articles[this.articleIndex];
 		};
 	}
 }

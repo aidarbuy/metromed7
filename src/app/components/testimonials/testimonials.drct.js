@@ -1,3 +1,5 @@
+import testimonials from './testimonials';
+
 class TestimonialsDirective {
 	constructor () {
 		'ngInject';
@@ -13,10 +15,10 @@ class TestimonialsDirective {
 }
 
 class TestimonialsController {
-	constructor (Testimonials) {
+	constructor () {
 		'ngInject';
 
-		this.testimonials = Testimonials;
+		this.testimonials = testimonials;
 	}
 }
 

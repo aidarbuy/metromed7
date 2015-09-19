@@ -3,6 +3,7 @@ class ServicesController {
 		'ngInject';
 
 		this.prices = Services.prices;
+
 	}
 }
 

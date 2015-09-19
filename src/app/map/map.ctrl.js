@@ -24,6 +24,7 @@ class MapController {
 				options: { draggable: false }
 			};
 		});
+
 	}
 }
 

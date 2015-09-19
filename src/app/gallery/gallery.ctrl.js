@@ -4,34 +4,7 @@ class PhotogalleryController {
 
 		this.title = 'Photo Gallery';
 
-		var myColorScheme = {
-			navigationbar: {
-				background: '#f00',
-				border: '1px dotted #555',
-				color: '#ccc',
-				colorHover: '#fff'
-			},
-			thumbnail: {
-				background: '#f00',
-				border: '0px solid #000',
-				labelBackground: 'transparent',
-				labelOpacity: '0.8',
-				titleColor: '#fff',
-				descriptionColor: '#eee'
-			}
-		};
-
-		var myColorSchemeViewer = {
-			background: 'rgba(1, 1, 1, 0.75)',
-			imageBorder: '15px solid #f8f8f8',
-			imageBoxShadow: '#888 0px 0px 20px',
-			barBackground: '#222',
-			barBorder: '2px solid #111',
-			barColor: '#eee',
-			barDescriptionColor: '#aaa'
-		};
-
-		$("#nanoGallery").nanoGallery({
+		angular.element("#nanoGallery").nanoGallery({
 			// Name of the theme.
 			// Note: the corresponding css-file must also be included in the html file.
 			// Possible values: 'default', 'clean', 'light' or your custom one.
@@ -48,7 +21,7 @@ class PhotogalleryController {
 			locationHash: false,
 			thumbnailWidth: 'auto', thumbnailHeight: 200,
 			// thumbnailWidth: 260, thumbnailHeight: 'auto',
-			itemsBaseURL:'assets/images/gallery/',
+			itemsBaseURL:'assets/images/gallery',
 
 			/* 
 				Thumbnail mouse hover effect. The effect will also be triggered by 'tap' on touch-screen.

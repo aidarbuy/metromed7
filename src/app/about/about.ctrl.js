@@ -1,4 +1,5 @@
 class AboutUsController {
+
 	constructor (AboutUs) {
 		'ngInject';
 
@@ -7,7 +8,9 @@ class AboutUsController {
 		this.welcome = AboutUs.welcome;
 
 		this.whyMetroMed = AboutUs.whyMetroMed;
+
 	}
+
 }
 
 export default AboutUsController;

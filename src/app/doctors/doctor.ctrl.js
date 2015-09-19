@@ -7,6 +7,7 @@ class DoctorController {
 		// this.img = "assets/" + this.doctor.img.href.src;
 		// this.alt = "Photo of doctor " + name;
 		// this.header = "Dr. " + name;
+
 	}
 }
 

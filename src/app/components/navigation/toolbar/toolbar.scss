@@ -4,8 +4,13 @@
 	left:0;
 	top:0;
 	z-index: 1999999998;
+	color: white;
 	.md-toolbar-tools {
 		font-size: large;
+
+		.md-button {
+			md-icon {fill: white;}
+		}
 
 		h1 {
 			font-size: inherit;
@@ -20,7 +25,12 @@
 			}
 		}
 
-		a { md-icon { margin-right: 5px; } }
+		a { 
+			md-icon { 
+				margin-right: 5px;
+				fill: white;
+			};
+		}
 
 		a:nth-child(5) { md-icon { margin-left: 15px; } }
 
@@ -53,7 +63,6 @@
 		}
 	}
 }
-
 
 #masthead-positioner {
 	position: fixed;

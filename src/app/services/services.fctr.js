@@ -5,6 +5,7 @@ class ServicesFactory {
 		'ngInject';
 
 		return	{ prices: services };
+
 	}
 }
 

@@ -6,13 +6,12 @@ class AboutUsFactory {
 
 		var factory = {
 			imagePath: aboutUs.imagePath,
-
 			welcome: aboutUs.welcome,
-			
 			whyMetroMed: aboutUs.whyMetroMed
 		};
 
 		return factory;
+
 	}
 }
 
