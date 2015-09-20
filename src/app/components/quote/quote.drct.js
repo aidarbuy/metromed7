@@ -11,8 +11,10 @@ class QuoteDirective {
 		};
 
 		return directive;
+
 	}
 }
+
 
 class QuoteController {
 	constructor (Credentials) {
@@ -26,5 +28,6 @@ class QuoteController {
 		};
 	}
 }
+
 
 export default QuoteDirective;

@@ -1,26 +1,59 @@
 #primary-care {
+
 	h1 {
 		text-align: center;
 		color: $md-primary;
 	}
-	h2 {
-		text-align: center;
-		color: $md-hue-2;
-	}
 
-	div {
-		div {
-			md-card {
-				img {
-				}
-				md-card-content {
-					h2 {}
-					p {
-						font-size: large;
-						text-align: left;
-					}
-				}
+	md-card {
+		max-width: 700px;
+		margin-left: auto;
+		margin-right: auto;
+
+		.md-card-header {
+			position: relative;
+			overflow: hidden;
+
+			img {}
+
+			.md-card-header-bg {
+				background: -webkit-linear-gradient(rgba(255,255,255,0), rgba(255,255,255,1)); /* For Safari 5.1 to 6.0 */
+				background: -o-linear-gradient(rgba(255,255,255,0), rgba(255,255,255,1)); /* For Opera 11.1 to 12.0 */
+				background: -moz-linear-gradient(rgba(255,255,255,0), rgba(255,255,255,1)); /* For Firefox 3.6 to 15 */
+				background: linear-gradient(rgba(255,255,255,0), rgba(255,255,255,1)); /* Standard syntax */
+				width: 100%;
+				// opacity: .9;
+				position: absolute;
+				bottom: 6px;
+				height: 50px;
+				margin: 0;
+				padding: 0;
+				padding: 10px 6px;
+			}
+
+			h2 {
+				// background: #56cce1;
+				width: 100%;
+				opacity: .9;
+				position: absolute;
+				bottom: 20%;
+				margin: 0;
+				padding: 0;
+				padding: 10px 60px;
+				font-size: 300%;
+				color: $md-primary;
+				line-height: 1.5em;
+				width: 50%;
 			}
 		}
+
+		md-card-content {
+			p {
+				font-size: large;
+				text-align: left;
+			}
+		}
+
 	}
+
 }

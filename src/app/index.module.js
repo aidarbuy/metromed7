@@ -30,6 +30,7 @@ import DoctorsFactory from './doctors/doctors.fctr';
 import DoctorsController from './doctors/doctors.ctrl';
 import DoctorController from './doctors/doctor.ctrl';
 import PrimaryCareController from './primary/care.ctrl';
+import PrimaryCareFactory from './primary/care.fctr';
 import MapController from './map/map.ctrl';
 import VirtualTourController from './virtual/tour.ctrl';
 import PhotogalleryController from './gallery/gallery.ctrl';
@@ -78,6 +79,7 @@ angular.module('metromed', ['ui.router', 'ngAnimate', 'ngCookies', 'ngTouch', 'n
 	.controller('DoctorsController', DoctorsController)
 	.controller('DoctorController', DoctorController)
 	.controller('PrimaryCareController', PrimaryCareController)
+	.factory('PrimaryCare', () => new PrimaryCareFactory())
 	.controller('MapController', MapController)
 	.controller('VirtualTourController', VirtualTourController)
 	.controller('PhotogalleryController', PhotogalleryController)
