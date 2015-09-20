@@ -1,6 +1,10 @@
 #top-sidebar(layout="row" layout-wrap)
+
 	md-card.md-whiteframe-z2(ng-repeat="i in ts.data" flex="25" flex-md="50" flex-sm="100" ng-style="{'background-color':(i.bgColor)};")
+
 		//- md-card(flex ng-style="{'background-color':(i.bgColor)};")
 		md-card-content
+
 			h2.md-headline(ng-bind-html="::i.header | unsafe")
+
 			div(ng-bind-html="::i.text | unsafe")

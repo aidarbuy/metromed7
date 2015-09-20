@@ -1,7 +1,7 @@
 var topSidebars = [
 	{
 		header: 'Contact Info:',
-		text: '<p>Phone: <a href="tel:7036874158"><b>(703) 687-4158</b></a></p><p>Address: <a href="http://maps.google.com/?q=952 Edwards Ferry Road NE, Leesburg, Virginia, 20176"><b>952 Edwards Ferry Road NE Leesburg VA</b></a></p><p>Email: <a href="mailto:info@metromeduc.com"><b>info@metromeduc.com</b></a></p>',
+		text: '<p>Phone: <a href="tel:7036874158"><b>(703) 687-4158</b></a></p><p>Address: <a href="#/map"><b>952 Edwards Ferry Road NE Leesburg VA</b></a></p><p>Email: <a href="mailto:info@metromeduc.com"><b>info@metromeduc.com</b></a></p>',
 		// bgColor: '#56cce1',
 		// bgColor: '#24cdd2',
 		// bgColor: '#3aC0f3',
@@ -13,7 +13,7 @@ var topSidebars = [
 	},
 	{
 		header: 'Hours of operation:',
-		text: '<p><ul><li>Open 7 days a week.</li><md-divider><li>10:00 am - 8:00 pm.</li><md-divider><li>We observe major holidays.</li><li class="md-warn-txt"><md-divider><b>We will be closed at 2&nbsp;pm on Labor Day</b></li></ul></p>',
+		text: '<p><ul><li style="padding-bottom:5px">Open 7 days a week.</li><md-divider><li style="padding-top:5px;padding-bottom:5px">10:00 am - 8:00 pm.</li><md-divider><li style="padding-top:5px">We observe major holidays.</li></ul></p>',
 		// bgColor: '#2ca6d9',
 		// bgColor: '#1b90da',
 		// bgColor: '#3aC0f3',

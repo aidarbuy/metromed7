@@ -1,4 +1,5 @@
-import TopSidebar from './top-sidebar';
+import topSidebarData from './top-sidebar';
+
 
 class TopSidebarDirective {
 	constructor () {
@@ -11,15 +12,18 @@ class TopSidebarDirective {
 		};
 
 		return directive;
+
 	}
 }
+
 
 class TopSidebarController {
 	constructor () {
 		'ngInject';
 
-		this.data = TopSidebar;
+		this.data = topSidebarData;
 	}
 }
+
 
 export default TopSidebarDirective;
