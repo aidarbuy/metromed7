@@ -1,6 +1,22 @@
 var articles = [
 
 	{
+		header: "Knee Pain",
+		date: 'September 25, 2015',
+		text: [
+			'If you have pain in one or both of your knees, there are many possible causes for it. Here are 2 of the more common causes of knee pain:',
+			'<strong>Runner’s Knee</strong>, ​also known as <strong>C​hondromalacia Patellae</strong> ​and <strong>P​atello Femoral Syndrome</strong>,​ causes pain on ascending and descending stairs. It is caused by being knock-kneed (knees too close together on standing). This can be caused by having flat feet, or it may just be the way your body was made. The way to find out if you have Runner’s Knee is to feel if there is <strong>crunching in your knee cap</strong> when you bend your knee. If you have flat feet, then the treatment for your Runner’s Knee is to wear arch supports in your shoes. If you do not have flat feet, then the treatment is physical therapy to change the way you walk.',
+			'<strong>Arthritis</strong>, ​also known as <strong>O​steoarthritis​</strong> and <strong>D​egenerative Joint Disease</strong>,​ causes pain when you bend your knee. The way to find out for sure if you have this is to get an Xray. The treatment for arthritis is multifactorial, to include glucosamine/chondroitin, stretching and strengthening exercises, weight loss and pain medication.',
+			'Keep in mind that there are many other causes of knee pains, and some of them are quite serious. For example if one of your legs is swollen you could have a blood clot, which is an emergency. So if you have knee pain, be sure to seek medical attention. This way the correct diagnosis can be made, and the appropriate treatment can be provided.'
+		],
+		img: {
+			title: 'Knee pain image',
+			src: 'knee_pain_600x300.jpg',
+			alt: 'Knee pain'
+		}
+	},
+
+	{
 		header: 'Is it a sinus infection or allergies?',
 		date: 'August 30, 2015',
 		text: [

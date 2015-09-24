@@ -1,15 +1,38 @@
 (function() {
-  'use strict';
+	'use strict';
 
-  describe('controllers', function(){
+	describe('controllers', function(){
 
-    beforeEach(module('metromed'));
+		beforeEach(module('metromed'));
 
-    it('should define more than 5 awesome things', inject(function($controller) {
-      var vm = $controller('MainController');
 
-      expect(angular.isArray(vm.awesomeThings)).toBeTruthy();
-      expect(vm.awesomeThings.length > 5).toBeTruthy();
-    }));
-  });
+		it('should return "Primary Care" as page title', inject(function($controller) {
+			var vm = $controller('PrimaryCareController');
+			expect(vm.pageTitle = "Primary Care").toBeTruthy();
+		}));
+
+
+		it('should return "What is a Primary Care Provider?" header', inject(function($controller) {
+			var vm = $controller('PrimaryCareController');
+			expect(vm.content.header = "What is a Primary Care Provider?").toBeTruthy();
+		}));
+
+
+		// it('should return "What is a Primary Care Provider?" header', inject(function($controller) {
+		// 	var vm = $controller('PrimaryCareController');
+		// 	expect(vm.content.header = "What is a Primary Care Provider?").toBeTruthy();
+			// assets/images/primary/mattbeckwith_whitebg_closer.jpg
+		// }));
+
+
+		it('should define 7 content paragraphs', inject(function($controller) {
+			var vm = $controller('PrimaryCareController');
+
+			expect(angular.isArray(vm.content.text)).toBeTruthy();
+			expect(vm.content.text.length == 7).toBeTruthy();
+		}));
+
+
+	});
+
 })();

@@ -20,15 +20,13 @@
 				background: -webkit-linear-gradient(rgba(255,255,255,0), rgba(255,255,255,1)); /* For Safari 5.1 to 6.0 */
 				background: -o-linear-gradient(rgba(255,255,255,0), rgba(255,255,255,1)); /* For Opera 11.1 to 12.0 */
 				background: -moz-linear-gradient(rgba(255,255,255,0), rgba(255,255,255,1)); /* For Firefox 3.6 to 15 */
-				background: linear-gradient(rgba(255,255,255,0), rgba(255,255,255,1)); /* Standard syntax */
+				background: linear-gradient(rgba(255,255,255,0), white); /* Standard syntax */
 				width: 100%;
-				// opacity: .9;
 				position: absolute;
 				bottom: 6px;
-				height: 50px;
+				height: 70px;
 				margin: 0;
 				padding: 0;
-				padding: 10px 6px;
 			}
 
 			h2 {
@@ -40,7 +38,7 @@
 				margin: 0;
 				padding: 0;
 				padding: 10px 60px;
-				font-size: 300%;
+				// font-size: 300%;
 				color: $md-primary;
 				line-height: 1.5em;
 				width: 50%;
