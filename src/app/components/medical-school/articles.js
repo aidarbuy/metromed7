@@ -1,5 +1,60 @@
 var articles = [
+	{
+		header: "How to Save Money on Prescriptions",
+		date: 'December 6, 2015',
+		text: [
+		'Here are some tips on how to not spend exorbitant amounts on medications unnecessarily:',
+		'<ol><li>Obtain a copy of your insurance company’s <b>Drug Formulary</b> and take it with you to every doctor appointment.  The formulary is a listing of which medications are covered by your insurance.  When the doctor is prescribing you a medication, show them the formulary so that they can choose a medication covered by your plan.</li>',
+		'<ol start="2"><li>If you ever get to the pharmacy and find that the price of your medication is higher than you expected, ask the pharmacist to contact the doctor to find out if there is anything less expensive that could be prescribed instead.  Oftentimes, the doctor is unaware of how expensive the medication they prescribed will be for you.  Frequently, there is a less expensive alternative which could be chosen.</li>',
+		'<ol start="3"><li>Shop around.  Some pharmacies have much lower prices than others.  Pharmacies with lower prices are often the pharmacies associated with savings clubs such as Sam’s Club and Costco.  Also, local non-chain pharmacies often have quite reasonable prices.</li>',
+		'<ol start="4"><li>Obtain a copy of the $4 plan.  There are several pharmacies with $4 plans, not just Walmart.  Take it with you to every doctor appointment and ask the doctor to pick a medication on the list, if possible.</li>',
+		'<ol start="5"><li>Make an appointment with your doctor just for the purpose of reviewing your medications list to see if any medications could be eliminated, or have cheaper alternatives.  In a doctor visit when you have an acute problem to address, there may not be time to do this.  But if you make a separate appointment just for this purpose, the doctor will be happy to go over your medication list and try and save you some money by eliminating some medications or finding reasonable alternatives.</li>',
+		],
+		img: {
+			title: "Money and prescription",
+			src: 'prescriptions-600x300.jpg',
+			alt: "Image of 100 dollar bills in prescription cans"
+		}
+	},
 
+	{
+		header: "Depression and Anxiety",
+		date: 'November 1, 2015',
+		text: [
+		'Depression and Anxiety are a couple of the <b>most unpleasant medical conditions​</b> to endure. Paradoxically, they are also a couple of the <b>e​asiest to treat</b> (​in most cases). This is because we have excellent medications for them.',
+		'Everyone intuitively knows what depression is. Thus, if you think you’re depressed, you probably are. The diagnosis of clinical depression requires at least 3 of the following symptoms: Depressed mood, trouble sleeping, a loss of interest in usual activities, a poor self&#8209;image or sense of guilt, low energy, difficulty concentrating, poor or excessive appetite, appearing physically either low&#8209;energy or agitated, and suicidal thoughts. Basically, depression means feeling that life is hopeless, and that it’s all your fault.',
+		'Anxiety is worrying out of proportion to the situation. The diagnosis of clinical anxiety requires at least 4 of the following symptoms: Excessive worry, irritability, tiring easily, trouble sleeping, difficulty concentrating, restlessness (feeling that you have to be doing something all the time), and muscle pains or headaches.',
+		'There are 3 brain chemicals which help us to maintain emotional stability and be happy. These are:',
+		'<ol class="bracketed"><li><b><u><a href="https://en.wikipedia.org/wiki/Serotonin">Serotonin</a></u></b>, ​which helps us to feel <b>S​afe​</b> and <b>S​ecure</b>.​</li><li><u><b><a href="https://en.wikipedia.org/wiki/Norepinephrine">Nor&#8209;epinephrine</a></b></u>, ​which gives us <b>E​nergy​</b> and <b>C​oncentration</b>.</u>​<li><u><b><a href="https://en.wikipedia.org/wiki/Dopamine">Dopamine</a></b></u>, ​which gives us <b>M​otivation</b>.</li></ol>',
+		'If you have stress in your life now, or have had stress in your life in the past which tends to bubble to the surface at times, your serotonin, nor&#8209;epinephrine and dopamine may be getting used up. This can cause you to be unable to feel good even when everything is all right.',
+		'Medications which raise the levels of these brain chemicals include the following:',
+		'<ol><li>Prozac, Paxil, Zoloft, Celexa, and Lexapro raise Serotonin.</li><li>Wellbutrin raises Nor&#8209;epinephrine and Dopamine.</li><li>Effexor and Cymbalta raise Serotonin and Nor&#8209;epinephrine.</li>',
+		'If you are think you may have depression or anxiety, please see your health care provider immediately.'
+		],
+		img: {
+			title: "Depression and anxiety",
+			src: 'depression-600x300.jpg',
+			alt: "Depression Image"
+		}
+	},
+
+	{
+		header: "High Blood Pressure",
+		date: 'October 6, 2015',
+		text: [
+			'Imagine that you turn the water all the way up on your garden hose, but leave the nozzle closed so the pressure builds up.  This is what high blood pressure is like.',
+			'Well, the garden hose can handle the pressure. But the little blood vessel in your kidneys, in your brain, and around your heart cannot.',
+			'The tiny blood vessels in your kidneys are like little threads, and will simply pop if the pressure is too high. The small blood vessels in the brain get thicker in order to handle the pressure.  But this thickness reduces the size of the opening through which the blood can flow, leading to a stroke. The same thing happens with the vessels around the heart, leading to a heart attack.  High blood pressure also puts a strain on the heart muscle itself, leading to heart failure.',
+			"High blood pressure, also known as hypertension, is diagnosed by obtaining 6 blood pressure readings on separate days, and taking the average.  If the average is 140/90 or above, then you have high blood pressure.  These 6 BP readings should be taken at different times of the day.  If you don't have a blood pressure machine, all you have to do is to go a pharmacy that has one and check your BP there.",
+			"If you have hypertension, it is important to see your physician and get it treated."
+		],
+		img: {
+			title: "Blood Pressure",
+			src: 'blood_pressure_600x300.jpg',
+			alt: "Blood Pressure Image"
+		}
+	},
+ 
 	{
 		header: "Knee Pain",
 		date: 'September 25, 2015',

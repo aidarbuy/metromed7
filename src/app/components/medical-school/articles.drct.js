@@ -16,6 +16,7 @@ class MedicalSchoolDirective {
 	}
 }
 
+
 class MedicalSchoolController {
 	constructor () {
 		'ngInject';
@@ -35,5 +36,6 @@ class MedicalSchoolController {
 		};
 	}
 }
+
 
 export default MedicalSchoolDirective;

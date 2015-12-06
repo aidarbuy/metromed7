@@ -25,9 +25,10 @@ var topSidebars = [
 		marginLeft: 0
 	},
 	{
-		header: 'Flu Shots <span class="accent">$20</span>',
+		// header: 'Flu Shots <span class="accent">$20</span>',
+		header: 'We will be closed November <span class="accent">26</span> and <span class="accent">27</span>',
 		// header: 'Self-pay prices',
-		text: '<p class="p-accent">Starting from September 1, 2015 we offer flu shots for just $20!</p><p class="p-accent">Looking forward to seeing you here!</p>',
+		// text: '<p class="p-accent">Starting from September 1, 2015 we offer flu shots for just $20!</p><p class="p-accent">Looking forward to seeing you here!</p>',
 		// bgColor: '#1b90da',
 		// bgColor: '#0097A7',
 		// bgColor: '#00ACC1',
@@ -39,7 +40,7 @@ var topSidebars = [
 	},
 	{
 		header: 'Urgent Care',
-		text: '<p>Our Emergency Medicine doctors can diagnose and treat a wide variety of illnessess and injuries.</p><p>We guarantee the lowest self-pay prices in the area.</p>',
+		text: '<p>Our Emergency Medicine doctors can diagnose and treat a wide variety of illnessess and injuries.</p>',
 		// bgColor: '#2cbfd9',
 		// bgColor: '#f24592',
 		// bgColor: '#00838F',

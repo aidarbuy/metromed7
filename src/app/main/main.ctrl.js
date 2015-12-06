@@ -2,6 +2,8 @@ class MainController {
 	constructor () {
 		'ngInject';
 
+		// console.log(metromed);
+
 	}
 }
 

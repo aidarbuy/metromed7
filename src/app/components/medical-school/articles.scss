@@ -61,6 +61,28 @@
 			}
 		}
 
+
+		ol.bracketed {
+			counter-reset: item;
+			margin-left: 0;
+			padding-left: .5em;
+
+			li {
+				display: block;
+				margin-bottom: .5em;
+				margin-left: 2em;
+			}
+
+			li:before {
+				display: inline-block;
+				content: "(" counter(item) ") ";
+				counter-increment: item;
+				width: 2em;
+				margin-left: -2em;
+			}
+		}
+
+
 		.date {
 			font-style: italic;
 			text-align: right;
