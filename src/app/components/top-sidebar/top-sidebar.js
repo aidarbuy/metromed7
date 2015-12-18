@@ -26,7 +26,8 @@ var topSidebars = [
 	},
 	{
 		// header: 'Flu Shots <span class="accent">$20</span>',
-		header: 'We will be closed November <span class="accent">26</span> and <span class="accent">27</span>',
+		// header: 'We will be closed November <span class="accent">26</span> and <span class="accent">27</span>',
+		header: 'We will be closed <span class="accent">Dec&nbsp;24-25</span> <br>and<br> <span class="accent">Dec&nbsp;31 - Jan&nbsp;1</span>',
 		// header: 'Self-pay prices',
 		// text: '<p class="p-accent">Starting from September 1, 2015 we offer flu shots for just $20!</p><p class="p-accent">Looking forward to seeing you here!</p>',
 		// bgColor: '#1b90da',
