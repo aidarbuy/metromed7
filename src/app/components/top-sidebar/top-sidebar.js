@@ -12,8 +12,10 @@ var topSidebars = [
 		marginLeft: 8
 	},
 	{
-		header: 'Hours of operation:',
-		text: '<p><ul><li style="padding-bottom:5px">Open 7 days a week.</li><md-divider><li style="padding-top:5px;padding-bottom:5px">10:00 am - 8:00 pm.</li><md-divider><li style="padding-top:5px">We observe major holidays.</li></ul></p>',
+		header: 'New 2016 Hours of Operation:',
+		// text: '<p><ul><li style="padding-bottom:5px">Monday-Friday: 10 am to 8 pm</li><md-divider><li style="padding-top:5px;padding-bottom:5px">Saturday: 10 am to 5 pm</li><md-divider><li style="padding-top:5px">Sunday: Closed</li><li style="padding-top:5px">Major Holidays Observed</li><li style="padding-top:5px">No Appointments Necessary</li></ul></p>',
+		text: '<p><ul><li style="padding-bottom:5px">Monday-Friday: 10 am to 8 pm</li><md-divider><li style="padding-top:5px;padding-bottom:5px">Saturday: 10 am to 5 pm</li><md-divider><li style="padding-top:5px">Sunday: Closed</li></ul></p>',
+		// text: '<p><ul><li>Monday-Friday: 10 am to 8 pm</li><md-divider><li>Saturday: 10 am to 5 pm</li><md-divider><li>Sunday: Closed</li></ul></p>',
 		// bgColor: '#2ca6d9',
 		// bgColor: '#1b90da',
 		// bgColor: '#3aC0f3',
@@ -27,7 +29,9 @@ var topSidebars = [
 	{
 		// header: 'Flu Shots <span class="accent">$20</span>',
 		// header: 'We will be closed November <span class="accent">26</span> and <span class="accent">27</span>',
-		header: 'We will be closed <span class="accent">Dec&nbsp;24-25</span> <br>and<br> <span class="accent">Dec&nbsp;31 - Jan&nbsp;1</span>',
+		// header: 'We will be closed <span class="accent">Dec&nbsp;24-25</span> <br>and<br> <span class="accent">Dec&nbsp;31 - Jan&nbsp;1</span>',
+		header: '<ul><li>Major Holidays Observed</li><md-divider><li>No Appointments Necessary</li></ul>',
+		// header: '<p class="p-accent">Closed today and on 23&nbsp;rd due to inclement weather</p>',
 		// header: 'Self-pay prices',
 		// text: '<p class="p-accent">Starting from September 1, 2015 we offer flu shots for just $20!</p><p class="p-accent">Looking forward to seeing you here!</p>',
 		// bgColor: '#1b90da',
